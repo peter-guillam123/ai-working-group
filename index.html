@@ -1,0 +1,540 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI working group - Session 1</title>
+<link rel="preconnect" href="https://assets.guim.co.uk" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================================================================
+     AI WORKING GROUP — Session 1, 30 September 2026.
+     Built from the Guardian deck template, second edition.
+
+     Part 1 (20 minutes) is the landscape: scale, then the four layers
+     built around a language model (model, reasoning, loop, harness),
+     then agents acting for you, the risks, and what it means for news.
+     The four layers keep one colour each all the way through:
+     blue, red, green, ink.
+
+     Every figure on a slide has an entry in SOURCES.md.
+     ================================================================ -->
+
+<deck-stage width="1920" height="1080">
+
+  <!-- 01 — Cover -->
+  <section class="slide cover" data-label="Cover">
+    <div class="rule-band"></div>
+
+    <div>
+      <p class="kicker" data-fx="rise" style="--d:80ms"><span class="group-tag">Working group</span>AI, agents and our journalism · Session 1</p>
+      <h1 class="wordmark" data-split data-split-base="300" data-split-step="60">The new<br><em>baseline<span class="q-mark">.</span></em></h1>
+    </div>
+
+    <div class="cover-meta-row">
+      <p class="cover-framing" data-fx="rise" style="--d:900ms">Where AI has got to, and how it got there. Then we give the same news story to the leading models and see what comes back.</p>
+      <div class="cover-stat-block" data-fx="rise" style="--d:1020ms">
+        <p class="stat-line">Session 1 of 4<strong>30 September 2026</strong></p>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">01 / NN</span>
+    </div>
+  </section>
+
+  <!-- 02 — Today: the hour in two parts, and where the six weeks lead -->
+  <section class="slide slide--spread" data-label="Today">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">Today</p>
+    <h2 class="slide-title" data-split>One hour, two <em>parts</em>.</h2>
+
+    <div class="slide-body">
+      <div class="parts">
+        <div class="part" data-fx="rise" style="--d:320ms">
+          <p class="pn">Part 1 · 20 minutes</p>
+          <h3>Where we are now</h3>
+          <p>How many people already use AI, the four layers that turned a chatbot into something that acts for you, and the risks that brings.</p>
+        </div>
+        <div class="part" data-fx="rise" style="--d:440ms">
+          <p class="pn">Part 2 · Hands on</p>
+          <h3>The new baseline</h3>
+          <p>One news story, given to Gemini, ChatGPT, Claude and Google's AI Overviews. We compare what each one gives back, and where each falls down.</p>
+        </div>
+      </div>
+
+      <div class="destination" data-fx="rise" style="--d:600ms">
+        <b>Where it leads</b>
+        <p>In week six each of you writes a one-page brief for your area: where AI is already good enough, where our human edge lies, and one experiment to run. Everything between now and then feeds it.</p>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">02 / NN</span>
+    </div>
+  </section>
+
+  <!-- 03 — Part 1 opener -->
+  <section class="slide ink section-opener" data-label="Part 1 opener">
+    <div class="rule-band"></div>
+    <span class="chapter-ghost" aria-hidden="true" data-fx="ghost" style="--d:150ms">01</span>
+
+    <div class="chapter-num" data-fx="rise" style="--d:100ms">Part 1 · 20 minutes</div>
+    <h1 data-split data-split-base="260" data-split-step="50">Where we are <em>now.</em></h1>
+    <p class="section-dek" data-fx="rise" style="--d:780ms">Three years ago it was a chatbot. Now it plans, uses tools and acts for you. How it got here, in four layers, and what comes with it.</p>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group · Part 1</span>
+      <span class="num">03 / NN</span>
+    </div>
+  </section>
+
+  <!-- 04 — Scale. Company figures are self-reported and unaudited;
+       see SOURCES.md for how each was checked. -->
+  <section class="slide ink slide--scale" data-label="Scale">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">Where we are</p>
+    <h2 class="slide-title" data-split>Already used at <em>scale</em>.</h2>
+
+    <div class="slide-body">
+      <div class="scale-grid">
+        <div class="scale-cell" data-fx="rise" style="--d:300ms">
+          <p class="scale-fig">1bn<span class="unit">+</span></p>
+          <p class="scale-what"><strong>people a week</strong> use ChatGPT</p>
+          <p class="scale-src">OpenAI's own figure, 31 August 2026</p>
+        </div>
+        <div class="scale-cell" data-fx="rise" style="--d:440ms">
+          <p class="scale-fig">2.5bn</p>
+          <p class="scale-what"><strong>people a month</strong> see Google's AI Overviews. The Gemini app passed 1bn in August.</p>
+          <p class="scale-src">Google, May and August 2026</p>
+        </div>
+        <div class="scale-cell" data-fx="rise" style="--d:580ms">
+          <p class="scale-fig"><span data-count="54" data-count-delay="600">54</span><span class="unit">%</span></p>
+          <p class="scale-what"><strong>of UK adults</strong> use AI tools. Among 16–24s, 79%.</p>
+          <p class="scale-src">Ofcom, published April 2026, surveyed autumn 2025</p>
+        </div>
+        <div class="scale-cell" data-fx="rise" style="--d:720ms">
+          <p class="scale-fig"><span data-count="55" data-count-delay="740">55</span><span class="unit">%</span></p>
+          <p class="scale-what"><strong>of workers in Great Britain</strong> use AI for work or education</p>
+          <p class="scale-src">ONS, May–June 2026</p>
+        </div>
+      </div>
+      <p class="scale-coda" data-fx="rise" style="--d:1000ms">In the US, it reached the level of use at work that the PC reached, in a third of the time.<span class="src">Bick, Blandin and Deming, St Louis Fed economists, May 2026</span></p>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">04 / NN</span>
+    </div>
+  </section>
+
+  <!-- 05 — News. Pew is US data from March 2025; Chartbeat does not
+       separate AI Overviews from other causes. Say both out loud. -->
+  <section class="slide slide--spread slide--news" data-label="News">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">Where we are · News</p>
+    <h2 class="slide-title" data-split>Between us and our <em>readers</em>.</h2>
+
+    <div class="slide-body">
+      <div class="news-cols">
+        <div>
+          <p class="wg-eyebrow" data-fx="rise" style="--d:260ms">People who click a link in Google results</p>
+          <div class="clicks" role="img" aria-label="15% click a link with no AI summary; 8% when an AI summary appears">
+            <div class="col"><span class="v" data-fx="rise" style="--d:700ms">15%</span><span class="bar" data-fx="bar-v" style="--h:94%;--d:400ms;transform-origin:center bottom"></span></div>
+            <div class="col after"><span class="v" data-fx="rise" style="--d:1000ms">8%</span><span class="bar" data-fx="bar-v" style="--h:50%;--d:700ms;transform-origin:center bottom"></span></div>
+          </div>
+          <div class="clicks-labels" data-fx="rise" style="--d:500ms"><span>No AI summary</span><span>With AI summary</span></div>
+          <p class="wg-body" data-fx="rise" style="--d:1200ms">Just 1% clicked a link inside the summary itself. And Google search traffic to more than 2,500 news sites <strong>fell by a third</strong> in the year to November 2025.</p>
+          <p class="wg-source" data-fx="rise" style="--d:1300ms;margin-top:12px">Pew Research Center, US browsing data, March 2025. Chartbeat, via the Reuters Institute Digital News Report 2026.</p>
+        </div>
+        <div>
+          <p class="wg-eyebrow" data-fx="rise" style="--d:360ms">UK readers</p>
+          <ul class="news-figs">
+            <li data-fx="rise" style="--d:500ms"><span class="n">21%</span><p>came across news through an AI app or search summary in the past month. ChatGPT alone: 13%.<small>Ofcom, News Consumption in the UK, September 2026</small></p></li>
+            <li data-fx="rise" style="--d:640ms"><span class="n">4%</span><p>use a chatbot for news each week. The lowest of 48 countries.<small>Reuters Institute Digital News Report, June 2026</small></p></li>
+            <li data-fx="rise" style="--d:780ms"><span class="n">6%</span><p>trust chatbot answers about news. Also the lowest of 48.<small>Reuters Institute Digital News Report, June 2026</small></p></li>
+          </ul>
+          <p class="news-take" data-fx="rise" style="--d:1100ms">UK readers aren't choosing AI for news. <mark>It reaches them anyway</mark>, through search.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">05 / NN</span>
+    </div>
+  </section>
+
+  <!-- 06 — The map: four layers, one agent -->
+  <section class="slide slide--map" data-label="Four layers">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">How it got here</p>
+    <h2 class="slide-title" data-split>Four layers, one <em>agent</em>.</h2>
+
+    <div class="slide-body">
+      <div data-fx="fade" style="--d:200ms">
+        <svg class="rings" viewBox="0 0 760 760" role="img" aria-label="Four concentric rings: the model at the centre, then reasoning, then the loop, then the harness on the outside">
+          <defs>
+            <path id="arc4" d="M 63 380 A 317 317 0 0 1 697 380"/><path id="arc3" d="M 153 380 A 227 227 0 0 1 607 380"/><path id="arc2" d="M 241 380 A 139 139 0 0 1 519 380"/>
+          </defs>
+          <circle class="disc d4" cx="380" cy="380" r="370" data-fx="pop" style="--d:900ms"/>
+          <circle class="disc d3" cx="380" cy="380" r="280" data-fx="pop" style="--d:700ms"/>
+          <circle class="disc d2" cx="380" cy="380" r="190" data-fx="pop" style="--d:500ms"/>
+          <circle class="disc d1" cx="380" cy="380" r="105" data-fx="pop" style="--d:300ms"/>
+          <g data-fx="fade" style="--d:1250ms">
+            <text class="ring-label d4-label"><textPath href="#arc4" startOffset="50%" text-anchor="middle">4 · The harness</textPath></text>
+            <text class="ring-label"><textPath href="#arc3" startOffset="50%" text-anchor="middle">3 · The loop</textPath></text>
+            <text class="ring-label"><textPath href="#arc2" startOffset="50%" text-anchor="middle">2 · Reasoning</textPath></text>
+            <text class="core-label" x="380" y="386" text-anchor="middle">The model</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <ol class="layer-list">
+          <li data-fx="rise" style="--d:360ms"><span class="ln">1</span><div><h3>The model</h3><p>Predicts the next word. It learned how by reading a vast share of the internet.</p></div><span class="since">2022</span></li>
+          <li data-fx="rise" style="--d:560ms"><span class="ln">2</span><div><h3>Reasoning</h3><p>Works a problem through, step by step, before it answers.</p></div><span class="since">2024</span></li>
+          <li data-fx="rise" style="--d:760ms"><span class="ln">3</span><div><h3>The loop</h3><p>Plans, acts, checks the result and goes again until the job is done.</p></div><span class="since">2025</span></li>
+          <li data-fx="rise" style="--d:960ms"><span class="ln">4</span><div><h3>The harness</h3><p>The tools and access built around it: browser, files, email, apps.</p></div><span class="since">2025</span></li>
+        </ol>
+        <p class="layer-sum" data-fx="rise" style="--d:1300ms">Together they make an <em>agent</em>: not a better chatbot, but something that does the work.</p>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">06 / NN</span>
+    </div>
+  </section>
+
+  <!-- 07 — Layer 1: the model -->
+  <section class="slide slide--layer" data-layer="1" data-label="Layer 1: the model">
+    <div class="rule-band"></div>
+    <div class="rings-badge" data-on="1" data-fx="fade" style="--d:200ms"><span class="badge-text">Layer<b>The model</b></span><svg class="rings" viewBox="0 0 760 760" aria-hidden="true"><circle class="disc d4" cx="380" cy="380" r="370"/><circle class="disc d3" cx="380" cy="380" r="280"/><circle class="disc d2" cx="380" cy="380" r="190"/><circle class="disc d1" cx="380" cy="380" r="105"/></svg></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">Layer 1 · The model</p>
+    <h2 class="slide-title" data-split>It guesses the next <em>word</em>.</h2>
+
+    <div class="slide-body">
+      <div class="layer-cols">
+        <div>
+          <p class="odds-prompt" data-fx="rise" style="--d:260ms">The cat sat on the<span class="gap" aria-hidden="true"></span></p>
+          <ul class="odds" aria-label="Likely next words">
+            <li data-fx="rise" style="--d:420ms"><span>mat</span><span class="track"><span class="fill" data-fx="bar" style="--w:100%;--d:520ms"></span></span><span class="pc">52%</span></li>
+            <li data-fx="rise" style="--d:520ms"><span>sofa</span><span class="track"><span class="fill" data-fx="bar" style="--w:40%;--d:620ms"></span></span><span class="pc">21%</span></li>
+            <li data-fx="rise" style="--d:620ms"><span>windowsill</span><span class="track"><span class="fill" data-fx="bar" style="--w:25%;--d:720ms"></span></span><span class="pc">13%</span></li>
+            <li data-fx="rise" style="--d:720ms"><span>keyboard</span><span class="track"><span class="fill" data-fx="bar" style="--w:17%;--d:820ms"></span></span><span class="pc">9%</span></li>
+          </ul>
+          <p class="odds-note" data-fx="rise" style="--d:1000ms">Made-up odds, to show the idea. A real model does this for every word-piece in an answer, weighing everything written so far. Nobody wrote its rules: it learned them, and even its makers can't fully read how.</p>
+        </div>
+        <div>
+          <p class="wg-eyebrow" data-fx="rise" style="--d:360ms">Grown, not built: three stages of training</p>
+          <ol class="stages">
+            <li data-fx="rise" style="--d:500ms"><h4>Read everything</h4><p>It learns to predict the next word across a vast share of the internet. Knowledge, but no manners.</p></li>
+            <li data-fx="rise" style="--d:640ms"><h4>Learn what people like</h4><p>People rate its answers, and it is nudged towards the ones they prefer. This is what makes it an assistant.</p></li>
+            <li class="hot" data-fx="rise" style="--d:780ms"><h4>Practise on tasks</h4><p>It is rewarded for getting checkable tasks right, such as maths and code. This is where reasoning came from.</p></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">07 / NN</span>
+    </div>
+  </section>
+
+  <!-- 08 — Layer 2: reasoning. The worked sum is real arithmetic:
+       1.04 / 1.06 = 0.981, so about 2% less per head. -->
+  <section class="slide slide--layer" data-layer="2" data-label="Layer 2: reasoning">
+    <div class="rule-band"></div>
+    <div class="rings-badge" data-on="2" data-fx="fade" style="--d:200ms"><span class="badge-text">Layer<b>Reasoning</b></span><svg class="rings" viewBox="0 0 760 760" aria-hidden="true"><circle class="disc d4" cx="380" cy="380" r="370"/><circle class="disc d3" cx="380" cy="380" r="280"/><circle class="disc d2" cx="380" cy="380" r="190"/><circle class="disc d1" cx="380" cy="380" r="105"/></svg></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">Layer 2 · Reasoning</p>
+    <h2 class="slide-title" data-split>It thinks before it <em>answers</em>.</h2>
+
+    <div class="slide-body">
+      <div class="layer-cols">
+        <div class="think-pane" data-fx="rise" style="--d:280ms">
+          <p class="think-q">A council says its budget went up 4%, but spending per resident fell. Can both be true?</p>
+          <p class="think-head">Thought for 9 seconds</p>
+          <ol class="think-steps">
+            <li data-fx="fade" style="--d:700ms">The budget is a total. Per resident means dividing by population.</li>
+            <li data-fx="fade" style="--d:1000ms">If the population grew faster than 4%, each resident gets less.</li>
+            <li data-fx="fade" style="--d:1300ms">Check: 4% more money, 6% more people. 1.04 ÷ 1.06 = 0.98.</li>
+          </ol>
+          <p class="think-a" data-fx="rise" style="--d:1700ms"><strong>Yes.</strong> If the population grew faster than the budget, spending per head falls. With 6% more residents, a 4% rise means about 2% less each.</p>
+        </div>
+        <div>
+          <ul class="marks">
+            <li data-fx="rise" style="--d:380ms"><span class="when">Sep 2024</span><span class="what"><strong>OpenAI's o1</strong>, the first widely used model that thinks before it answers.</span></li>
+            <li data-fx="rise" style="--d:500ms"><span class="when">Jan 2025</span><span class="what"><strong>DeepSeek R1</strong>, from China, matches it at a fraction of the price, and publishes how.</span></li>
+            <li data-fx="rise" style="--d:620ms"><span class="when">Jul 2025</span><span class="what">Google's Gemini reaches <strong>gold-medal standard</strong> at the International Mathematical Olympiad.</span></li>
+            <li data-fx="rise" style="--d:740ms"><span class="when">Jul 2026</span><span class="what">Two AI systems score a <strong>perfect 42 out of 42</strong>, officially marked. Seven of 666 human contestants did the same.</span></li>
+          </ul>
+          <p class="wg-body" data-fx="rise" style="--d:1000ms;margin-top:28px">How it works: reward the model for getting checkable answers right, and it learns to work things through first. The thinking takes longer and costs more, and the answers get much better.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">08 / NN</span>
+    </div>
+  </section>
+
+  <!-- 09 — Layer 3: the loop. The train example is the one used in the
+       AI risk field guide, plate 2. -->
+  <section class="slide slide--layer" data-layer="3" data-label="Layer 3: the loop">
+    <div class="rule-band"></div>
+    <div class="rings-badge" data-on="3" data-fx="fade" style="--d:200ms"><span class="badge-text">Layer<b>The loop</b></span><svg class="rings" viewBox="0 0 760 760" aria-hidden="true"><circle class="disc d4" cx="380" cy="380" r="370"/><circle class="disc d3" cx="380" cy="380" r="280"/><circle class="disc d2" cx="380" cy="380" r="190"/><circle class="disc d1" cx="380" cy="380" r="105"/></svg></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">Layer 3 · The loop</p>
+    <h2 class="slide-title" data-split>It keeps <em>going</em>.</h2>
+
+    <div class="slide-body">
+      <div class="layer-cols layer-cols--loop">
+        <div class="loop-wrap">
+          <svg class="loop-svg" viewBox="0 0 640 640" aria-hidden="true">
+            <circle class="orbit" cx="320" cy="320" r="240" data-fx="fade" style="--d:300ms"/>
+            <g data-fx="fade" style="--d:900ms">
+              <polygon class="arrow" points="-13,-11 13,0 -13,11" transform="translate(527.8 200.0) rotate(60)"/>
+              <polygon class="arrow" points="-13,-11 13,0 -13,11" transform="translate(320.0 560.0) rotate(180)"/>
+              <polygon class="arrow" points="-13,-11 13,0 -13,11" transform="translate(112.2 200.0) rotate(300)"/>
+            </g>
+          </svg>
+          <div class="loop-node" style="left:320px;top:80px;--d:400ms" data-fx="pop">Think<small>plans the next step</small></div>
+          <div class="loop-node" style="left:528px;top:440px;--d:560ms" data-fx="pop">Act<small>uses a tool</small></div>
+          <div class="loop-node" style="left:112px;top:440px;--d:720ms" data-fx="pop">Look<small>checks what happened</small></div>
+          <div class="loop-goal" data-fx="fade" style="--d:1000ms"><b>The goal</b>set by a person, then round and round until it's met</div>
+        </div>
+        <div>
+          <p class="run-goal" data-fx="rise" style="--d:300ms">Find me the cheapest train from London to Leeds on Friday morning.</p>
+          <ol class="run">
+            <li data-fx="rise" style="--d:500ms"><span class="k">Thinks</span><span>I need times and prices. I'll search a booking site.</span></li>
+            <li data-fx="rise" style="--d:640ms"><span class="k">Acts</span><span>Opens a browser. Searches London to Leeds, Friday, before noon.</span></li>
+            <li data-fx="rise" style="--d:780ms"><span class="k">Looks</span><span>14 trains, from £31 to £118.</span></li>
+            <li data-fx="rise" style="--d:920ms"><span class="k">Thinks</span><span>The 06:33 is cheapest. Check for booking fees first.</span></li>
+            <li data-fx="rise" style="--d:1060ms"><span class="k">Acts</span><span>Clicks through to the checkout for the 06:33.</span></li>
+            <li data-fx="rise" style="--d:1200ms"><span class="k">Looks</span><span>£32.50 with the fee.</span></li>
+            <li class="done" data-fx="rise" style="--d:1340ms"><span class="k">Done</span><span>Reports back, and asks before paying.</span></li>
+          </ol>
+          <div class="horizon" data-fx="rise" style="--d:1500ms">
+            <span class="big">16+ hrs</span>
+            <p>The longest task, in a skilled person's time, that the best agent could finish on its own half the time. METR, spring 2026. In late 2025 it was about five hours, and METR's test has run out of longer tasks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">09 / NN</span>
+    </div>
+  </section>
+
+  <!-- 10 — Layer 4: the harness -->
+  <section class="slide slide--layer" data-layer="4" data-label="Layer 4: the harness">
+    <div class="rule-band"></div>
+    <div class="rings-badge" data-on="4" data-fx="fade" style="--d:200ms"><span class="badge-text">Layer<b>The harness</b></span><svg class="rings" viewBox="0 0 760 760" aria-hidden="true"><circle class="disc d4" cx="380" cy="380" r="370"/><circle class="disc d3" cx="380" cy="380" r="280"/><circle class="disc d2" cx="380" cy="380" r="190"/><circle class="disc d1" cx="380" cy="380" r="105"/></svg></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">Layer 4 · The harness</p>
+    <h2 class="slide-title" data-split>It gets <em>tools</em>.</h2>
+
+    <div class="slide-body">
+      <div class="layer-cols layer-cols--hub">
+        <div class="hub">
+          <svg class="hub-svg" viewBox="0 0 700 700" aria-hidden="true">
+            <circle class="rim" cx="350" cy="350" r="285" data-fx="fade" style="--d:300ms"/>
+            <g data-fx="fade" style="--d:500ms">
+              <line x1="350" y1="350" x2="350" y2="65"/><line x1="350" y1="350" x2="552" y2="148"/>
+              <line x1="350" y1="350" x2="635" y2="350"/><line x1="350" y1="350" x2="552" y2="552"/>
+              <line x1="350" y1="350" x2="350" y2="635"/><line x1="350" y1="350" x2="148" y2="552"/>
+              <line x1="350" y1="350" x2="65" y2="350"/><line x1="350" y1="350" x2="148" y2="148"/>
+            </g>
+          </svg>
+          <div class="hub-core" data-fx="fade" style="--d:200ms"><span>Model</span></div>
+          <span class="tool" style="left:350px;top:65px;--d:600ms" data-fx="pop"><i></i>Search</span>
+          <span class="tool" style="left:552px;top:148px;--d:680ms" data-fx="pop"><i></i>Browser</span>
+          <span class="tool" style="left:635px;top:350px;--d:760ms" data-fx="pop"><i></i>Your files</span>
+          <span class="tool" style="left:552px;top:552px;--d:840ms" data-fx="pop"><i></i>Code</span>
+          <span class="tool risky" style="left:350px;top:635px;--d:920ms" data-fx="pop"><i></i>Payments</span>
+          <span class="tool risky" style="left:148px;top:552px;--d:1000ms" data-fx="pop"><i></i>Email</span>
+          <span class="tool" style="left:65px;top:350px;--d:1080ms" data-fx="pop"><i></i>Calendar</span>
+          <span class="tool" style="left:148px;top:148px;--d:1160ms" data-fx="pop"><i></i>Memory</span>
+        </div>
+        <div>
+          <p class="wg-body" data-fx="rise" style="--d:300ms">The harness is everything built around the model: <strong>which tools it can use, what it can see, what it remembers, and what it must ask you first.</strong> The same model in a different harness behaves very differently.</p>
+          <p class="wg-body" data-fx="rise" style="--d:440ms;margin-top:22px">Most now plug into apps through a shared standard, MCP, so any tool can connect to any model. The red ones are those that let it send and spend.</p>
+          <p class="wg-eyebrow" data-fx="rise" style="--d:600ms;margin-top:40px">Harnesses you'll hear about</p>
+          <ul class="harness-names" data-fx="rise" style="--d:700ms">
+            <li>Claude Code</li><li>Claude Cowork</li><li>Claude in Chrome</li><li>OpenAI Codex</li><li>ChatGPT Work</li><li>Gemini Spark</li><li>Perplexity Comet</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">10 / NN</span>
+    </div>
+  </section>
+
+  <!-- 11 — Acting for you. Muse facts from Meta's launch and safety
+       posts; Voice facts from coverage quoting OpenAI's help centre,
+       which blocked direct reading. See SOURCES.md. -->
+  <section class="slide slide--spread slide--proxy" data-label="Acting for you">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">September 2026</p>
+    <h2 class="slide-title" data-split>Now it acts on your <em>behalf</em>.</h2>
+    <p class="slide-subtitle" data-fx="rise" style="--d:220ms">All four layers, now inside apps that hundreds of millions of people already use.</p>
+
+    <div class="slide-body">
+      <div class="proxy">
+        <div class="proxy-card" data-fx="rise" style="--d:360ms">
+          <p class="who">Meta · 8 September · US only for now</p>
+          <h3>Muse</h3>
+          <p>A personal agent, in its own app and inside WhatsApp. It keeps working after you close it.</p>
+          <ul class="does">
+            <li>Sends emails, fills in forms, books travel</li>
+            <li>Shops and pays, once you approve</li>
+            <li>Top of the US App Store within ten days</li>
+          </ul>
+          <p class="proxy-note">Meta's own safety notes: “Muse will sometimes make mistakes.”</p>
+        </div>
+        <div class="proxy-card" data-fx="rise" style="--d:500ms">
+          <p class="who">OpenAI · 23 September · worldwide</p>
+          <h3>ChatGPT Voice</h3>
+          <p>Talk to it, and it now uses your connected apps in the middle of the conversation.</p>
+          <ul class="does">
+            <li>Reads your Gmail, finds a slot in your diary, posts to Slack</li>
+            <li>Builds documents, decks and spreadsheets while you talk</li>
+            <li>Included for free users</li>
+          </ul>
+          <p class="proxy-note">Saying “yes, send it” isn't enough: you have to tap to approve on screen.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">11 / NN</span>
+    </div>
+  </section>
+
+  <!-- 12 — Timeline. Evenly spaced, not to scale: the gaps are told in
+       the subtitle instead. Colours follow the four layers. -->
+  <section class="slide slide--spread slide--timeline" data-label="Timeline">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">How fast it moved</p>
+    <h2 class="slide-title" data-split>Nine moments in four <em>years</em>.</h2>
+    <p class="slide-subtitle" data-fx="rise" style="--d:220ms">Nearly two years between the first two. Since then, something big every few months.</p>
+
+    <div class="slide-body">
+      <div class="tl">
+          <div class="tl-axis" data-fx="bar" style="--d:250ms"></div>
+          <div class="tl-ev up l1" style="left:125px;--d:400ms" data-fx="rise"><span class="stem"></span><span class="dot"></span><p class="d">Nov 2022</p><p class="t">ChatGPT</p><p class="s">The model goes public</p></div>
+          <div class="tl-ev down l2" style="left:304px;--d:530ms" data-fx="rise"><span class="stem"></span><span class="dot"></span><p class="d">Sep 2024</p><p class="t">OpenAI o1</p><p class="s">Thinks before it answers</p></div>
+          <div class="tl-ev up l4" style="left:482px;--d:660ms" data-fx="rise"><span class="stem"></span><span class="dot"></span><p class="d">Nov 2024</p><p class="t">MCP</p><p class="s">One plug for every tool</p></div>
+          <div class="tl-ev down l2" style="left:661px;--d:790ms" data-fx="rise"><span class="stem"></span><span class="dot"></span><p class="d">Jan 2025</p><p class="t">DeepSeek R1</p><p class="s">Reasoning, cheap and open</p></div>
+          <div class="tl-ev up l4" style="left:840px;--d:920ms" data-fx="rise"><span class="stem"></span><span class="dot"></span><p class="d">Feb 2025</p><p class="t">Claude Code</p><p class="s">An agent at work on your computer</p></div>
+          <div class="tl-ev down l2" style="left:1019px;--d:1050ms" data-fx="rise"><span class="stem"></span><span class="dot"></span><p class="d">Jul 2025</p><p class="t">Maths Olympiad</p><p class="s">Gold-medal standard</p></div>
+          <div class="tl-ev up l3" style="left:1198px;--d:1180ms" data-fx="rise"><span class="stem"></span><span class="dot"></span><p class="d">Nov 2025</p><p class="t">Claude Opus 4.5</p><p class="s">Agents work for five hours</p></div>
+          <div class="tl-ev down tl-risk" style="left:1376px;--d:1310ms" data-fx="rise"><span class="stem"></span><span class="dot"></span><p class="d">Jul 2026</p><p class="t">Hugging Face</p><p class="s">Test agents break out</p></div>
+          <div class="tl-ev up l4 now" style="left:1555px;--d:1440ms" data-fx="rise"><span class="stem"></span><span class="dot"></span><p class="d">Sep 2026</p><p class="t">Muse, ChatGPT Voice</p><p class="s">Agents go mainstream</p></div>
+      </div>
+      <p class="tl-key" data-fx="rise" style="--d:1700ms"><span><i style="background:var(--l1)"></i>The model</span><span><i style="background:var(--l2)"></i>Reasoning</span><span><i style="background:var(--l3)"></i>The loop</span><span><i style="background:var(--l4)"></i>The harness</span><span><i style="background:var(--news-red)"></i>Risk, and now</span></p>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">12 / NN</span>
+    </div>
+  </section>
+
+  <!-- 13 — What can go wrong -->
+  <section class="slide slide--spread" data-label="Risks">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">The catch</p>
+    <h2 class="slide-title" data-split>What can go <em>wrong</em>.</h2>
+    <p class="slide-subtitle" data-fx="rise" style="--d:220ms">When a chatbot gets it wrong, you get a bad answer. When an agent gets it wrong, it does a bad thing.</p>
+
+    <div class="slide-body">
+      <div class="risks">
+        <div class="risk" data-fx="rise" style="--d:340ms"><p class="rn">01</p><h3>It can be tricked</h3><p>Anyone who can put words in front of it can try to give it orders: a web page, an email, a document. This is prompt injection, and nobody has solved it.</p><p><b>Real case:</b> in 2025 researchers showed that one crafted email could make Microsoft 365 Copilot leak company data, without anyone clicking anything.</p></div>
+        <div class="risk" data-fx="rise" style="--d:460ms"><p class="rn">02</p><h3>Mistakes become actions</h3><p>A wrong answer you can ignore. A wrong email sent or a wrong purchase made has already happened.</p><p><b>Real case:</b> asked to find cheap eggs, OpenAI's Operator agent bought $31 worth, with priority delivery, without checking first.</p></div>
+        <div class="risk" data-fx="rise" style="--d:580ms"><p class="rn">03</p><h3>It sees what you let it see</h3><p>To act for you it needs your inbox, your files and your logins. Private data, plus content from strangers, plus a way to send things out: security people call it the lethal trifecta.</p><p>Meta cites it in the safety notes for Muse.</p></div>
+        <div class="risk" data-fx="rise" style="--d:700ms"><p class="rn">04</p><h3>It chases the goal, not what you meant</h3><p>It does what it was rewarded for, by whatever route works. Researchers call this reward hacking.</p><p><b>Classic case:</b> a game-playing AI rewarded for points circled one lagoon for ever instead of finishing the race (OpenAI, 2016).</p></div>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">13 / NN</span>
+    </div>
+  </section>
+
+  <!-- 14 — This summer. Figures from the AI risk field guide, which cites
+       OpenAI's technical report, Hugging Face's timeline and the METR /
+       Redwood review. -->
+  <section class="slide ink slide--incident" data-label="This summer">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">This summer, and last week</p>
+
+    <div class="slide-body">
+      <p class="incident-line" data-split data-split-base="160" data-split-step="34">In July, AI agents under test at OpenAI broke out and hacked another company. <em>Nobody</em> told them to.</p>
+      <div class="incident-figs">
+        <div class="f" data-fx="rise" style="--d:1200ms"><div class="n">~<span data-count="700" data-count-delay="1300">700</span></div><p class="l">agents went into Hugging Face, which hosts AI models and data</p></div>
+        <div class="f" data-fx="rise" style="--d:1350ms"><div class="n">&lt;<span data-count="13" data-count-delay="1450">13</span> hrs</div><p class="l">from one machine to administrator control across its systems</p></div>
+        <div class="f" data-fx="rise" style="--d:1500ms"><div class="n">17,600</div><p class="l">separate actions, with no person directing any of them</p></div>
+      </div>
+      <p class="incident-after" data-fx="rise" style="--d:1800ms">They were trying to cheat on a test, and the answers were stored at Hugging Face. Since then <strong>Anthropic, Meta and Google</strong> have admitted their models broke into outside systems during tests too. On 25 September <strong>OpenAI said an agent had slipped out again</strong>, and paused all work that lets its most capable models use tools.</p>
+      <p class="wg-source" data-fx="rise" style="--d:2000ms">Sources: OpenAI technical report, 26 August 2026; Hugging Face technical timeline, 27 July 2026; METR and Redwood Research review, 26 August 2026; OpenAI misalignment report, 25 September 2026. The whole story, with every source: AI risk field guide, peter-guillam123.github.io/ai-risk-field-guide</p>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">14 / NN</span>
+    </div>
+  </section>
+
+  <!-- 15 — What it means for news. Draws on the session 1 brief in the
+       working group proposal. -->
+  <section class="slide slide--spread" data-label="So what">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">So what</p>
+    <h2 class="slide-title" data-split>What this means for <em>news</em>.</h2>
+
+    <div class="slide-body">
+      <div class="sowhat">
+        <div data-fx="rise" style="--d:320ms"><p class="wg-eyebrow">Already happening</p><h3>Agents read the news for people</h3><p>Google is launching agents that watch the web around the clock and send people updates. Bots make up more than half of all web traffic.</p></div>
+        <div data-fx="rise" style="--d:460ms"><p class="wg-eyebrow">Getting better fast</p><h3>Explainers on demand</h3><p>Models write clearer explainers every few months, shaped to what each reader already knows. That is our home ground, and it is what part two tests.</p></div>
+        <div class="ours" data-fx="rise" style="--d:600ms"><p class="wg-eyebrow">Our opening</p><h3>What a model can't make</h3><p>As generic summary gets cheap, what stands out is original reporting, judgement, taste, and values people trust. The question for your brief is where that lies in your area.</p></div>
+      </div>
+      <p class="sowhat-bridge" data-fx="rise" style="--d:900ms">So how good are they at the news, today? <span>That's part two.</span></p>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">15 / NN</span>
+    </div>
+  </section>
+
+</deck-stage>
+
+<script src="deck-stage.js"></script>
+<script src="prompt-copy.js"></script>
+<script src="motion.js"></script>
+<script src="grid-overlay.js"></script>
+
+</body></html>
