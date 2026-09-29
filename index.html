@@ -605,17 +605,20 @@
   <section class="slide slide--story" data-label="The story">
     <div class="rule-band"></div>
 
-    <p class="kicker" data-fx="rise" style="--d:60ms">Today's story</p>
+    <p class="kicker" data-fx="rise" style="--d:60ms">A good test case</p>
     <h2 class="slide-title story-title" data-split data-split-base="200" data-split-step="60">What happened at <em>Fairford</em>?</h2>
 
     <div class="slide-body">
       <div class="story-cols">
-        <p class="story-dek" data-fx="rise" style="--d:700ms">Five men arrested near RAF Fairford on Sunday and released on bail, with a great deal of rumour since.</p>
-        <ul class="story-why" data-fx="rise" style="--d:900ms">
+        <p class="story-dek" data-fx="rise" style="--d:700ms">Let's put a range of AI tools to work in the place we know best: a live news story.</p>
+        <div class="story-side" data-fx="rise" style="--d:900ms">
+          <p class="wg-label">What makes it hard</p>
+          <ul class="story-why">
           <li><b>It's moving fast.</b> What was true on Sunday night isn't all true now.</li>
-          <li><b>It's unclear.</b> Official statements are few, and claims from elsewhere are many.</li>
+          <li><b>It's unclear.</b> Few official statements, and a great many claims from elsewhere.</li>
           <li><b>There are rules.</b> Once people are arrested, the law limits what can be reported.</li>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -630,16 +633,16 @@
     <div class="rule-band"></div>
 
     <p class="kicker" data-fx="rise" style="--d:60ms">As you go</p>
-    <h2 class="slide-title" data-split>What to look <em>for</em>.</h2>
+    <h2 class="slide-title" data-split>What we're <em>comparing</em>.</h2>
 
     <div class="slide-body">
       <div class="checks">
-        <div class="check" data-fx="rise" style="--d:320ms"><span class="check-n">01</span><h3>Is it right?</h3><p>Check it against the official record: police, courts, named officials.</p></div>
-        <div class="check" data-fx="rise" style="--d:410ms"><span class="check-n">02</span><h3>Does it separate fact from claim?</h3><p>Confirmed, reported and rumoured, or all in one voice?</p></div>
-        <div class="check" data-fx="rise" style="--d:500ms"><span class="check-n">03</span><h3>Can you check it?</h3><p>Do the sources exist, and do they say what it says they say?</p></div>
-        <div class="check" data-fx="rise" style="--d:590ms"><span class="check-n">04</span><h3>Did it make anything up?</h3><p>Numbers, quotes or charts that appear nowhere else.</p></div>
-        <div class="check" data-fx="rise" style="--d:680ms"><span class="check-n">05</span><h3>Is it fresh?</h3><p>Does it know what happened this morning?</p></div>
-        <div class="check" data-fx="rise" style="--d:770ms"><span class="check-n">06</span><h3>What did it cost you?</h3><p>Seconds, or minutes of waiting. Was the wait worth it?</p></div>
+        <div class="check" data-fx="rise" style="--d:320ms"><span class="check-n">01</span><h3>Is it right?</h3></div>
+        <div class="check" data-fx="rise" style="--d:410ms"><span class="check-n">02</span><h3>Does it separate fact from claim?</h3></div>
+        <div class="check" data-fx="rise" style="--d:500ms"><span class="check-n">03</span><h3>Can you check it?</h3></div>
+        <div class="check" data-fx="rise" style="--d:590ms"><span class="check-n">04</span><h3>Did it make anything up?</h3></div>
+        <div class="check" data-fx="rise" style="--d:680ms"><span class="check-n">05</span><h3>Is it fresh?</h3></div>
+        <div class="check" data-fx="rise" style="--d:770ms"><span class="check-n">06</span><h3>What did it cost you?</h3></div>
       </div>
     </div>
 
@@ -655,15 +658,15 @@
     <div class="rule-band"></div>
 
     <p class="kicker" data-fx="rise" style="--d:60ms">Four tools, one trade-off</p>
-    <h2 class="slide-title" data-split>The ones that read most think <em>least</em>.</h2>
+    <h2 class="slide-title" data-split>What reaches most thinks <em>least</em>.</h2>
 
     <div class="slide-body">
       <div class="reach-grid">
-        <svg class="reach-map" viewBox="0 0 900 540" role="img" aria-label="A rough map. AI Overviews and AI Mode can read the most and think the least. Gemini with Canvas sits in the middle. ChatGPT thinking hard thinks the most and can read less.">
+        <svg class="reach-map" viewBox="0 0 900 540" role="img" aria-label="A rough map. AI Overviews and AI Mode can reach the most and think the least. Gemini with Canvas sits in the middle. ChatGPT thinking hard thinks the most and can reach less.">
           <line class="ax" x1="60" y1="480" x2="880" y2="480" data-fx="fade" style="--d:300ms"/>
           <line class="ax" x1="60" y1="20" x2="60" y2="480" data-fx="fade" style="--d:300ms"/>
           <text class="ax-t" x="880" y="516" text-anchor="end" data-fx="fade" style="--d:400ms">Thinks harder, takes longer →</text>
-          <text class="ax-t" x="30" y="480" text-anchor="start" transform="rotate(-90 30 480)" data-fx="fade" style="--d:400ms">Can read more of the web →</text>
+          <text class="ax-t" x="30" y="480" text-anchor="start" transform="rotate(-90 30 480)" data-fx="fade" style="--d:400ms">Can reach more of the web →</text>
             <g class="mp" data-fx="pop" style="--d:700ms"><circle cx="126" cy="52" r="16"/></g>
             <text class="mp-label" x="144" y="46" text-anchor="start" data-fx="fade" style="--d:800ms">AI Overviews</text>
             <g class="mp" data-fx="pop" style="--d:860ms"><circle cx="281" cy="84" r="16"/></g>
@@ -674,9 +677,10 @@
             <text class="mp-label" x="778" y="332" text-anchor="end" data-fx="fade" style="--d:1280ms">ChatGPT, thinking hard</text>
         </svg>
         <div class="reach-text">
-          <div data-fx="rise" style="--d:1500ms"><p class="wg-label">Why Google's pair read most</p><p class="wg-body">Google treats AI Overviews and AI Mode as part of Search. A publisher can only keep its work out by cutting back how it appears in ordinary results too, so almost everything is in.</p></div>
-          <div data-fx="rise" style="--d:1650ms"><p class="wg-label">Why the others read less</p><p class="wg-body">The Gemini app and ChatGPT are separate AI products. Publishers can block them without losing any Search traffic, and some do.</p></div>
-          <p class="wg-source" data-fx="rise" style="--d:1800ms">A rough map, not a measurement. Access: Google Search Central documentation on AI features and on Google-Extended.</p>
+          <div data-fx="rise" style="--d:1500ms"><p class="wg-label">Why Google's pair reach most</p><p class="wg-body">Google treats AI Overviews and AI Mode as part of Search. A publisher can only keep its work out by cutting back how it appears in ordinary results too, so almost everything is within reach.</p></div>
+          <div data-fx="rise" style="--d:1650ms"><p class="wg-label">Why the others reach less</p><p class="wg-body">The Gemini app and ChatGPT are separate AI products. Publishers can block them without losing any Search traffic, and some do.</p></div>
+          <div data-fx="rise" style="--d:1750ms"><p class="wg-label">Reaching isn't reading</p><p class="wg-body">A quick answer can draw on almost anything, but uses very little of it. The slower tools reach less, but tend to read more of what they find.</p></div>
+          <p class="wg-source" data-fx="rise" style="--d:1850ms">A rough map, not a measurement. Access: Google Search Central documentation on AI features and on Google-Extended.</p>
         </div>
       </div>
     </div>
@@ -722,9 +726,9 @@
         </div>
         <ul class="tool-rows">
             <li data-fx="rise" style="--d:400ms"><span class="tr-k">What it's for</span><p>A quick answer at the top of Google results. It appears by itself on some searches; you don't ask for it.</p></li>
-            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can read</span><p>Everything in Google's search index, and fresh within minutes.</p></li>
+            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can reach</span><p>Everything in Google's search index, and fresh within minutes.</p></li>
             <li data-fx="rise" style="--d:580ms"><span class="tr-k">Strong at</span><p>A fast first sense of a story, with the sources linked underneath.</p></li>
-            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Watch for</span><p>It's brief by design and can't be steered. It blends sources without weighing them, so rumour and fact can share a sentence.</p></li>
+            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Watch for</span><p>Brief by design, and it can't be steered. It blends sources without weighing them, so rumour and fact can share a sentence.</p></li>
             <li data-fx="rise" style="--d:760ms"><span class="tr-k">How long</span><p>A second or two.</p></li>
         </ul>
       </div>
@@ -774,9 +778,9 @@
         </div>
         <ul class="tool-rows">
             <li data-fx="rise" style="--d:400ms"><span class="tr-k">What it's for</span><p>Search as a conversation: ask, follow up, narrow down.</p></li>
-            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can read</span><p>The same search index as AI Overviews. It runs many searches for you behind the scenes.</p></li>
+            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can reach</span><p>The same search index as AI Overviews. It runs many searches for you behind the scenes.</p></li>
             <li data-fx="rise" style="--d:580ms"><span class="tr-k">Strong at</span><p>Breadth, freshness and follow-ups. It can build simple maps, charts and tables.</p></li>
-            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Watch for</span><p>Polished visuals can carry numbers and quotes that come from nowhere. The richer it looks, the more it needs checking.</p></li>
+            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Watch for</span><p>Polished visuals can carry numbers and quotes that come from nowhere, and the richer it looks, the more convincing the error.</p></li>
             <li data-fx="rise" style="--d:760ms"><span class="tr-k">How long</span><p>Seconds.</p></li>
         </ul>
       </div>
@@ -826,9 +830,9 @@
         </div>
         <ul class="tool-rows">
             <li data-fx="rise" style="--d:400ms"><span class="tr-k">What it's for</span><p>Making things: reports, explainers and small interactive apps you can change by asking.</p></li>
-            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can read</span><p>Google Search, but as a separate AI product. Publishers can block it without leaving Search.</p></li>
+            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can reach</span><p>Google Search, but as a separate AI product. Publishers can block it without leaving Search.</p></li>
             <li data-fx="rise" style="--d:580ms"><span class="tr-k">Strong at</span><p>Turning a sentence into something working and well laid out, then reshaping it on request.</p></li>
-            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Watch for</span><p>Design can run ahead of sourcing. Check the citations are real and say what it claims they say.</p></li>
+            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Watch for</span><p>Design can run ahead of sourcing: the page can look more certain than its citations are.</p></li>
             <li data-fx="rise" style="--d:760ms"><span class="tr-k">How long</span><p>A minute or two.</p></li>
         </ul>
       </div>
@@ -878,7 +882,7 @@
         </div>
         <ul class="tool-rows">
             <li data-fx="rise" style="--d:400ms"><span class="tr-k">What it's for</span><p>Deep, careful work: briefings, explainers and analysis, refined over a conversation.</p></li>
-            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can read</span><p>OpenAI's own search. Publishers can block it without affecting Google, and some do.</p></li>
+            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can reach</span><p>OpenAI's own search. Publishers can block it without affecting Google, and some do.</p></li>
             <li data-fx="rise" style="--d:580ms"><span class="tr-k">Strong at</span><p>Weighing evidence, separating confirmed from claimed, going to primary sources, and checking itself when asked.</p></li>
             <li data-fx="rise" style="--d:670ms"><span class="tr-k">Watch for</span><p>The wait. Its confidence can still outrun the record, and what it can't read, it can't weigh.</p></li>
             <li data-fx="rise" style="--d:760ms"><span class="tr-k">How long</span><p>Several minutes. Our test run took seven.</p></li>
@@ -914,7 +918,7 @@
         </div>
         <ul class="tool-rows">
           <li data-fx="rise" style="--d:500ms"><span class="tr-k">How it works</span><p>All four layers: it plans, searches, reads whole pages, writes the page, checks its own work and goes round again.</p></li>
-          <li data-fx="rise" style="--d:590ms"><span class="tr-k">What it can read</span><p>Its own web search, plus the pages it opens. Publishers can block it too.</p></li>
+          <li data-fx="rise" style="--d:590ms"><span class="tr-k">What it can reach</span><p>Its own web search, plus the pages it opens. Publishers can block it too.</p></li>
           <li data-fx="rise" style="--d:680ms"><span class="tr-k">Watch for</span><p>The same as the rest: it's only as good as what it can read, and it still needs an editor.</p></li>
           <li data-fx="rise" style="--d:770ms"><span class="tr-k">How long</span><p>As long as the job takes.</p></li>
         </ul>

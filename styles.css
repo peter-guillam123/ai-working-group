@@ -3413,3 +3413,10 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .asks h3 { font-family: var(--display); font-weight: 500; font-size: 50px; line-height: 1.05; margin: 0 0 8px; }
 .asks p { margin: 0; font-family: var(--body); font-size: 28px; line-height: 1.42; color: var(--ink-soft); max-width: 60ch; }
 .asks-foot { margin: 34px 0 0; font-family: var(--display); font-weight: 500; font-size: 36px; color: var(--ink); }
+/* Slide 15 side list with its own label; slide 16 as bare questions */
+.story-side .wg-label { margin-bottom: 12px; }
+.checks .check h3 { font-size: 52px; margin-top: 12px; }
+.slide--spread .checks { row-gap: 70px; }
+.checks .check h3 { font-size: 62px; line-height: 1.02; }
+.checks .check-n { font-size: 24px; }
+.slide--spread .checks { row-gap: 90px; }

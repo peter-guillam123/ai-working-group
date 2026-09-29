@@ -28,6 +28,15 @@ python3 -m http.server 8811
 
 ## Changelog
 
+### 29 September 2026, late: reach, not read
+
+The map said the Google tools "read" most. They can reach most, which
+isn't the same: a quick answer draws on almost anything but uses very
+little of it. The map and every tool slide now say reach, and the map
+says plainly that reaching isn't reading. The room doesn't need telling
+how to check a story or what Fairford is, so the story slide became "a
+good test case" and the checks slide lost its how-to lines.
+
 ### 29 September 2026, evening: part two
 
 Ten slides for the hands-on half: one story, four tools, quickest first.
