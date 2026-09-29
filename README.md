@@ -28,6 +28,27 @@ python3 -m http.server 8811
 
 ## Changelog
 
+### 29 September 2026, later: one idea, polished
+
+Narrowed part one to a single job: showing that AI is no longer just a
+language model, and pulling apart the layers that took us from a chatbot
+to agents that are truly useful, and to Hugging Face. The news and
+search-traffic slide went, and so did the "what it means for news" close;
+the business side belongs to session four.
+
+The new last slide explains why nobody agrees how good AI is: its
+ability is jagged, and "AI" is many different machines, from a
+one-second search summary to an agent that works for hours. The Harvard
+and BCG consultants study gives it a real number.
+
+Then a design pass on everything but the harness and incident slides.
+The cover carries the four rings. The agenda draws the hour to scale.
+The model slide shows the next-word guess as a waterfall. The reasoning
+slide now asks the same question two ways, one wrong and one right, next
+to OpenAI's 12% against 74% on the same maths test. The agent's 16+
+hours is now a small chart from METR, so the jump reads at a glance. The
+risks slide leads with one line, then the ledger.
+
 ### 29 September 2026: Part one, first build
 
 Fifteen slides. The spine is four layers built around a language model:
