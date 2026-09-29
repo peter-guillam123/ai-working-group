@@ -3155,3 +3155,6 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .slide--layer[data-layer="1"] .guess-stem,
 .guess-words li:nth-child(1) { font-size: 88px; white-space: nowrap; }
 .slide--layer[data-layer="1"] .slide-body { padding: 30px 0 28px; }
+/* Reasoning slide: the one-line explanation under the two answers */
+.l2-how { margin: 22px 0 6px; font-family: var(--body); font-size: 25px; line-height: 1.4; color: var(--ink-soft); padding-left: 18px; border-left: 4px solid var(--l2); }
+.l2-how strong { color: var(--ink); }
