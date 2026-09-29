@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI working group - Session 1</title>
 <link rel="preconnect" href="https://assets.guim.co.uk" crossorigin>
-<link rel="stylesheet" href="styles.css?v=202609291643">
+<link rel="stylesheet" href="styles.css?v=202609291656">
 <style id="deck-gate-style">
   #deck-gate {
     position: fixed; inset: 0; z-index: 2147483647;
@@ -61,7 +61,7 @@
     <p class="dg-error" id="deck-gate-error" hidden>That's not it. Try again.</p>
   </form>
 </div>
-<script src="gate.js?v=202609291643"></script>
+<script src="gate.js?v=202609291656"></script>
 
 <!-- ================================================================
      AI WORKING GROUP — Session 1, 30 September 2026.
@@ -661,37 +661,30 @@
     </div>
   </section>
 
-  <!-- Part 2 · The map. A rough map, not a measurement. Access facts:
-       Google's own docs (AI features, Google-Extended). -->
-  <section class="slide slide--spread slide--reach" data-label="Reach and depth">
+  <!-- Part 2 · Things to consider with each tool. A rough guide as of
+       late September 2026; the "for its maker" row is our reading.
+       Sources in SOURCES.md. -->
+  <section class="slide slide--spread slide--consider" data-label="Things to consider">
     <div class="rule-band"></div>
 
-    <p class="kicker" data-fx="rise" style="--d:60ms">Four tools, one trade-off</p>
-    <h2 class="slide-title" data-split>What reaches most thinks <em>least</em>.</h2>
+    <p class="kicker" data-fx="rise" style="--d:60ms">Things to consider with each tool</p>
+    <h2 class="slide-title" data-split>Each one is built for a <em>job</em>.</h2>
 
-    <div class="slide-body">
-      <div class="reach-grid">
-        <svg class="reach-map" viewBox="0 0 900 540" role="img" aria-label="A rough map. AI Overviews and AI Mode can reach the most and think the least. Gemini with Canvas sits in the middle. ChatGPT thinking hard thinks the most and can reach less.">
-          <line class="ax" x1="60" y1="480" x2="880" y2="480" data-fx="fade" style="--d:300ms"/>
-          <line class="ax" x1="60" y1="20" x2="60" y2="480" data-fx="fade" style="--d:300ms"/>
-          <text class="ax-t" x="880" y="516" text-anchor="end" data-fx="fade" style="--d:400ms">Thinks harder, takes longer →</text>
-          <text class="ax-t" x="30" y="480" text-anchor="start" transform="rotate(-90 30 480)" data-fx="fade" style="--d:400ms">Can reach more of the web →</text>
-            <g class="mp" data-fx="pop" style="--d:700ms"><circle cx="126" cy="52" r="16"/></g>
-            <text class="mp-label" x="144" y="46" text-anchor="start" data-fx="fade" style="--d:800ms">AI Overviews</text>
-            <g class="mp" data-fx="pop" style="--d:860ms"><circle cx="281" cy="84" r="16"/></g>
-            <text class="mp-label" x="299" y="98" text-anchor="start" data-fx="fade" style="--d:960ms">AI Mode</text>
-            <g class="mp" data-fx="pop" style="--d:1020ms"><circle cx="486" cy="241" r="16"/></g>
-            <text class="mp-label" x="506" y="255" text-anchor="start" data-fx="fade" style="--d:1120ms">Gemini with Canvas</text>
-            <g class="mp" data-fx="pop" style="--d:1180ms"><circle cx="798" cy="342" r="16"/></g>
-            <text class="mp-label" x="778" y="332" text-anchor="end" data-fx="fade" style="--d:1280ms">ChatGPT, thinking hard</text>
-        </svg>
-        <div class="reach-text">
-          <div data-fx="rise" style="--d:1500ms"><p class="wg-label">Why Google's pair reach most</p><p class="wg-body">Google treats AI Overviews and AI Mode as part of Search. A publisher can only keep its work out by cutting back how it appears in ordinary results too, so almost everything is within reach.</p></div>
-          <div data-fx="rise" style="--d:1650ms"><p class="wg-label">Why the others reach less</p><p class="wg-body">The Gemini app and ChatGPT are separate AI products. Publishers can block them without losing any Search traffic, and some do.</p></div>
-          <div data-fx="rise" style="--d:1750ms"><p class="wg-label">Reaching isn't reading</p><p class="wg-body">A quick answer can draw on almost anything, but uses very little of it. The slower tools reach less, but tend to read more of what they find.</p></div>
-          <p class="wg-source" data-fx="rise" style="--d:1850ms">A rough map, not a measurement. Access: Google Search Central documentation on AI features and on Google-Extended.</p>
-        </div>
-      </div>
+    <div class="slide-body top">
+      <table class="consider">
+        <thead data-fx="rise" style="--d:280ms"><tr><td></td><th scope="col"><span class="cn">1</span>Google AI Overviews</th><th scope="col"><span class="cn">2</span>Google AI Mode</th><th scope="col"><span class="cn">3</span>Gemini with Canvas</th><th scope="col"><span class="cn">4</span>ChatGPT, thinking hard</th></tr></thead>
+        <tbody>
+            <tr data-fx="rise" style="--d:380ms"><th scope="row">For you</th><td>A quick answer</td><td>Research by conversation</td><td>Getting things made</td><td>Deep, careful work</td></tr>
+            <tr data-fx="rise" style="--d:460ms"><th scope="row">For its maker</th><td>Keeping search on Google</td><td>Keeping search on Google</td><td>A paid assistant, tied to Workspace</td><td>Subscriptions, and ads on the free tier</td></tr>
+            <tr data-fx="rise" style="--d:540ms"><th scope="row">Sources</th><td>Google's whole search index</td><td>Google's whole search index</td><td>Google Search, minus publishers who opt out</td><td>OpenAI's own search, minus publishers who block it</td></tr>
+            <tr data-fx="rise" style="--d:620ms"><th scope="row">Model</th><td>Gemini 3</td><td>A fast Gemini model</td><td>Your choice: fast or Thinking</td><td>Your choice, up to OpenAI's best</td></tr>
+            <tr data-fx="rise" style="--d:700ms"><th scope="row">Speed</th><td>A second or two</td><td>Seconds</td><td>A minute or two</td><td>Minutes</td></tr>
+            <tr data-fx="rise" style="--d:780ms"><th scope="row">Thinking</th><td>Little: it has to be quick</td><td>Some, on harder questions</td><td>When you choose Thinking</td><td>As much as you allow</td></tr>
+            <tr data-fx="rise" style="--d:860ms"><th scope="row">Built around it</th><td>The results page</td><td>Follow-ups, charts and maps</td><td>Canvas, which builds working apps</td><td>Search, code, files and apps</td></tr>
+            <tr data-fx="rise" style="--d:940ms"><th scope="row">Many steps on its own</th><td>No</td><td>Partly: many searches at once</td><td>Partly: plans and builds</td><td>Yes, in its agent mode</td></tr>
+        </tbody>
+      </table>
+      <p class="wg-source consider-note" data-fx="rise" style="--d:1100ms">A rough guide, as of late September 2026. "For its maker" is our reading, not the companies' words.</p>
     </div>
 
     <div class="slide-foot">
@@ -703,7 +696,7 @@
   <!-- Part 2 · AI Overviews -->
   <section class="slide slide--tool" data-tool="aio" data-label="AI Overviews">
     <div class="rule-band"></div>
-    <div class="map-badge" data-fx="fade" style="--d:200ms"><span class="badge-text">Where it<b>sits</b></span><svg viewBox="0 0 120 120" aria-hidden="true"><line class="mb-ax" x1="4" y1="116" x2="116" y2="116"/><line class="mb-ax" x1="4" y1="4" x2="4" y2="116"/><circle class="mb-dot on" cx="16" cy="15" r="9"/><circle class="mb-dot" cx="36" cy="23" r="6"/><circle class="mb-dot" cx="62" cy="58" r="6"/><circle class="mb-dot" cx="102" cy="81" r="6"/></svg></div>
+    <div class="map-badge" data-fx="fade" style="--d:200ms"><span class="badge-text">Tool 1<b>of 4</b></span><svg viewBox="0 0 100 94" aria-hidden="true"><rect class="mt on" x="0" y="0" width="22" height="14"/><rect class="mt on" x="0" y="20" width="22" height="14"/><rect class="mt on" x="0" y="40" width="22" height="14"/><rect class="mt on" x="0" y="60" width="22" height="14"/><rect class="mt on" x="0" y="80" width="22" height="14"/><rect class="mt" x="26" y="0" width="22" height="14"/><rect class="mt" x="26" y="20" width="22" height="14"/><rect class="mt" x="26" y="40" width="22" height="14"/><rect class="mt" x="26" y="60" width="22" height="14"/><rect class="mt" x="26" y="80" width="22" height="14"/><rect class="mt" x="52" y="0" width="22" height="14"/><rect class="mt" x="52" y="20" width="22" height="14"/><rect class="mt" x="52" y="40" width="22" height="14"/><rect class="mt" x="52" y="60" width="22" height="14"/><rect class="mt" x="52" y="80" width="22" height="14"/><rect class="mt" x="78" y="0" width="22" height="14"/><rect class="mt" x="78" y="20" width="22" height="14"/><rect class="mt" x="78" y="40" width="22" height="14"/><rect class="mt" x="78" y="60" width="22" height="14"/><rect class="mt" x="78" y="80" width="22" height="14"/></svg></div>
 
     <p class="kicker" data-fx="rise" style="--d:60ms">Tool 1 of 4 · Google Search</p>
     <h2 class="slide-title" data-split>Google AI <em>Overviews</em>.</h2>
@@ -734,11 +727,11 @@
           </div>
         </div>
         <ul class="tool-rows">
-            <li data-fx="rise" style="--d:400ms"><span class="tr-k">What it's for</span><p>A quick answer at the top of Google results. It appears by itself on some searches; you don't ask for it.</p></li>
-            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can reach</span><p>Everything in Google's search index, and fresh within minutes.</p></li>
-            <li data-fx="rise" style="--d:580ms"><span class="tr-k">Strong at</span><p>A fast first sense of a story, with the sources linked underneath.</p></li>
-            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Watch for</span><p>Brief by design, and it can't be steered. It blends sources without weighing them, so rumour and fact can share a sentence.</p></li>
-            <li data-fx="rise" style="--d:760ms"><span class="tr-k">How long</span><p>A second or two.</p></li>
+            <li data-fx="rise" style="--d:400ms"><span class="tr-k">Built for</span><p>You: a quick answer. Google: keeping search on Google.</p></li>
+            <li data-fx="rise" style="--d:490ms"><span class="tr-k">Sources</span><p>Google's whole search index, fresh within minutes.</p></li>
+            <li data-fx="rise" style="--d:580ms"><span class="tr-k">Model and speed</span><p>Gemini 3, answering in a second or two, so little time to think.</p></li>
+            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Built around it</span><p>The results page. Nothing to steer, no follow-ups.</p></li>
+            <li data-fx="rise" style="--d:760ms"><span class="tr-k">Watch for</span><p>Brief by design. It blends sources without weighing them, so rumour and fact can share a sentence.</p></li>
         </ul>
       </div>
     </div>
@@ -755,7 +748,7 @@
        SOURCES.md and research/research-aio-accuracy.md. -->
   <section class="slide slide--spread slide--aio-ev" data-label="AI Overviews: the evidence">
     <div class="rule-band"></div>
-    <div class="map-badge" data-fx="fade" style="--d:200ms"><span class="badge-text">Where it<b>sits</b></span><svg viewBox="0 0 120 120" aria-hidden="true"><line class="mb-ax" x1="4" y1="116" x2="116" y2="116"/><line class="mb-ax" x1="4" y1="4" x2="4" y2="116"/><circle class="mb-dot on" cx="16" cy="15" r="9"/><circle class="mb-dot" cx="36" cy="23" r="6"/><circle class="mb-dot" cx="62" cy="58" r="6"/><circle class="mb-dot" cx="102" cy="81" r="6"/></svg></div>
+    <div class="map-badge" data-fx="fade" style="--d:200ms"><span class="badge-text">Tool 1<b>of 4</b></span><svg viewBox="0 0 100 94" aria-hidden="true"><rect class="mt on" x="0" y="0" width="22" height="14"/><rect class="mt on" x="0" y="20" width="22" height="14"/><rect class="mt on" x="0" y="40" width="22" height="14"/><rect class="mt on" x="0" y="60" width="22" height="14"/><rect class="mt on" x="0" y="80" width="22" height="14"/><rect class="mt" x="26" y="0" width="22" height="14"/><rect class="mt" x="26" y="20" width="22" height="14"/><rect class="mt" x="26" y="40" width="22" height="14"/><rect class="mt" x="26" y="60" width="22" height="14"/><rect class="mt" x="26" y="80" width="22" height="14"/><rect class="mt" x="52" y="0" width="22" height="14"/><rect class="mt" x="52" y="20" width="22" height="14"/><rect class="mt" x="52" y="40" width="22" height="14"/><rect class="mt" x="52" y="60" width="22" height="14"/><rect class="mt" x="52" y="80" width="22" height="14"/><rect class="mt" x="78" y="0" width="22" height="14"/><rect class="mt" x="78" y="20" width="22" height="14"/><rect class="mt" x="78" y="40" width="22" height="14"/><rect class="mt" x="78" y="60" width="22" height="14"/><rect class="mt" x="78" y="80" width="22" height="14"/></svg></div>
 
     <p class="kicker" data-fx="rise" style="--d:60ms">Tool 1 of 4 · How accurate is it?</p>
     <h2 class="slide-title" data-split>Better than its <em>reputation</em>.</h2>
@@ -790,7 +783,7 @@
   <!-- Part 2 · AI Mode -->
   <section class="slide slide--tool" data-tool="aim" data-label="AI Mode">
     <div class="rule-band"></div>
-    <div class="map-badge" data-fx="fade" style="--d:200ms"><span class="badge-text">Where it<b>sits</b></span><svg viewBox="0 0 120 120" aria-hidden="true"><line class="mb-ax" x1="4" y1="116" x2="116" y2="116"/><line class="mb-ax" x1="4" y1="4" x2="4" y2="116"/><circle class="mb-dot" cx="16" cy="15" r="6"/><circle class="mb-dot on" cx="36" cy="23" r="9"/><circle class="mb-dot" cx="62" cy="58" r="6"/><circle class="mb-dot" cx="102" cy="81" r="6"/></svg></div>
+    <div class="map-badge" data-fx="fade" style="--d:200ms"><span class="badge-text">Tool 2<b>of 4</b></span><svg viewBox="0 0 100 94" aria-hidden="true"><rect class="mt" x="0" y="0" width="22" height="14"/><rect class="mt" x="0" y="20" width="22" height="14"/><rect class="mt" x="0" y="40" width="22" height="14"/><rect class="mt" x="0" y="60" width="22" height="14"/><rect class="mt" x="0" y="80" width="22" height="14"/><rect class="mt on" x="26" y="0" width="22" height="14"/><rect class="mt on" x="26" y="20" width="22" height="14"/><rect class="mt on" x="26" y="40" width="22" height="14"/><rect class="mt on" x="26" y="60" width="22" height="14"/><rect class="mt on" x="26" y="80" width="22" height="14"/><rect class="mt" x="52" y="0" width="22" height="14"/><rect class="mt" x="52" y="20" width="22" height="14"/><rect class="mt" x="52" y="40" width="22" height="14"/><rect class="mt" x="52" y="60" width="22" height="14"/><rect class="mt" x="52" y="80" width="22" height="14"/><rect class="mt" x="78" y="0" width="22" height="14"/><rect class="mt" x="78" y="20" width="22" height="14"/><rect class="mt" x="78" y="40" width="22" height="14"/><rect class="mt" x="78" y="60" width="22" height="14"/><rect class="mt" x="78" y="80" width="22" height="14"/></svg></div>
 
     <p class="kicker" data-fx="rise" style="--d:60ms">Tool 2 of 4 · Google Search</p>
     <h2 class="slide-title" data-split>Google AI <em>Mode</em>.</h2>
@@ -825,11 +818,11 @@
           </div>
         </div>
         <ul class="tool-rows">
-            <li data-fx="rise" style="--d:400ms"><span class="tr-k">What it's for</span><p>Search as a conversation: ask, follow up, narrow down.</p></li>
-            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can reach</span><p>The same search index as AI Overviews. It runs many searches for you behind the scenes.</p></li>
-            <li data-fx="rise" style="--d:580ms"><span class="tr-k">Strong at</span><p>Breadth, freshness and follow-ups. It can build simple maps, charts and tables.</p></li>
-            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Watch for</span><p>Polished visuals can carry numbers and quotes that come from nowhere, and the richer it looks, the more convincing the error.</p></li>
-            <li data-fx="rise" style="--d:760ms"><span class="tr-k">How long</span><p>Seconds.</p></li>
+            <li data-fx="rise" style="--d:400ms"><span class="tr-k">Built for</span><p>You: research by conversation. Google: keeping search on Google.</p></li>
+            <li data-fx="rise" style="--d:490ms"><span class="tr-k">Sources</span><p>Google's whole search index.</p></li>
+            <li data-fx="rise" style="--d:580ms"><span class="tr-k">Model and speed</span><p>A fast Gemini model that runs many searches for you, in seconds.</p></li>
+            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Built around it</span><p>Follow-up questions, and simple charts, maps and tables.</p></li>
+            <li data-fx="rise" style="--d:760ms"><span class="tr-k">Watch for</span><p>Polished visuals can carry numbers and quotes that come from nowhere, and the richer it looks, the more convincing the error.</p></li>
         </ul>
       </div>
     </div>
@@ -843,7 +836,7 @@
   <!-- Part 2 · Gemini with Canvas -->
   <section class="slide slide--tool" data-tool="gem" data-label="Gemini with Canvas">
     <div class="rule-band"></div>
-    <div class="map-badge" data-fx="fade" style="--d:200ms"><span class="badge-text">Where it<b>sits</b></span><svg viewBox="0 0 120 120" aria-hidden="true"><line class="mb-ax" x1="4" y1="116" x2="116" y2="116"/><line class="mb-ax" x1="4" y1="4" x2="4" y2="116"/><circle class="mb-dot" cx="16" cy="15" r="6"/><circle class="mb-dot" cx="36" cy="23" r="6"/><circle class="mb-dot on" cx="62" cy="58" r="9"/><circle class="mb-dot" cx="102" cy="81" r="6"/></svg></div>
+    <div class="map-badge" data-fx="fade" style="--d:200ms"><span class="badge-text">Tool 3<b>of 4</b></span><svg viewBox="0 0 100 94" aria-hidden="true"><rect class="mt" x="0" y="0" width="22" height="14"/><rect class="mt" x="0" y="20" width="22" height="14"/><rect class="mt" x="0" y="40" width="22" height="14"/><rect class="mt" x="0" y="60" width="22" height="14"/><rect class="mt" x="0" y="80" width="22" height="14"/><rect class="mt" x="26" y="0" width="22" height="14"/><rect class="mt" x="26" y="20" width="22" height="14"/><rect class="mt" x="26" y="40" width="22" height="14"/><rect class="mt" x="26" y="60" width="22" height="14"/><rect class="mt" x="26" y="80" width="22" height="14"/><rect class="mt on" x="52" y="0" width="22" height="14"/><rect class="mt on" x="52" y="20" width="22" height="14"/><rect class="mt on" x="52" y="40" width="22" height="14"/><rect class="mt on" x="52" y="60" width="22" height="14"/><rect class="mt on" x="52" y="80" width="22" height="14"/><rect class="mt" x="78" y="0" width="22" height="14"/><rect class="mt" x="78" y="20" width="22" height="14"/><rect class="mt" x="78" y="40" width="22" height="14"/><rect class="mt" x="78" y="60" width="22" height="14"/><rect class="mt" x="78" y="80" width="22" height="14"/></svg></div>
 
     <p class="kicker" data-fx="rise" style="--d:60ms">Tool 3 of 4 · Gemini</p>
     <h2 class="slide-title" data-split>Gemini with <em>Canvas</em>.</h2>
@@ -878,11 +871,11 @@
           </div>
         </div>
         <ul class="tool-rows">
-            <li data-fx="rise" style="--d:400ms"><span class="tr-k">What it's for</span><p>Making things: reports, explainers and small interactive apps you can change by asking.</p></li>
-            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can reach</span><p>Google Search, but as a separate AI product. Publishers can block it without leaving Search.</p></li>
-            <li data-fx="rise" style="--d:580ms"><span class="tr-k">Strong at</span><p>Turning a sentence into something working and well laid out, then reshaping it on request.</p></li>
-            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Watch for</span><p>Design can run ahead of sourcing: the page can look more certain than its citations are.</p></li>
-            <li data-fx="rise" style="--d:760ms"><span class="tr-k">How long</span><p>A minute or two.</p></li>
+            <li data-fx="rise" style="--d:400ms"><span class="tr-k">Built for</span><p>You: getting things made. Google: a paid assistant, tied to Workspace.</p></li>
+            <li data-fx="rise" style="--d:490ms"><span class="tr-k">Sources</span><p>Google Search, minus publishers who opt out.</p></li>
+            <li data-fx="rise" style="--d:580ms"><span class="tr-k">Model and speed</span><p>Your choice of fast or Thinking. With Thinking, a minute or two.</p></li>
+            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Built around it</span><p>Canvas, which builds documents and working apps you can change by asking.</p></li>
+            <li data-fx="rise" style="--d:760ms"><span class="tr-k">Watch for</span><p>Design can run ahead of sourcing: the page can look more certain than its citations are.</p></li>
         </ul>
       </div>
     </div>
@@ -896,7 +889,7 @@
   <!-- Part 2 · ChatGPT, thinking hard -->
   <section class="slide slide--tool" data-tool="gpt" data-label="ChatGPT, thinking hard">
     <div class="rule-band"></div>
-    <div class="map-badge" data-fx="fade" style="--d:200ms"><span class="badge-text">Where it<b>sits</b></span><svg viewBox="0 0 120 120" aria-hidden="true"><line class="mb-ax" x1="4" y1="116" x2="116" y2="116"/><line class="mb-ax" x1="4" y1="4" x2="4" y2="116"/><circle class="mb-dot" cx="16" cy="15" r="6"/><circle class="mb-dot" cx="36" cy="23" r="6"/><circle class="mb-dot" cx="62" cy="58" r="6"/><circle class="mb-dot on" cx="102" cy="81" r="9"/></svg></div>
+    <div class="map-badge" data-fx="fade" style="--d:200ms"><span class="badge-text">Tool 4<b>of 4</b></span><svg viewBox="0 0 100 94" aria-hidden="true"><rect class="mt" x="0" y="0" width="22" height="14"/><rect class="mt" x="0" y="20" width="22" height="14"/><rect class="mt" x="0" y="40" width="22" height="14"/><rect class="mt" x="0" y="60" width="22" height="14"/><rect class="mt" x="0" y="80" width="22" height="14"/><rect class="mt" x="26" y="0" width="22" height="14"/><rect class="mt" x="26" y="20" width="22" height="14"/><rect class="mt" x="26" y="40" width="22" height="14"/><rect class="mt" x="26" y="60" width="22" height="14"/><rect class="mt" x="26" y="80" width="22" height="14"/><rect class="mt" x="52" y="0" width="22" height="14"/><rect class="mt" x="52" y="20" width="22" height="14"/><rect class="mt" x="52" y="40" width="22" height="14"/><rect class="mt" x="52" y="60" width="22" height="14"/><rect class="mt" x="52" y="80" width="22" height="14"/><rect class="mt on" x="78" y="0" width="22" height="14"/><rect class="mt on" x="78" y="20" width="22" height="14"/><rect class="mt on" x="78" y="40" width="22" height="14"/><rect class="mt on" x="78" y="60" width="22" height="14"/><rect class="mt on" x="78" y="80" width="22" height="14"/></svg></div>
 
     <p class="kicker" data-fx="rise" style="--d:60ms">Tool 4 of 4 · ChatGPT</p>
     <h2 class="slide-title" data-split>ChatGPT, thinking <em>hard</em>.</h2>
@@ -931,11 +924,11 @@
           </div>
         </div>
         <ul class="tool-rows">
-            <li data-fx="rise" style="--d:400ms"><span class="tr-k">What it's for</span><p>Deep, careful work: briefings, explainers and analysis, refined over a conversation.</p></li>
-            <li data-fx="rise" style="--d:490ms"><span class="tr-k">What it can reach</span><p>OpenAI's own search. Publishers can block it without affecting Google, and some do.</p></li>
-            <li data-fx="rise" style="--d:580ms"><span class="tr-k">Strong at</span><p>Weighing evidence, separating confirmed from claimed, going to primary sources, and checking itself when asked.</p></li>
-            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Watch for</span><p>The wait. Its confidence can still outrun the record, and what it can't read, it can't weigh.</p></li>
-            <li data-fx="rise" style="--d:760ms"><span class="tr-k">How long</span><p>Several minutes. Our test run took seven.</p></li>
+            <li data-fx="rise" style="--d:400ms"><span class="tr-k">Built for</span><p>You: deep, careful work. OpenAI: subscriptions, and ads on the free tier.</p></li>
+            <li data-fx="rise" style="--d:490ms"><span class="tr-k">Sources</span><p>OpenAI's own search, minus publishers who block it.</p></li>
+            <li data-fx="rise" style="--d:580ms"><span class="tr-k">Model and speed</span><p>OpenAI's top model at its highest thinking level: minutes, not seconds. Our test took seven.</p></li>
+            <li data-fx="rise" style="--d:670ms"><span class="tr-k">Built around it</span><p>Search, code and files, and an agent mode that works through a brief on its own.</p></li>
+            <li data-fx="rise" style="--d:760ms"><span class="tr-k">Watch for</span><p>Its confidence can still outrun the record, and what it can't read, it can't weigh.</p></li>
         </ul>
       </div>
     </div>
@@ -1005,11 +998,11 @@
 
 </deck-stage>
 
-<script src="deck-stage.js?v=202609291643"></script>
-<script src="prompt-copy.js?v=202609291643"></script>
-<script src="predictor.js?v=202609291643"></script>
-<script src="stream.js?v=202609291643"></script>
-<script src="motion.js?v=202609291643"></script>
-<script src="grid-overlay.js?v=202609291643"></script>
+<script src="deck-stage.js?v=202609291656"></script>
+<script src="prompt-copy.js?v=202609291656"></script>
+<script src="predictor.js?v=202609291656"></script>
+<script src="stream.js?v=202609291656"></script>
+<script src="motion.js?v=202609291656"></script>
+<script src="grid-overlay.js?v=202609291656"></script>
 
 </body></html>

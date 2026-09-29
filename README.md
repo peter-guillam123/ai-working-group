@@ -38,6 +38,16 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 29 September 2026, late: built for a job
+
+The reach-against-thinking map was a false flag: the tools differ in
+more ways than that, and speed and access don't line up so neatly. It is
+now a table, "Each one is built for a job": for you, for its maker,
+sources, model, speed, thinking, what's built around it, and whether it
+works through many steps on its own. The tool slides echo those rows, and
+the corner badge is now a small copy of the table with that tool's
+column in red.
+
 ### 29 September 2026, late: read it like an editor
 
 The checklist slide was too thin and too much like a marking scheme. It
