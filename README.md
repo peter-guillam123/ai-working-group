@@ -28,6 +28,16 @@ python3 -m http.server 8811
 
 ## Changelog
 
+### 29 September 2026, evening: the Fairford explainer
+
+A worked example for the group, built by Claude Code in about an hour:
+what we know about the RAF Fairford arrests, what is only claimed, and
+why the contempt rules already bite before anyone is charged. Maps, a
+timeline, a fact-or-claim quiz and a step-through of the law, with every
+line sourced. It lives at `/fairford/` behind the same gate. The source
+and build script sit outside this repo, in `Working group/fairford/`;
+`build.py` writes the gated copy here.
+
 ### 29 September 2026, late: read it like an editor
 
 The checklist slide was too thin and too much like a marking scheme. It

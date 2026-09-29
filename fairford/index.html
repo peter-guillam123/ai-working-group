@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Fairford arrests</title>
+<meta name="description" content="Five men were arrested near RAF Fairford and bailed a day later. What police have confirmed, what politicians have claimed, and why reporting is limited. Correct at 4pm BST, Tuesday 29 September 2026.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="styles.css?v=1790696526">
+<style id="deck-gate-style">
+  #deck-gate { position: fixed; inset: 0; z-index: 2147483647; background: #F4EFE6; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  #deck-gate .dg-card { width: min(520px, 88vw); }
+  #deck-gate .dg-rule { height: 8px; display: grid; grid-template-columns: 2fr 1fr; margin-bottom: 44px; }
+  #deck-gate .dg-rule::before { content: ''; background: #052962; }
+  #deck-gate .dg-rule::after { content: ''; background: #FFE500; }
+  #deck-gate .dg-kicker { font-family: "Guardian Text Sans", "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.2em; text-transform: uppercase; color: #C70000; margin: 0 0 14px; }
+  #deck-gate h1 { font-family: "GH Guardian Headline", Georgia, serif; font-weight: 500; font-size: clamp(36px, 9vw, 50px); line-height: 1; letter-spacing: -0.02em; color: #121212; margin: 0 0 30px; }
+  #deck-gate h1 em { color: #C70000; font-style: italic; }
+  #deck-gate input { width: 100%; box-sizing: border-box; font-family: "Guardian Text Egyptian", Georgia, serif; font-size: 22px; padding: 14px 18px; color: #121212; background: #FBF8F1; border: 1px solid #D0C4AE; border-radius: 8px; margin-bottom: 16px; }
+  #deck-gate input:focus { border-color: #052962; box-shadow: 0 0 0 3px rgba(5,41,98,0.25); outline: none; }
+  #deck-gate button { font-family: "Guardian Text Sans", "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; color: #F4EFE6; background: #052962; border: none; border-radius: 8px; padding: 14px 30px; cursor: pointer; min-height: 44px; }
+  #deck-gate .dg-error { font-family: "Guardian Text Sans", "Helvetica Neue", Arial, sans-serif; font-size: 15px; color: #C70000; margin: 14px 0 0; }
+</style>
+</head>
+<body>
+<div id="deck-gate" role="dialog" aria-modal="true" aria-label="Password required">
+  <form class="dg-card" id="deck-gate-form">
+    <div class="dg-rule" aria-hidden="true"></div>
+    <p class="dg-kicker">AI working group</p>
+    <h1>Enter the <em>password</em>.</h1>
+    <input id="deck-gate-input" type="password" autocomplete="off" autofocus aria-label="Password" placeholder="Password">
+    <button type="submit">Enter</button>
+    <p class="dg-error" id="deck-gate-error" hidden>That's not it. Try again.</p>
+  </form>
+</div>
+<script src="../gate.js"></script>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <span><span class="tag">Explainer</span> · AI working group example</span>
+    <button type="button" class="theme-btn" id="theme-btn">Dark mode</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <svg class="hero-rings" viewBox="0 0 560 560" aria-hidden="true"><circle cx="280" cy="280" r="270"/><circle cx="280" cy="280" r="270"/><circle cx="280" cy="280" r="270"/></svg>
+  <div class="wrap">
+    <p class="kicker">RAF Fairford · counter-terrorism investigation</p>
+    <h1>The Fairford arrests: what we <em>know</em>, and what we don’t</h1>
+    <p class="standfirst">Five men were held near a base used by US bombers, then bailed a day later. Here is what police have confirmed, what politicians have claimed, and why the press has to tread with care.</p>
+    <p class="asof"><span class="dot" aria-hidden="true"></span><span>Based on sources checked up to <time datetime="2026-09-29T16:00+01:00">4pm BST, Tuesday 29 September 2026</time>. The story is moving; this page is not updated live.</span></p>
+  </div>
+</div>
+
+<!-- ================= IN SHORT ================= -->
+<section class="block" aria-labelledby="short-h">
+  <div class="wrap">
+    <div class="measure">
+      <p class="sec-num">In short</p>
+      <h2 id="short-h">Five things to hold on to</h2>
+      <p>Every claim on this page carries a label, so you can see at a glance how firm it is.</p>
+      <ul class="legend" aria-label="Key to labels">
+        <li><span class="pill official">Police or government</span> said on the record</li>
+        <li><span class="pill reported">Widely reported</span> several outlets, sources unnamed</li>
+        <li><span class="pill claim">Claimed</span> said by a politician, not backed by police</li>
+        <li><span class="pill unknown">Not known</span> nobody has said on the record</li>
+      </ul>
+      <ol class="inshort">
+        <li class="reveal"><span class="n" aria-hidden="true">1</span><div><p>Police arrested five men near RAF Fairford in Gloucestershire early on Sunday 27 September, first over explosives, then on suspicion of preparing acts of terrorism. <span class="pill official">Police</span><a class="cite" href="#p2">P2</a><a class="cite" href="#p3">P3</a></p></div></li>
+        <li class="reveal"><span class="n" aria-hidden="true">2</span><div><p>All five are British men from London, aged 23 to 25. <span class="pill official">Police</span><a class="cite" href="#p4">P4</a></p></div></li>
+        <li class="reveal"><span class="n" aria-hidden="true">3</span><div><p>Police released all five on bail on Monday afternoon, under what they called “stringent conditions”. They have not been charged and they remain under investigation. <span class="pill official">Police</span><a class="cite" href="#p5">P5</a></p></div></li>
+        <li class="reveal"><span class="n" aria-hidden="true">4</span><div><p>Donald Trump and Marco Rubio have gone further than British police, speaking of “big damage” and a “foreign actor”. Police say they are keeping “an open mind” and have named no country. <span class="pill claim">Claimed</span><a class="cite" href="#s8">8</a><a class="cite" href="#s10">10</a><a class="cite" href="#p5">P5</a></p></div></li>
+        <li class="reveal"><span class="n" aria-hidden="true">5</span><div><p>Because the men have been arrested, the law on contempt of court already applies, even though no one has been charged. That is why you won’t see names, photos or talk of evidence here. <span class="pill official">The law</span><a class="cite" href="#l2">L2</a><a class="cite" href="#l3">L3</a></p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAP ================= -->
+<section class="block soft" aria-labelledby="map-h">
+  <div class="wrap">
+    <p class="sec-num">1 · Where</p>
+    <h2 id="map-h">A quiet corner of the Cotswolds, 72 miles from London</h2>
+    <div class="map-grid">
+      <figure style="margin:0">
+        <div class="map-stage">
+          <svg viewBox="0 0 400 560" role="img" aria-labelledby="map-title map-desc">
+            <title id="map-title">Map of Great Britain</title>
+            <desc id="map-desc">Locator map showing RAF Fairford in Gloucestershire and London, about 72 miles to the east.</desc>
+            <g id="map-view" class="map-view">
+              <path class="land" d="M654.8,885.1L654.9,892.5L655.8,894.6L657.4,896L658.3,897.6L662,917L662,918.6L658.5,927.2L657.9,929.6L658.9,939.5L658.4,942.2L657.2,945L655.4,953.8L653.4,957.9L645.8,954.2L641.5,952.8L639.4,950.8L637.8,949.5L638.4,947.4L640,945.2L640.1,943.5L635.5,942.2L633.3,941.2L633.1,939.1L634.1,935.6L633.1,932.9L630.7,933.4L628.6,933.2L628.3,931.8L629.4,929.8L631,927.2L630.5,924.6L628.3,923.7L626,921.8L624.8,919L626.2,916.8L628.4,915.2L626.3,912.4L624.9,912.5L623.9,912L624.6,910.5L626.2,908.2L628.2,901.7L631.5,898.3L637.9,895.5L639.7,894.5L641,892.1L642.7,890.5L644.8,890.3L647,890.8L648.4,891.6L649.3,890.5L649.7,887.7L648.9,885.5L648.3,878.9L648.9,875.1L650.9,874.5L652.9,876.4L653,878.1L654.3,882.3ZM557.3,653.8L553.4,656.6L552.8,658.7L551.5,661.5L549,662.9L546.5,663.6L544.2,663.5L542.9,662.6L542.9,661.6L541.7,661L538.9,661.3L536.2,663.5L534.2,666.7L535.1,668.3L537.4,668.4L538,669L538.1,669.9L537.4,671L536.8,672.8L532.9,678.6L528.9,684.3L528.3,685.9L527.1,687.2L521.6,690.6L521.1,691.8L521.3,696.6L521.1,700.6L517.1,704.6L513.3,708.7L512.4,711L511.9,713.6L510.9,716.7L510.8,718.2L513.2,720.5L513.1,722.5L512.8,725.5L510.9,727.8L508.8,729.2L509.1,732.4L510.4,732.7L513.1,732.2L516.9,729.5L519,726.2L517.3,723.6L516.9,723.1L517.2,722.3L520,719L523.5,716.7L528.6,715.8L535,716.2L535.6,716.6L535.5,718.5L536.4,721.2L537.7,723L536.9,728.7L538.2,730.3L540.2,732.2L541.8,733.9L544,735.4L546,738.1L546.9,739.7L544.3,743L540,746.2L539.5,747.9L539.9,749.9L540.5,751.4L543.4,753.1L546.7,757.2L549,761L553.4,764.5L554.5,765.5L554.4,766.5L553.4,768.3L552.8,773.9L551.2,775L549.5,775.5L545,780.1L542.8,779.8L539.6,780.2L537.6,781.8L538,784.2L540.2,786.3L541.7,788.6L542.5,791.2L545,792.9L548.2,793.6L550,793.5L551.2,794.1L552.1,794.9L554,800.3L553.3,801.8L551.7,802.6L551,805L549.3,808.6L548.4,811.4L550,813.6L550.7,815.3L550.2,817.2L551.4,819.9L554.2,822.4L561.1,825.7L567.5,828.1L569.6,828.4L577.5,825.5L578.9,825.5L580.3,827.8L580.8,829.4L580.2,832L578.4,835.7L576.3,838.7L575.1,841.2L575.6,843.3L576.1,846L574.2,847.1L574,846.5L573.2,846.2L572.5,846.5L572.1,847.2L572.1,848.3L568.1,850.6L565.3,852.7L555,865L550,868.9L549.1,871L548.5,874.7L545.6,878.2L542.9,880L536.2,882.2L529.5,886.2L526.4,885.1L518.2,886L512.8,882.4L502.8,880.8L499.2,875.2L494.8,875.3L491.9,875.7L490.2,875L489.5,873L489.3,871.1L486.4,872.2L484,872.4L482.6,873.3L481.6,874.3L480.3,873.8L479.5,874.1L479.7,875.2L476.9,875.7L473.8,875.3L465.6,872.9L464.3,872.5L458.8,871.8L456.4,870.7L454.4,867.8L452.9,867.1L452,866.5L447.1,868.4L445.4,870.8L442.8,873.8L424.6,888.6L421.3,894.4L417.8,903L417.7,906.8L420.2,919.1L424.6,925.4L425.2,926.9L422.9,927.1L419.2,926.4L416,925.6L413.3,926.3L410.6,927.9L408.1,928.8L406.3,929.2L405.2,929.9L404.7,931.5L404.7,932.7L401.6,932.6L394.3,930.7L387.8,929.4L384,931.4L381.7,933.1L379.9,933L378.7,931.4L377.6,929.7L375,928.3L369.2,926.2L369.6,925.1L370.4,923.4L370.4,922.5L369.1,921.1L363.9,919.8L361.5,919.6L359.9,920.7L358.8,922L355.7,917.3L353.6,916.5L350.5,916.4L346.8,915.1L343,913.4L333.9,910.7L331.4,910.5L330.5,910.9L329.9,912.8L329.6,917.8L329.3,918.4L325,918.7L319.8,918.1L317.5,918.5L315.3,918.6L313.3,917.3L304.5,919L303,918.3L300.8,916.1L298.3,914.3L296.4,913.5L294.8,912.4L293.3,912.2L291.2,913.3L288.2,913.8L285.7,913.8L284.3,914L278.6,908.5L277.7,907L274.8,906.6L271.4,906.6L262.5,903.1L258.4,901.1L257.9,900L257.9,899.1L257.2,899.3L256,901L255.4,902.3L254.4,902.6L253.3,902.4L252.1,901.6L251.3,900.7L252.1,898.9L253.4,896.7L254,894.3L253.8,892.2L251.6,890.8L248.3,890.2L245.9,890.1L242.8,888.9L241.2,888L239.9,885.6L239.8,883.8L245.7,882.3L251,876L255.9,853L259.3,825.9L261.8,820.9L265.1,819.3L262.4,815.7L260.8,817.6L260.1,819.6L259.2,820.6L260.9,795.8L262.2,786.6L264.5,777.1L269.5,780.8L273.6,784.6L275.8,788L278.7,799L280.6,801.3L283.7,803.5L282.5,801L280.3,799.1L276.9,784.4L274.8,780.2L271.6,776.8L261.4,769.5L260.4,768L259.9,765.3L263.3,765.3L266.2,766.7L265.8,765.1L264.9,763.5L263.5,757.5L262.3,743.5L262.4,741L261.8,738.1L258.6,737.5L256.1,737.4L253.3,736.2L239.6,728L235,719.5L230.2,713.3L229.1,710.5L229.2,707.7L231.7,701.9L229.5,698.1L227.4,697.4L225.5,695.6L227.3,692.5L228.6,690.5L231.3,690L235,690.7L238.4,692.5L241,692.9L233.1,688.2L220.3,689.7L217.5,689.1L215.2,688L214.3,684.6L216.2,683L217.8,680.1L215.9,678L213.5,677.2L209.7,677.3L206.2,677.9L205.4,676.7L207.5,673.5L205.6,672.2L203.2,672.8L199.7,673.4L196.3,672.4L193.2,668.7L191.1,668.6L189.6,669L187.5,667.6L185.2,667.2L183.6,667.6L181.4,665.5L168.3,660.9L162.6,660.3L157.4,662L154.5,661.4L152.4,658.5L150.8,653.9L142.5,650.1L144.3,647.8L148.1,647.4L152.7,645.9L154.4,643.9L151,641.4L148.4,640.7L147.3,639.8L146.3,637.7L147.9,636.7L149,637.2L152.1,637.7L157.5,637.3L155.6,635.1L153.5,634.5L152.5,633.9L148.2,633.5L146.2,634.3L141.7,633.8L140.8,631.4L140.5,629.4L141.9,625L148.4,621.2L164.2,617.2L170.8,618L175.6,617.3L181.2,614.7L183.7,612.3L191.7,611.1L199.1,613.7L206,623.3L209.3,626.6L217.5,621L229.7,621.3L232.2,624.4L233.1,621.8L235.4,618.6L237.2,620L238.1,622L250.9,621.4L252.9,620.8L249.4,618.6L246.7,613.2L246,593.3L242.4,587.7L238.4,578.9L236.5,573.6L236.4,571.8L237,569.2L241.9,569.3L245.6,570L252.8,567.9L256.3,569.3L256.1,573.4L257.3,578.6L258.6,581L260.4,583.8L266.2,583.5L272.6,585.1L280.6,585.2L292.3,587.9L297.2,586L301.9,582.3L311,579.7L311.8,578.5L306.5,579.1L301.5,577L300.9,574.5L301.4,572.3L303.1,567.2L316.9,558.8L326.7,556L336.8,551.2L341.8,546.4L345,540.4L346.1,539.1L347.4,537.9L346,535.9L345.8,513.5L346.6,509.5L348.4,506.1L351.4,503.4L355.8,500.4L372.3,495.6L374.7,494L375.2,496.3L376.7,499.3L377.6,500.9L377,503.1L377.7,504.9L380.2,508L383.2,510.8L385.9,512.7L386.6,512.4L388.4,511.7L391.5,509.5L394.2,508.7L395.8,510.1L396.6,510.9L398.6,514.2L399.3,517.8L400.3,520.7L401.8,521.8L406.9,521.9L410.7,522.7L411.8,523.6L413.6,530.1L414.4,531L415.3,530.1L416.2,529L417.4,528.8L419.7,529L422.7,528.9L425.7,529.3L430.2,532.8L430.1,534L429.5,536.3L429.3,538L430.1,538.7L431.4,540.3L431.3,542.4L430.3,544L430,545.2L430.1,546L430.5,546.6L431.5,547.1L437.7,547.3L443.3,546L446.7,543.6L447.1,541.4L447.9,538.8L449.8,536.4L451.2,535.6L452.7,536.3L451.2,545.4L453,547.5L453.6,550.9L454.5,553.8L456.5,553.5L459,553.8L460.8,554.8L463.1,556.3L466.2,557.7L468.3,558L469.2,559.3L471.1,560.7L474,563.7L476.5,565.6L477.7,565.5L479.8,564.4L483,563.6L485.6,563.4L486.9,564.9L489.5,565.3L490.4,566L491.6,567L493.3,567.2L495.3,566.6L496.6,564.9L498.5,563.9L500.5,564L501.7,564.7L504.1,565.7L505.3,565.3L507.8,565.8L510.6,567.9L511.9,570.2L512.4,571.5L513.6,572.8L518.5,578.9L519.9,579L521.2,577.8L522,576.3L523.4,575.9L525.6,576.3L527.1,576.9L528.1,579.6L528.6,580.1L529.5,579.4L531.3,579L533.9,579.4L537.6,578.1L540.4,576.6L542,576.4L544.9,579.4L547.8,580.3L554.1,580.5L560.9,581.1L563.7,582.1L565.5,582.5L566.4,586.8L565.9,587.6L560.4,597.1L558.1,600.6L557.2,605.3L557,612.2L555.9,619L553.7,625.5L553.2,630.4L554.4,633.3L554.6,638.2L553.6,645.1L553.8,650.1L555.5,653.3ZM260.9,758.5L259.7,762.9L257.4,758.9L254.2,755.4L253.6,752.2L253.6,751.3L257.2,753.6ZM2808.5,3999L2804.2,3998.6L2802.7,3996.3L2802.5,3991.7L2804.7,3987.8L2805.8,3984.4L2803.7,3977.7L2808,3975.1L2810,3979.7L2811.4,3980.3L2815.2,3984.1L2812.7,3988.9L2812.6,3990.5L2809.4,3995.2ZM3296.1,4877.4L3285.4,4874L3279.5,4869.6L3270.1,4856.4L3268.9,4850.4L3270.2,4836.4L3273.5,4833.2L3281.5,4828.4L3292.1,4830.6L3301.3,4837.2L3304.6,4841.5L3305,4852.5L3306.9,4864.7L3300.3,4873.9ZM-3165.9,1729.6L-3168.4,1734.1L-3170.8,1734.1L-3172.4,1728.9L-3185.6,1724.1L-3186.1,1719.6L-3185.8,1717.9L-3176.9,1714.5L-3183.7,1709.8L-3185.5,1706L-3186.5,1690.8L-3184.3,1687.3L-3181,1686.5L-3176.5,1688.1L-3170.2,1695.5L-3166.9,1703.7L-3164.9,1704.7L-3164.7,1706.6L-3167.6,1710.3L-3165.6,1715.2L-3165.2,1718.2ZM-3142.6,1570.5L-3151.9,1567.1L-3157.7,1563.5L-3156.4,1557.1L-3151,1553.7L-3150.4,1546.8L-3147.3,1544L-3143.1,1543.1L-3139.6,1548.5L-3140.9,1553.4L-3139.8,1558.9L-3129.7,1574ZM-3171.5,1579L-3179.4,1579.8L-3182,1577.2L-3182.6,1568.3L-3175.8,1547.6L-3172.4,1545.5L-3170.4,1544.9L-3163.2,1551.3L-3161.1,1555.6L-3158.3,1559.1L-3162,1561.7L-3167.7,1576.7ZM-3147.9,1601.5L-3152.2,1599.8L-3153.8,1598.2L-3152.2,1593.2L-3147.3,1591.3L-3144.9,1591.4L-3143.9,1596.5L-3144.5,1600ZM-2875.9,2868.2L-2874.7,2867.5L-2871.7,2867.1L-2869.1,2867.2L-2864.6,2861.5L-2857.6,2858L-2844.6,2838.1L-2839.1,2829.9L-2838.2,2825.3L-2836.1,2815.8L-2838,2803.9L-2836.6,2800.6L-2825.3,2787.2L-2820.3,2779.8L-2819.5,2773.2L-2818,2768.5L-2819,2765.9L-2821.2,2765L-2824.5,2758.5L-2826.7,2753.1L-2832.9,2747.3L-2837.1,2741.4L-2843.9,2728.3L-2842.4,2721.5L-2844.5,2718.7L-2846.6,2715.9L-2846,2712.7L-2847,2704.8L-2848.3,2697.2L-2848.4,2692.5L-2845.8,2684.6L-2846.1,2675.7L-2847.9,2670.8L-2848,2663.5L-2846.7,2657.2L-2844,2654L-2844.1,2649.4L-2832.6,2636.5L-2824.3,2629.2L-2817,2624.2L-2810.7,2620.7L-2800.3,2600.5L-2793.9,2593.7L-2788.1,2593.5L-2759.2,2614.8L-2744.9,2618L-2717,2630.7L-2707.7,2643.9L-2685.7,2666.2L-2673.8,2673.6L-2674.1,2678.9L-2677.7,2686.7L-2668.9,2680.4L-2657.5,2692.9L-2654.5,2698.8L-2651.5,2709.3L-2653.5,2715.8L-2655.5,2719L-2656,2721.5L-2651.8,2718.2L-2649.6,2715.6L-2648.1,2708.8L-2644.6,2700.7L-2640.4,2700.9L-2637.6,2706.3L-2632.9,2728.7L-2630.8,2733.3L-2630.3,2740.4L-2631.1,2743.4L-2630.8,2746.4L-2633.5,2747.8L-2640.1,2750.9L-2643.6,2755.6L-2645.6,2760L-2649.7,2762.9L-2654,2766.6L-2655.3,2769.8L-2659.1,2772L-2660.3,2776.3L-2670.3,2790.7L-2674.5,2797.2L-2680.3,2804.1L-2683.6,2806.6L-2688.3,2810.7L-2690.9,2815.4L-2691.3,2820.7L-2694.7,2826.6L-2696.8,2832L-2699.8,2834.9L-2708.7,2851.4L-2709.3,2857.2L-2711.5,2860.7L-2717.3,2868.5L-2721.2,2873.2L-2727.9,2876.6L-2735.3,2880.2L-2738,2884.4L-2743,2886.5L-2746.4,2886.5L-2752.1,2884.5L-2760.1,2883.5L-2763.8,2883.7L-2765.7,2881.4L-2768.1,2876.3L-2771.6,2872.6L-2774.3,2873.7L-2779.9,2876.9L-2786.1,2878.7L-2790.4,2877.8L-2799.9,2874.9L-2804.2,2873.5L-2805.2,2871.2L-2806.6,2869.5L-2808.6,2870.1L-2811.7,2872.7L-2815.6,2875.3L-2821.3,2878.7L-2833.4,2884.9L-2836.7,2887.1L-2839.9,2885.5L-2844.8,2884L-2850.1,2883.6L-2861.4,2878.8L-2867.7,2875.3L-2870.4,2871.2L-2873.9,2869.4Z"/>
+              <path class="land" d="M-2.2,343.9L-2.5,345.4L-4.5,343.3L-5.3,341.3L-11.2,339.6L-8.5,338L-7.3,338.7L-3.1,339.3L-2,340.3ZM82.6,292.4L77.8,295.3L77.1,296.5L75.4,301.3L75.1,302.7L73.5,305.2L71.8,307.9L70.2,308.9L67.6,309.6L66.2,310.4L64.5,309.8L62.3,309.7L61.1,310.6L61.2,311.3L61.7,312.3L63.5,313.7L65.6,315.1L65.3,316.1L64,317.2L56.5,319.5L54.1,321.2L53.3,322.2L53.8,324.3L59.2,330.7L60.1,331.4L60.8,334.8L65.8,336.7L67.8,339.1L69.5,339.7L73.4,339.8L74.9,340.8L75.9,340.2L76.6,339.2L80,336.4L81.3,335.2L80.8,333.4L80.2,332.1L82.4,329.5L85,327L86.2,327.2L88.2,329L89.7,331.4L89.8,333.1L90,334.4L91.5,337.3L92.5,338.3L95.3,339L95.9,340.1L95.1,344.1L95.5,345.4L98.5,345.6L101.7,345.5L102.8,345.7L104,345L105.8,344.2L108.2,344.6L109.4,346.5L109.8,348.4L107.7,348.9L105.4,348.4L104.2,349.5L104,351.8L104.7,354.8L106,357L106.9,361.8L107.7,367.1L109,370.4L109.1,374.3L108.7,376.2L108.9,379.7L108.1,380.9L108.4,384.2L109.9,391.1L110.5,394.9L110.6,403.1L109.1,406.2L107.2,409L105.8,412.4L104.7,416.1L103.8,422.1L99.4,428.9L97.6,430.6L95.6,431.6L99.6,436.7L95.9,438.7L92.1,439.2L88,437.7L85.5,437.6L82.9,439.1L82,440L81.2,439.5L79.9,435.4L78.4,439.4L75.9,440.6L71.8,440L64.9,440.6L62.2,441.7L60.9,443.4L59.8,445.5L58.6,446.6L57.4,447.2L51.9,448.4L50.9,449L48,452.3L44.6,454L41.9,454.4L39.7,452.2L38.8,450.9L37.8,450.1L34.1,449.9L35.2,450.6L35.8,452.1L35.9,454.9L35.2,457.6L33.3,458.7L31.2,458.8L27.5,461.3L22.8,461.6L20.1,464L4.7,466.9L3.9,466.8L1.9,465.5L-0.3,464.8L-2.6,464.9L-9.2,466.7L-12.2,465.8L-7.7,460.3L-2.1,457.8L-1.5,457L-3.2,456.4L-13.3,457.5L-16.9,458.9L-20.4,459L-18.6,456.4L-13.7,453.2L-11.2,451.6L-9.5,451.1L-7.7,449.1L-2.8,447.1L-18.4,450.6L-22.2,449.5L-22.9,448L-26.1,448.3L-26.8,444.7L-21.8,439.9L-18.9,437.9L-15.5,437.1L-12.3,435.7L-11,433.6L-12.4,432.8L-21.5,432.3L-25.7,431.4L-25.3,429.6L-24.2,427.8L-19.4,425.1L-16.9,424.9L-14.8,425.5L-12.8,426.5L-11.2,427.8L-6.1,427.7L-8,425.4L-7.8,421.2L-9.3,419.6L-7,417.9L-4.6,416.9L-0.2,413.3L1.3,412.8L9.1,412.7L17.7,411.4L26.3,409.3L22.2,407.2L20.3,404.8L16.6,409L14.1,410.4L7.4,410.6L5.3,409.8L2.5,408.2L1.5,408.6L0.5,409.6L-4.1,411.2L-8.7,411.2L-3,407.9L4.5,402L6.3,400L8.8,396.6L8.3,395L7,393.8L12.7,386.8L14.5,385.7L17.7,385.7L20.2,384.7L21.2,384.8L22.1,384.5L24.3,382.4L21.3,380.7L18.3,379.6L8.3,379.4L7,379.1L5.8,378.3L5.2,377.2L4.8,374.6L4.2,374L1.9,373.7L-0.3,374.3L-1.9,374L-3.3,372.7L-0.5,370.4L-3.6,369.4L-6.7,369.6L-9.3,368.5L-9.1,366.9L-7.8,365.4L-9.2,363.6L-9.3,361.6L-7.5,360.8L-5.8,361.4L-1.9,360.3L2.8,360.1L-1,358.3L-2.5,356.9L-2.4,355L-1.9,353.5L3.1,351.2L8.1,350.6L7.9,348.7L8.5,346.9L3.6,345.7L-1.4,346.6L-0.5,342.9L1,339.7L1.5,337.6L1.5,335.2L-0.9,335.9L-0.8,332.6L-1.5,330.2L-5.1,331.4L-4.6,328.4L-3.4,326.4L-1.5,325.6L0.2,326.3L3.4,326.6L6.7,325.3L11.2,325.5L18.4,326.7L22.9,331.7L24.3,331L26.6,328.4L27.5,328.2L34.9,330.2L39.4,332.2L40.7,331.8L40.2,328.7L38.8,326.3L41.1,323.7L43.7,322L45.5,321.2L49.3,320.3L51,319.3L52.5,315.8L54.4,312.9L44.9,313.6L36.4,309.2L38.1,306.8L40.1,305.5L43.4,304.7L43.8,303.4L45.5,302.4L48.5,299.8L47.9,296L48.6,293.3L50.8,291.6L51.6,289.1L52.6,287.2L56.6,286.9L60.6,285.5L61.9,285.8L66.3,285.7L67.8,286.5L67.7,283.4L70.5,283.2L71.4,283.9L71.8,286.1L72.9,287.7L73,290.2L72,292L70.6,293.4L71.7,295L69.5,297.5L71.8,296.6L75,294.1L75.1,291.9L74.8,289.2L74,286.7L74.6,284L76.5,282.4L81,281.9L79.4,278.7L81.1,278.6L82.9,279.3L85.2,281.9L87.8,284L90.5,285.7L87.5,288.5L84.1,290.3Z"/>
+              <path class="land uk" d="M211.4,471.9L209.2,474L201.7,476L198.6,478.1L192.9,482.9L191.8,483.3L183.4,481.9L177.3,475.5L173.4,472.8L171.7,472.4L170,473.1L166.3,473.8L162.6,473.6L164.6,470.7L167.2,469.1L161.6,467.8L159.9,466.9L158.2,464.9L153.7,464.4L151.6,464.8L147.8,467.4L142,470L135.2,465.7L133.9,463.9L134.1,460.5L133.2,457.8L131.3,456.9L134,453.5L136.9,451.3L143.5,449.2L153.5,444.1L159,442L164.3,438.1L166.4,435.8L168.1,432.4L169.6,428.4L171.9,425L169.8,424.2L168.9,421.6L169.3,419.1L170.3,416.9L169.6,414L168.2,411L168.3,408.7L168.7,406.2L164.9,406.3L161,406.9L157.4,408.6L154,410.8L151,411.1L151.1,409.2L152.5,406.9L156,403.7L159.8,401.1L161.1,398.9L162.2,396.5L164.1,394.6L169,391L178,387.1L179.4,386.8L183,387.4L186.5,386.9L189.5,385.4L192.6,385.1L199.4,389.7L197.4,382.8L200.4,381.3L204.8,387.5L206.4,388.1L209.9,387.3L208.5,386.2L207,386.1L204.9,385.2L203.3,383.2L200.5,377L200.8,373.3L202.7,369.5L204.8,366L203.1,365.3L201.7,363.9L201.4,360.4L202,357.3L205.7,354.6L206.8,350.4L207.4,345.8L206.8,343.7L203.1,344L201.3,344.9L199.7,346.2L198,346.1L193.6,340.9L191,337L186.6,328.8L186,323.9L189.9,313.6L195.8,307L202.4,304.8L201.2,304.3L191,304L187.6,304.8L184.4,307.5L182.6,308.3L180.9,308.5L179.1,309.8L177.5,311.7L175.7,312.9L172.2,312.4L170.6,312.8L169.4,311.7L168.6,309.8L167.2,309.3L165.8,309.8L162.7,312.1L159.5,313.5L155.8,311.8L150.9,308.7L149.9,309.7L148.7,312.4L147.9,316.5L144.6,312.7L141.8,307.7L140.9,304.7L141.1,301.3L142.7,300L144.4,301.3L147.3,293.3L152.9,283L154.9,280L156.2,276.1L156.1,273.4L155.1,271.2L150.6,265.9L150.8,261.8L151.5,257.2L152.9,254.4L153.4,253.9L159.7,254.3L157.3,252.7L152.7,248.3L152.8,246.9L154.1,243L153.6,243.4L152.5,245.1L150.3,249.4L149,250.4L145.6,251.2L144.9,253.3L144.2,253.9L142.5,254L141.9,256L141.5,256.1L141.1,253.9L141.3,250.4L142.1,247.1L143.5,244.6L148.7,239L146.2,240.7L140.5,245.9L137.5,249.2L136.7,250.4L136.4,251.4L136.3,252.6L137.3,258.9L136.8,261.7L131,280.5L130,282.4L129.1,283.3L128.3,283.5L126,283.1L124.9,281.5L125,280L125.6,277.6L128.1,268.6L129.1,266.1L130.5,263.9L133.5,259.9L133.5,259.6L131.5,260.3L130.7,260L130.3,259.2L131.2,247.1L132.9,243.2L133.8,237.4L135.4,232.5L137.1,229L138.5,224.4L140.3,222.4L140.9,219.3L143,216L144.6,212.5L143.8,212.8L133.9,221.6L131.3,223.2L128,222.6L125.5,221.4L123.6,219L123,214.8L120.6,214.5L118.6,213.6L118.6,213.1L121.4,210.9L125.8,210.4L130.1,207L126.6,204.2L126.9,203.5L130.2,201.6L134.5,194.6L135.7,188.2L133.9,185L133.3,183L129.8,180.5L129.2,177.6L129.8,176.1L131.1,174.6L133,173.5L135.9,172.4L133.4,171L132.5,169.5L131.9,167.4L131.9,166.1L133.6,160.7L134.5,158.5L136.2,155.7L143,156.2L143.9,154.9L144.7,154.9L148.1,156.3L147.6,154.9L142.2,147.8L141.8,146.5L143.6,142.9L143.8,141.2L143.7,139.4L144.2,138.1L146.1,137.5L151.6,137.9L152.9,137.3L152.4,135.5L151.2,133L151.1,131.1L151.5,129.4L151.7,125.8L152,124.4L153.4,122.1L154.5,121.4L155.9,121.1L158.9,122L160,123L161.2,125.3L162.2,125.1L166,122.9L167.2,122.6L168.6,125.4L175,123.4L183.6,122.7L188.8,121.3L194.3,120.9L199.4,119.4L204.8,120.2L204.9,121.2L204.6,122.5L203.2,126.1L203.4,130.2L203.1,131.5L202.4,133L200.3,135.8L195,139.8L185.2,149L179.3,153.5L178.5,155.8L178,158.9L181.4,159.6L182.7,160.7L181.9,162.2L176.6,167.6L174.9,172.6L178.9,172.5L182.1,171.6L188.6,168.7L194.7,166.5L197.6,166.4L203.2,168.4L204.5,168.5L206.9,167.6L209.3,167.6L225.7,168.2L230.3,167.2L233.3,168.5L235.9,171.7L238.3,177.6L238.2,178.6L236.8,181.3L234,184.7L231.7,189.4L231,191.9L230.6,194.7L229.8,197.2L225.2,209.2L220.5,215.8L218.5,220.6L215.9,224.3L213.5,226.6L210.9,228.2L203.3,229.8L201.1,230.9L198.6,233L195.9,234L199,233.8L202.1,232.8L207.7,232.4L214.2,236.5L213.5,239.7L210.9,242.3L205,242.6L199.3,248.2L196.8,249.9L194.2,250.7L190.8,250.4L184.8,248.8L182.2,247.1L184.6,249.7L187.2,251.2L202.9,254.7L203.8,254.4L208.8,251L215.4,251.1L228.1,257.4L231.8,262.2L237.1,268.9L239.9,271.6L242.1,274L243.3,277.6L246,289.6L248.8,301.2L252.8,313.9L254.5,317.4L256.8,319.8L268.4,325.4L271,327.1L275.6,332.5L280,338.3L284.1,342.6L288.6,346.1L286.5,348L285.1,351L286.4,355L288.2,358.8L291.8,364.9L295.2,371.5L294,370.5L292.8,370L291.1,370.1L289.5,369.9L286.5,367.9L283.5,365.4L277.9,366.5L274.8,366.2L272,366.2L277.3,367.6L282.9,367.6L295.8,378.5L300.3,385L303.1,393.7L301.4,397.8L298.8,400.4L296.4,403.4L294.1,406.8L301.3,411.5L302.9,411.2L304.5,410.5L305.8,408.8L308.3,404.7L309.6,403.2L313.9,402.6L317.6,402.7L321.3,403.4L324.6,403L331.2,404.5L334.5,405.9L343.2,412.4L345.2,416.2L346.3,421.1L346.7,426.6L345.6,431.7L344.1,436.3L343.4,442.2L342.9,444.4L341.9,446L337.6,450.9L334.7,452.9L333.5,452.1L332.1,452.3L332.1,453.4L333.5,455.7L333.7,458.6L331.2,460.8L328.4,461.8L323.9,460.8L317.7,465L322.3,466.8L323.3,469L322.4,472.7L319.6,474.6L316.4,475.4L313.1,475.7L310.5,476.7L308,478.6L311.2,477.5L313.5,478.3L315,481.4L316.3,482.3L322.8,483.4L326.6,483.2L334.2,482.1L337.8,482L339.2,482.5L339.3,485.1L339.1,491.6L338.1,493L328.3,498.8L326.3,502.7L325.8,505L319.9,504.9L317.2,507.4L312.4,509.2L308.8,511L305.2,513.3L302.1,514L289.2,511.8L281.3,512.2L270.8,514.7L268,514.3L264,512.3L259.7,510.8L255,510.3L250.7,508.3L253.4,512.1L247.6,515.8L245,516.5L242.2,516.4L236.5,517.5L231.3,517L232.1,519.6L233.4,521.9L232.4,522.8L231.1,523.1L221.2,521.3L219.7,521.7L218.5,523.2L214.9,522.4L211.3,519.7L207.6,517.8L203.7,516.9L200.5,517.2L187.6,521.2L184.9,525.4L183.5,531.4L181.6,536.6L178.4,540.7L174.8,541.2L171.4,538.2L165,534.9L162.8,532.7L162.1,532.6L161.4,533.3L158.8,534.2L156.2,534.1L152.1,534.9L144.9,537.1L141.9,538.8L135.6,543.3L134.3,544.6L131.9,549.3L128.4,550L125.4,546.8L121.9,545.5L118.1,546.5L115.7,547.9L114.7,546.6L114.7,543.9L117.7,540.7L125.2,538.6L131.8,532.5L135.2,528.7L136.4,526.5L138.1,525.2L140.1,524.8L141.2,522.4L150.3,512.9L151.2,510.8L151.8,506.8L152.6,503L159.9,500.7L163.5,492.7L164.4,492.1L174.4,490.9L181.8,491.2L189.1,492.9L192.8,493.2L196.5,492.6L199.5,490.5L204.7,482.7L207.6,479.3L210.8,476.2L213.9,472.6L218.9,466L215.5,468.3ZM166.5,385.8L167.7,386.8L170.9,386.7L169.8,388.7L166.3,391L163.8,393.2L160.9,395L159.6,392.8L158,392.8L155.7,388.5L155.5,382.2L158.7,380.6L163.1,380.9ZM218.2,90.5L215.3,90.5L216.8,87.6L218.6,86.8L221.9,87.2L221.3,88.5ZM255.9,26L255.3,26.6L252.8,21.5L254.5,15.7L256.6,15.8L257,17.4L256.9,18.8L255.7,19L255.6,19.4L256,22.1L256.1,25.2ZM249.3,25L249.9,28.4L251.1,27.6L253.1,30.9L254.1,30.9L255.7,29.5L255.4,32.6L253.9,41.5L253.4,42.9L253.1,45.6L252.8,46.2L252.3,51.5L251.2,53.3L250.3,57.5L249.9,58L248.5,56.3L249.9,49.9L250.4,46.1L250,44.2L249.2,42.5L247,42.4L245.2,43.2L244.8,42.2L244.7,40.8L244.3,40.3L241.9,40.4L241.2,40.1L240.7,38.8L240.6,37.7L242.8,37L244.8,37.3L247.8,35.2L245.9,28.4L243.4,27.8L242.9,27.1L243.3,26L244.6,25.4L246.7,21.9L248,21.3L249.5,21.4ZM262.2,10.9L262.2,11.6L261.1,15.8L261.1,17.4L259.1,17.3L258.7,16.8L258.3,14.4L258.5,11.8L258.8,11.1L259.4,10.8L260,11.3L261,10L261.6,10ZM202,112.2L200.5,112.8L199.1,112.7L196.8,109.8L196,107.6L196.2,106.2L197.2,105.8L199.4,106.6L200.5,109L200.5,110.6L200.8,111.2L202.2,111.8ZM208.1,114.9L207.8,115.1L206.9,114.1L205.4,110.8L207.9,110.2L209,110.6L208.5,112ZM205,100.4L204.7,101.6L206.6,101.6L209.4,102.7L211.2,102.9L212.5,104.2L211.8,106.7L210.8,107.4L209.9,107.4L206.6,104.9L202.1,105.9L201.2,105.6L200.6,104.9L200.4,104.1L200.5,102.3L200.2,101.8L198.6,103.4L197.9,103.2L197.5,102.4L197.4,100.8L197.6,98.5L198.6,95.2L200.2,94.6L202.6,95L205.2,96.9L206,98.1L206,99ZM213.5,92.7L211.3,93.9L210.4,92.8L210.2,89.6L207.6,88.2L206.3,87.3L205.4,85.7L205.6,85.2L207.3,84.5L210.3,87.5L211.4,90L213.5,90.7L213.8,91ZM105.1,218.9L103.5,219.1L103.5,218.3L106.5,215.1L108.2,214.7L108.7,215.1L107.4,216.9ZM144,278.2L140.4,278L139.2,277.5L137.7,276.2L136.3,269.3L137,266.9L137.8,265.8L138.5,264.9L140.5,264.5L142.3,265.9L142.9,267.2L144.2,271.9L144.4,275.9ZM127.4,232.4L116.1,234.5L112.3,234L112,232.6L112.9,231.8L116,231.1L117.7,224.5L113.2,221.1L113,220.2L113.5,218.7L114,218.2L117,216.8L118.2,216.5L119.2,216.7L121.2,218.7L123.2,222.5L126.2,223.3L128.2,225.1ZM116.3,252.5L117,259L117.8,263.1L117.7,264.5L116.6,266.3L111.9,268.6L110.4,268.5L110.4,267.9L111.6,265.3L110.9,262.4L111.4,260.1L111,259.8L110.1,260L106.5,263.3L105.4,263.6L105.3,262.9L106.3,260L106.6,258.1L107.1,256.9L108.1,255.8L109.3,255L110.1,255L111,255.9L113.8,253.7ZM120.5,258.6L119.8,259.1L118.4,258.9L117.9,258L117.7,256.8L117.9,254.5L118.8,252.9L122.5,250.7L121,249.7L120.9,249.1L122,247.1L126.1,244.2L127.2,243.6L128.2,243.8L125.8,249.3ZM121.9,130.6L118,139.1L116.7,139.2L115.3,141.3L111.7,143.5L114.8,143.7L115.6,144.7L115.5,146.3L114.9,147.3L110.5,151.1L107.6,152.4L104.3,156.4L102.8,156.3L101.1,158.9L99.7,159.9L99.1,159.9L98.2,159.3L96.6,156.5L100.2,154.2L100.6,152.8L103,151.4L102.9,151L99.3,148.6L98,147L98.2,146.3L100.1,144.8L99.2,144.6L98.7,143.7L97.8,143.2L97.5,142.3L97.5,140.3L97.9,138L99.1,137.1L99.6,136.1L100.1,135.9L101.6,136.5L103.2,138.4L105.2,137.8L107.4,138.4L107.6,137.9L106.1,133.5L106.5,132.7L107.5,131.7L112.9,129L119.7,124.3L121.3,123.6L121.8,124.3L122.3,127ZM115.3,200.5L114.5,201.1L113.5,200.9L112.5,200L111.4,197.6L114.4,196.1L115.6,197.1L116,198.3L115.9,199.5ZM120.7,173.6L120.5,175.9L119.8,178.5L120.3,181.3L120.3,183.2L121.5,184L122.1,184.9L127.1,186.2L131.9,186.1L132.7,187.1L132.7,188.4L131.9,189.7L129.1,192.2L125.6,196.2L124.6,197L123.5,197L122.9,196.5L122.7,189L119.2,189.8L116.4,189.5L114.9,188.5L113.9,186.7L112.1,182.1L105.9,179.8L104.3,177.3L103.8,175.7L104.2,174.9L105.6,173.2L107.2,173.9L108.3,173.6L108.9,172.8L109,172.1L108.2,170.5L108.2,169.9L114.7,168.4L115.4,165.2L116.9,165L118.4,166.1L120.4,169.6ZM92.8,162.8L95.6,165.8L92.8,170.3L89.2,170L84.2,166.2L84.3,165.5L84.7,164.5L85.6,163.7L86.5,163.6L87.7,164.3L89.6,163.5L91,164ZM89.5,191.1L88.3,191.3L86.8,190.9L85.9,190L85.3,186.9L85.2,185L85.9,181.6L86.1,177.5L89.3,177.5L90,178.2L89.5,190.6ZM84.3,198.2L81.9,198.7L81,198.3L80.9,197.6L81.6,195.9L83.5,195.5L84.7,196.5L84.9,197.4ZM108.2,344.6L105.8,344.2L104,345L102.8,345.7L101.7,345.5L98.5,345.6L95.5,345.4L95.1,344.1L95.9,340.1L95.3,339L92.5,338.3L91.5,337.3L90,334.4L89.8,333.1L89.7,331.4L88.2,329L86.2,327.2L85,327L82.4,329.5L80.2,332.1L80.8,333.4L81.3,335.2L80,336.4L76.6,339.2L75.9,340.2L74.9,340.8L73.4,339.8L69.5,339.7L67.8,339.1L65.8,336.7L60.8,334.8L60.1,331.4L59.2,330.7L53.8,324.3L53.3,322.2L54.1,321.2L56.5,319.5L64,317.2L65.3,316.1L65.6,315.1L63.5,313.7L61.7,312.3L61.2,311.3L61.1,310.6L62.3,309.7L64.5,309.8L66.2,310.4L67.6,309.6L70.2,308.9L71.8,307.9L73.5,305.2L75.1,302.7L75.4,301.3L77.1,296.5L77.8,295.3L82.6,292.4L83.6,294.3L85.8,294.9L88,293.4L90.7,288.5L92.4,288.3L94.2,288.8L97.9,288.4L104.4,286.5L107.3,286.6L111.2,288.1L114.2,288.2L116.7,292.1L117.8,297.9L120.8,303.8L125,309L124.9,312L123.3,313.5L119.8,315.4L119.8,317.5L122,316.5L123.9,316.2L128.4,316.9L129.9,319.2L130.8,322.5L131.3,325.2L130.7,328.1L129.6,327.1L128.5,324.4L127.2,323.2L125.5,322.5L126.1,326.1L125.5,330.9L126.2,331.4L128.4,331.6L126.7,336.4L123.7,337.6L120.2,338L119.2,339.7L118.5,341.9L116.5,345.1L114.1,346.9L111.1,346.4ZM262,518.5L259.3,520.3L258.5,522.3L257.8,523.1L256.1,523.7L254.4,523.8L247.7,519.7L246.1,519.9L247.6,518L251.8,516.5L254.1,514.5L259.5,516.3Z"/>
+              <g data-show="south base" style="transition:opacity .8s">
+                <line x1="290.7" y1="477" x2="238.8" y2="469" stroke="var(--news)" stroke-width="calc(1.5px / var(--k,1))" stroke-dasharray="calc(4px / var(--k,1)) calc(3px / var(--k,1))"/>
+              </g>
+              <g data-show="south base" style="transition:opacity .8s">
+                <circle cx="290.7" cy="477" r="calc(4px / var(--k,1))" style="r:calc(4px / var(--k,1))" fill="var(--brand)"/>
+                <text class="map-label" x="290.7" y="477" style="transform:translate(calc(7px / var(--k,1)), calc(4px / var(--k,1)));font-size:calc(11px / var(--k,1));stroke-width:calc(3px / var(--k,1))">London</text>
+                <circle cx="255.3" cy="465.4" style="r:calc(2.5px / var(--k,1))" fill="var(--ink-3)"/>
+                <text class="map-label" x="255.3" y="465.4" style="transform:translate(calc(5px / var(--k,1)), calc(-5px / var(--k,1)));font-size:calc(10px / var(--k,1));stroke-width:calc(3px / var(--k,1))">Oxford</text>
+                <circle cx="239.1" cy="475.3" style="r:calc(2.5px / var(--k,1))" fill="var(--ink-3)"/>
+                <text class="map-label" x="239.1" y="475.3" style="transform:translate(calc(5px / var(--k,1)), calc(10px / var(--k,1)));font-size:calc(10px / var(--k,1));stroke-width:calc(3px / var(--k,1))">Swindon</text>
+                <circle cx="224.7" cy="459.9" style="r:calc(2.5px / var(--k,1))" fill="var(--ink-3)"/>
+                <text class="map-label" x="224.7" y="459.9" text-anchor="end" style="transform:translate(calc(-6px / var(--k,1)), calc(-5px / var(--k,1)));font-size:calc(10px / var(--k,1));stroke-width:calc(3px / var(--k,1))">Gloucester</text>
+              </g>
+              <circle cx="238.8" cy="469" style="r:calc(5px / var(--k,1))" fill="var(--news)" stroke="var(--bg-card)" stroke-width="calc(1.5px / var(--k,1))"/>
+              <text class="map-label big" x="238.8" y="469" text-anchor="end" style="transform:translate(calc(-8px / var(--k,1)), calc(4px / var(--k,1)));font-size:calc(13px / var(--k,1));stroke-width:calc(3px / var(--k,1))">RAF Fairford</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption class="map-caption">Coastline: Natural Earth, 1:50m. Positions from OpenStreetMap. Distance is a straight line from central London.</figcaption>
+      </figure>
+      <div>
+        <ol class="map-steps">
+          <li><button type="button" data-map-step="uk" aria-pressed="true"><b>The base</b><span>RAF Fairford sits in Gloucestershire. It is an RAF station, but in practice it is the US Air Force’s European home for its bombers, which have flown missions against Iran this year.<a class="cite" href="#s18">18</a><a class="cite" href="#s11">11</a></span></button></li>
+          <li><button type="button" data-map-step="south" aria-pressed="false"><b>The men</b><span>Police say all five live in London: three in Westminster, one in Camden, one in Willesden.<a class="cite" href="#p4">P4</a> That is about 72 miles from the base.</span></button></li>
+          <li><button type="button" data-map-step="base" aria-pressed="false"><b>The arrests</b><span>Armed officers arrested the men in the Whelford area, a small village at the eastern end of the base.<a class="cite" href="#p2">P2</a> The street map below shows the ground.</span></button></li>
+        </ol>
+        <p class="vh" aria-live="polite" id="map-live"></p>
+      </div>
+    </div>
+    <figure style="margin:32px 0 0">
+      <div id="local-map" style="height:420px;border-radius:6px;overflow:hidden;background:var(--land)" aria-label="Street map of RAF Fairford, the town of Fairford and the village of Whelford. Whelford lies about a mile and a half east of the middle of the base, and about two miles south-east of Fairford town." role="region"></div>
+      <figcaption class="map-caption">Street map: © OpenStreetMap contributors. Markers show the village and town centres, not the exact spot of any arrest, which police have not given. Drag to move; use the + and − buttons to zoom.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= TIMELINE ================= -->
+<section class="block" aria-labelledby="tl-h">
+  <div class="wrap">
+    <div class="measure">
+      <p class="sec-num">2 · When</p>
+      <h2 id="tl-h">Three days, hour by hour</h2>
+      <p class="lede">All times are UK time. Filter the list to see only what police and government said on the record, or only what politicians claimed.</p>
+    </div>
+    <div class="tl-controls" role="group" aria-label="Filter the timeline">
+      <button type="button" class="chip" data-tl-filter="all" aria-pressed="true">Everything</button>
+      <button type="button" class="chip" data-tl-filter="official" aria-pressed="false">On the record</button>
+      <button type="button" class="chip" data-tl-filter="reported" aria-pressed="false">Reported</button>
+      <button type="button" class="chip" data-tl-filter="claim" aria-pressed="false">Claims</button>
+      <span id="tl-count" aria-live="polite" style="align-self:center;color:var(--ink-3);font-size:.875rem"></span>
+    </div>
+    <ol class="timeline" id="timeline">
+      <span class="spine" aria-hidden="true"></span>
+      <li class="tl-day" role="presentation">Sunday 27 September</li>
+      <li class="tl-item official reveal"><span class="tl-time">12.45am</span><div class="tl-body"><span class="pill official">On the record</span><h3>A call to police</h3><p>Police get a call about three suspicious vehicles “which appeared to be travelling towards the air base”.<a class="cite" href="#p2">P2</a><a class="cite" href="#p3">P3</a></p></div></li>
+      <li class="tl-item reported reveal"><span class="tl-time">1.36am</span><div class="tl-body"><span class="pill reported">Reported</span><h3>A 999 call</h3><p>A local farmer says she dialled 999 after finding three vans near her farm. Police have not said who made the earlier call.<a class="cite" href="#s18">18</a></p></div></li>
+      <li class="tl-item official reveal"><span class="tl-time">Early hours</span><div class="tl-body"><span class="pill official">On the record</span><h3>Five men arrested</h3><p>Armed officers arrest five men in the Whelford area on suspicion of offences under “the Explosives Act”.<a class="cite" href="#p2">P2</a><a class="cite" href="#p3">P3</a></p></div></li>
+      <li class="tl-item official reveal"><span class="tl-time">8.18am</span><div class="tl-body"><span class="pill official">On the record</span><h3>Major incident</h3><p>Gloucestershire police declare a major incident. Homes are being cleared and the army’s bomb disposal team is examining the vehicles. “We believe this incident is contained.”<a class="cite" href="#p1">P1</a></p></div></li>
+      <li class="tl-item official reveal"><span class="tl-time">2.02pm</span><div class="tl-body"><span class="pill official">On the record</span><h3>Terror arrest</h3><p>Counter Terrorism Policing, now leading the case, says all five have been further arrested on suspicion of preparing an act of terrorism. Eighty-five households have been evacuated inside a 400-metre cordon.<a class="cite" href="#p2">P2</a><a class="cite" href="#p3">P3</a></p></div></li>
+      <li class="tl-item reported reveal"><span class="tl-time">Sunday</span><div class="tl-body"><span class="pill reported">Reported</span><h3>Not led by intelligence</h3><p>British officials say the arrests came from warnings on the ground, not from advance intelligence.<a class="cite" href="#s1">1</a><a class="cite" href="#s18">18</a></p></div></li>
+      <li class="tl-item official reveal"><span class="tl-time">About 4.40pm</span><div class="tl-body"><span class="pill official">On the record</span><h3>Prime minister urges calm</h3><p>Andy Burnham, at Labour’s conference in Liverpool, urges people “not to speculate while the authorities establish the full facts”.<a class="cite" href="#s14">14</a></p></div></li>
+      <li class="tl-item claim reveal"><span class="tl-time">Evening</span><div class="tl-body"><span class="pill claim">Claim</span><h3>Trump: “big damage”</h3><p>Speaking to reporters in Chicago, Donald Trump says the men “were looking to do big damage” and that “we had them under view for a long time”.<a class="cite" href="#s8">8</a><a class="cite" href="#s19">19</a></p></div></li>
+      <li class="tl-item reported reveal"><span class="tl-time">Sunday</span><div class="tl-body"><span class="pill reported">Reported</span><h3>Fake photos debunked</h3><p>Fact-checkers find that sharp “photos” of the suspects spreading online were made with AI from one blurred image.<a class="cite" href="#s16">16</a><a class="cite" href="#s17">17</a></p></div></li>
+      <li class="tl-day" role="presentation">Monday 28 September</li>
+      <li class="tl-item official reveal"><span class="tl-time">Morning</span><div class="tl-body"><span class="pill official">On the record</span><h3>Defence secretary on Iran</h3><p>Wes Streeting tells the BBC: “I am not drawing a connection with Iran”, while saying Iran and its proxies “wish to do us harm”.<a class="cite" href="#s13">13</a></p></div></li>
+      <li class="tl-item official reveal"><span class="tl-time">12.30pm</span><div class="tl-body"><span class="pill official">On the record</span><h3>Who the men are</h3><p>Police say all five are British nationals from London, aged 23 to 25, held under the Police and Criminal Evidence Act.<a class="cite" href="#p4">P4</a></p></div></li>
+      <li class="tl-item official reveal"><span class="tl-time">About 1.40pm</span><div class="tl-body"><span class="pill official">On the record</span><h3>Iran denies it</h3><p>Iran’s embassy in London “categorically rejects” what it calls “unfounded and malicious speculations”.<a class="cite" href="#s13">13</a></p></div></li>
+      <li class="tl-item official reveal"><span class="tl-time">About 3.45pm</span><div class="tl-body"><span class="pill official">On the record</span><h3>Released on bail</h3><p>Assistant Commissioner Laurence Taylor says all five are being released on bail under “stringent conditions” and “absolutely remain under investigation”.<a class="cite" href="#p5">P5</a></p></div></li>
+      <li class="tl-item official reveal"><span class="tl-time">Afternoon</span><div class="tl-body"><span class="pill official">On the record</span><h3>Cobra meets</h3><p>The prime minister chairs the government’s emergency committee, Cobra.<a class="cite" href="#s3">3</a></p></div></li>
+      <li class="tl-item official reveal"><span class="tl-time">6.40pm</span><div class="tl-body"><span class="pill official">On the record</span><h3>Residents go home</h3><p>Gloucestershire police say evacuated residents can return, while a cordon stays around the three vehicles.<a class="cite" href="#p6">P6</a></p></div></li>
+      <li class="tl-item claim reveal"><span class="tl-time">Evening</span><div class="tl-body"><span class="pill claim">Claim</span><h3>Trump: “I would not have released them”</h3><p>In the Oval Office, Trump says he is surprised the men were bailed.<a class="cite" href="#s3">3</a><a class="cite" href="#s12">12</a></p></div></li>
+      <li class="tl-item reported reveal"><span class="tl-time">Evening</span><div class="tl-body"><span class="pill reported">Reported</span><h3>No explosives, sources say</h3><p>Several outlets report, citing unnamed sources, that no explosive material was found. Police have not said so on the record.<a class="cite" href="#s3">3</a><a class="cite" href="#s8">8</a></p></div></li>
+      <li class="tl-day" role="presentation">Tuesday 29 September</li>
+      <li class="tl-item claim reveal"><span class="tl-time">Overnight</span><div class="tl-body"><span class="pill claim">Claim</span><h3>Rubio: “foreign actor”</h3><p>On Fox News (Monday evening in the US), secretary of state Marco Rubio says the case “clearly involves the hands of a foreign actor”. He gives no evidence.<a class="cite" href="#s10">10</a><a class="cite" href="#s6">6</a></p></div></li>
+      <li class="tl-item official reveal"><span class="tl-time">Morning</span><div class="tl-body"><span class="pill official">On the record</span><h3>“Operational decisions”</h3><p>Labour’s deputy leader, Lucy Powell, tells Sky News that bail decisions are “operational decisions for the police and they are not taken by ministers”.<a class="cite" href="#s15">15</a></p></div></li>
+      <li class="tl-item official reveal"><span class="tl-time">4pm</span><div class="tl-body"><span class="pill official">On the record</span><h3>Where things stand</h3><p>No one has been charged. The five remain on bail and under investigation.<a class="cite" href="#p5">P5</a></p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= KNOWN / CLAIMED / UNKNOWN ================= -->
+<section class="block soft" aria-labelledby="kcu-h">
+  <div class="wrap">
+    <div class="measure">
+      <p class="sec-num">3 · Fact and claim</p>
+      <h2 id="kcu-h">Sorting what we know from what we’re told</h2>
+      <p class="lede">The gap between what British police have said and what some politicians have said is the heart of this story. Here it is, side by side.</p>
+    </div>
+    <div class="kcu">
+      <div class="kcu-col reveal">
+        <h3>Police have said</h3>
+        <p class="sub"><span class="pill official">On the record</span></p>
+        <ul>
+          <li><span class="who">Gloucestershire police, Sunday</span>A call came in at about 12.45am about three suspicious vehicles “travelling towards RAF Fairford”.<a class="cite" href="#p3">P3</a></li>
+          <li><span class="who">Counter Terrorism Policing</span>The five were further arrested on suspicion of preparing an act of terrorism under section 5 of the Terrorism Act.<a class="cite" href="#p2">P2</a></li>
+          <li><span class="who">Counter Terrorism Policing, Monday</span>All five are British nationals from London, aged 23, 24, 24, 24 and 25.<a class="cite" href="#p4">P4</a></li>
+          <li><span class="who">Asst Commissioner Laurence Taylor, Monday</span>The men are on bail, with “stringent conditions on their movement and contact with others”, and “absolutely remain under investigation”.<a class="cite" href="#p5">P5</a></li>
+          <li><span class="who">Taylor, Monday</span>Police are “keeping an open mind” and considering people “knowingly or unknowingly working on behalf of a foreign state”, among other angles. He named no state.<a class="cite" href="#p5">P5</a></li>
+          <li><span class="who">Home secretary Shabana Mahmood, Monday</span>The scene is “now safe”.<a class="cite" href="#s8">8</a></li>
+        </ul>
+      </div>
+      <div class="kcu-col claim reveal" style="transition-delay:.1s">
+        <h3>Others have claimed</h3>
+        <p class="sub"><span class="pill claim">Not confirmed by police</span></p>
+        <ul>
+          <li><span class="who">Donald Trump, Sunday</span>The men “were looking to do big damage”, and “we had them under view for a long time”. British briefings to the Guardian and BBC say the operation was not led by intelligence.<a class="cite" href="#s8">8</a><a class="cite" href="#s19">19</a><a class="cite" href="#s1">1</a></li>
+          <li><span class="who">Marco Rubio, US secretary of state, Monday</span>The case “clearly involves the hands of a foreign actor”. He gave no evidence.<a class="cite" href="#s10">10</a><a class="cite" href="#s6">6</a></li>
+          <li><span class="who">Nigel Farage, Sunday and Monday</span>Linked the arrests to “Iranian agents” arriving on small boats. Police later confirmed all five are British nationals from London.<a class="cite" href="#s5">5</a></li>
+          <li><span class="who">Unnamed sources, several outlets</span>Iran is the leading line of inquiry. Others mentioned: Russia, and jihadist or other motives. None of this is on the record.<a class="cite" href="#s2">2</a><a class="cite" href="#s10">10</a></li>
+          <li><span class="who">Unnamed sources, several outlets</span>No viable explosives were found. Police have not said so on the record.<a class="cite" href="#s3">3</a><a class="cite" href="#s8">8</a></li>
+        </ul>
+      </div>
+      <div class="kcu-col unknown reveal" style="transition-delay:.2s">
+        <h3>Nobody has said</h3>
+        <p class="sub"><span class="pill unknown">Not known</span></p>
+        <ul>
+          <li>What, if anything, the men meant to do, and why.</li>
+          <li>Whether any foreign state or group was involved. Iran’s embassy in London has denied it.<a class="cite" href="#s13">13</a></li>
+          <li>What the material in the vans was. Early reports said it looked like bombs; later ones said it wasn’t.<a class="cite" href="#s1">1</a><a class="cite" href="#s3">3</a></li>
+          <li>The exact bail conditions, and when the men must return to police.</li>
+          <li>Whether anyone else was involved. Early on Sunday police said: “We believe this incident is contained.”<a class="cite" href="#p1">P1</a></li>
+          <li>Who made the 12.45am call. A local farmer says she dialled 999 at 1.36am; police have not said how the two fit together.<a class="cite" href="#s18">18</a></li>
+          <li>Whether the men will be charged, and with what.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tester" id="tester" hidden aria-labelledby="tester-h">
+      <h3 id="tester-h">Test yourself: fact, claim or unknown?</h3>
+      <p style="margin:0;color:var(--ink-3);font-family:var(--sans);font-size:.9375rem">Nine statements you might have seen this week. Pick a label for each.</p>
+      <p class="q" tabindex="-1"></p>
+      <div class="opts" role="group" aria-label="Choose a label"></div>
+      <div class="verdict" tabindex="-1" aria-live="polite"></div>
+      <div class="foot"><span class="score"></span><button type="button" class="btn next">Next statement</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE LAW ================= -->
+<section class="block" aria-labelledby="law-h">
+  <div class="wrap">
+    <div class="measure">
+      <p class="sec-num">4 · The law</p>
+      <h2 id="law-h">Why the press is holding back</h2>
+      <p class="lede">Many readers assume the rules on reporting a case begin when someone is charged. In England and Wales they begin at arrest.</p>
+      <p>The Contempt of Court Act 1981 makes it an offence to publish anything that creates “a substantial risk” that a trial will be “seriously impeded or prejudiced”, whatever the publisher meant.<a class="cite" href="#l1">L1</a> The rule bites once a case is “active”, and a case becomes active when someone is arrested without a warrant.<a class="cite" href="#l2">L2</a></p>
+      <p>Bail does not switch it off. Since March 2018, a case in England and Wales stays active until the suspect is charged and tried, or is told there will be no prosecution.<a class="cite" href="#l3">L3</a> So the Fairford case is active now. A publisher who breaks it faces an unlimited fine, and those responsible up to two years in jail.<a class="cite" href="#l1">L1</a></p>
+      <p>This is not theory. In 2011 the Mirror and the Sun were found in contempt over their coverage of Christopher Jefferies, a man arrested over a murder in Bristol, bailed and never charged.<a class="cite" href="#l4">L4</a></p>
+    </div>
+
+    <div class="journey">
+      <h3 style="margin-top:32px">Step through the case</h3>
+      <p style="font-family:var(--sans);font-size:.9375rem;color:var(--ink-3);margin:0 0 20px">Choose a stage, or use the arrow keys. The yellow dot marks where the case stands today.</p>
+      <ol class="journey-track" aria-label="Stages of the case">
+        <li><button type="button" data-j="arrest"><span class="jt-date">Sun 27 Sept</span><span class="jt-name">Arrest</span></button></li>
+        <li><button type="button" data-j="custody"><span class="jt-date">Sun–Mon</span><span class="jt-name">Custody</span></button></li>
+        <li><button type="button" data-j="bail" class="now"><span class="jt-date">Mon 28 Sept · now</span><span class="jt-name">Bail</span></button></li>
+        <li><button type="button" data-j="decision" class="future"><span class="jt-date">Next</span><span class="jt-name">Charge or not</span></button></li>
+        <li><button type="button" data-j="court" class="future"><span class="jt-date">If charged</span><span class="jt-name">Court</span></button></li>
+      </ol>
+
+      <div class="journey-panel" id="j-arrest">
+        <div>
+          <h3 tabindex="-1">Arrest: the rules switch on</h3>
+          <p>Armed officers arrested the five in the early hours of Sunday. By 2pm, police had arrested them again on suspicion of preparing an act of terrorism.<a class="cite" href="#p2">P2</a></p>
+          <p><strong>The explosives arrest.</strong> Police said “the Explosives Act” but not which law or section.<a class="cite" href="#p3">P3</a> The most serious charge of this kind, under section 4 of the Explosive Substances Act 1883, covers making or holding an explosive substance where there is good reason to suspect it is not for a lawful purpose. The maximum sentence is life.<a class="cite" href="#l14">L14</a></p>
+          <p><strong>The terror arrest: Terrorism Act 2006, section 5.</strong> It is a crime to do anything to prepare for an act of terrorism, even without a set target. The maximum is life.<a class="cite" href="#l15">L15</a> Where explosives are used, the law counts an act as terrorism without needing to show an aim to sway a government or scare the public.<a class="cite" href="#l16">L16</a></p>
+        </div>
+        <div>
+          <div class="cansay ok"><h4>Safe to report</h4><ul><li>The arrests, the offences, the ages and home areas police gave</li><li>What police and ministers said on the record</li><li>Wider debate about US bases and threats from states</li></ul></div>
+          <div class="cansay no" style="margin-top:12px"><h4>Risky</h4><ul><li>Anything that assumes guilt</li><li>Names, photos, past convictions, character</li><li>Talk of what the evidence shows</li></ul></div>
+          <p style="font-family:var(--sans);font-size:.8125rem;color:var(--ink-3);margin-top:10px">Based on Attorney General and CPS guidance.<a class="cite" href="#l8">L8</a><a class="cite" href="#l9">L9</a> Section 5 of the 1981 act protects good-faith debate of public affairs, where any risk to a case is incidental.<a class="cite" href="#l5">L5</a></p>
+        </div>
+      </div>
+
+      <div class="journey-panel" id="j-custody">
+        <div>
+          <h3 tabindex="-1">Custody: about a day and a half</h3>
+          <p>It depends on which power police use. Here, police said the men were held under the ordinary law, the Police and Criminal Evidence Act, and got more time in custody “until later today” on Monday.<a class="cite" href="#p4">P4</a></p>
+          <p>Under that law, police can hold a suspect for 24 hours, 36 with a superintendent’s say-so, and up to 96 with a magistrate’s warrant.<a class="cite" href="#l10">L10</a> The Terrorism Act 2000 has its own power: 48 hours, and up to 14 days with a judge’s warrant.<a class="cite" href="#l11">L11</a> Some reports this week cited that 14-day limit, but it was not the power used here.</p>
+          <p>The choice matters for what came next. People held under the terrorism power cannot be given bail with conditions: they must be charged or let go.<a class="cite" href="#l12">L12</a> The ordinary law allows bail with conditions, which is what happened.</p>
+        </div>
+        <div class="clocks" style="margin-top:0;grid-template-columns:1fr">
+          <div class="clock"><div><span class="big" data-count="96">96</span> <span class="unit">hours at most</span></div><div class="bar" aria-hidden="true"><i data-w="28.6%"></i></div><p style="margin:0;font-family:var(--sans);font-size:.875rem">Ordinary police powers (PACE 1984)</p></div>
+          <div class="clock"><div><span class="big" data-count="14">14</span> <span class="unit">days at most</span></div><div class="bar" aria-hidden="true"><i data-w="100%"></i></div><p style="margin:0;font-family:var(--sans);font-size:.875rem">Terrorism Act 2000, section 41</p></div>
+        </div>
+      </div>
+
+      <div class="journey-panel" id="j-bail">
+        <div>
+          <h3 tabindex="-1">Bail: free to go, not in the clear</h3>
+          <p>At about 3.45pm on Monday police released all five on bail, with “stringent conditions on their movement and contact with others”. Assistant Commissioner Laurence Taylor said they “absolutely remain under investigation”.<a class="cite" href="#p5">P5</a></p>
+          <p>Bail before charge is not a verdict either way. Police can only grant it if they still suspect the person and need to investigate further.<a class="cite" href="#l13">L13</a> In general, conditions can cover where someone lives, whom they contact and whether they can travel. For some terror offences, breaking a travel condition is itself a crime.<a class="cite" href="#l19">L19</a></p>
+          <p>The first period of bail lasts three months, and senior officers or a court can extend it. By our count, that first period runs to about the end of December.<a class="cite" href="#l13">L13</a> Police can arrest the men again if new evidence emerges.<a class="cite" href="#l17">L17</a></p>
+          <p>Trump said he would not have released them. On Tuesday, Labour’s deputy leader, Lucy Powell, said bail decisions are “operational decisions for the police”.<a class="cite" href="#s12">12</a><a class="cite" href="#s15">15</a></p>
+        </div>
+        <div>
+          <div class="cansay no"><h4>Contempt rules</h4><p style="margin:0">Still on. Bail changes nothing.<a class="cite" href="#l3">L3</a></p></div>
+          <div class="cansay no" style="margin-top:12px"><h4>Names</h4><p style="margin:0">Not released. Police name people only in exceptional cases before charge, and the Supreme Court has said people under investigation can expect privacy until then.<a class="cite" href="#l6">L6</a><a class="cite" href="#l7">L7</a></p></div>
+        </div>
+      </div>
+
+      <div class="journey-panel" id="j-decision">
+        <div>
+          <h3 tabindex="-1">Next: charge, or no further action</h3>
+          <p>In terror cases the Crown Prosecution Service’s counter-terrorism division decides on charges, not the police.<a class="cite" href="#l18">L18</a> Prosecutions under both laws need sign-off from the top: the Attorney General for the explosives offence, and the Director of Public Prosecutions for the terror offence, who needs the Attorney General’s permission if a foreign country is involved.<a class="cite" href="#l14">L14</a><a class="cite" href="#l15">L15</a></p>
+          <p>If a foreign power were shown to be behind it, the National Security Act 2023 could also apply, with its own offences such as sabotage.<a class="cite" href="#l21">L21</a></p>
+        </div>
+        <div>
+          <div class="cansay neutral"><h4>If charged</h4><p style="margin:0">Police normally name people when they charge them.<a class="cite" href="#l6">L6</a> The contempt rules get stricter in practice as a trial nears.</p></div>
+          <div class="cansay neutral" style="margin-top:12px"><h4>If not</h4><p style="margin:0">The case stops being active once each man is told he will not be prosecuted.<a class="cite" href="#l3">L3</a></p></div>
+        </div>
+      </div>
+
+      <div class="journey-panel" id="j-court">
+        <div>
+          <h3 tabindex="-1">Court: reporting opens up</h3>
+          <p>Once a case reaches court, the press can publish fair and accurate reports of what happens in open court, at the time it happens.<a class="cite" href="#l1">L1</a> What stays off limits is anything a jury would not hear.</p>
+          <p>Reform may come. In November 2025 the Law Commission proposed that cases should become active at charge rather than arrest. It had looked again at the question after the Southport murders in 2024, when rumour spread online while police said little. The law has not changed.<a class="cite" href="#l20">L20</a></p>
+        </div>
+        <div>
+          <div class="cansay neutral"><h4>Politicians too</h4><p style="margin:0">The law covers everyone who publishes, including ministers and people on social media. Before the Southport trial in January 2025, the Attorney General warned social media users, as well as editors, not to assume guilt.<a class="cite" href="#l22">L22</a></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTEXT ================= -->
+<section class="block soft" aria-labelledby="ctx-h">
+  <div class="wrap">
+    <div class="measure">
+      <p class="sec-num">5 · Why it matters</p>
+      <h2 id="ctx-h">Why this base, and why now</h2>
+      <p class="lede">RAF Fairford is, in the words of the Guardian’s defence editor, “essentially an American base on British soil”: the European home of the US Air Force’s bombers.<a class="cite" href="#s18">18</a></p>
+      <p>That matters because of the war the US began against Iran in the spring. Here is how the base came into it.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><p class="fig">March</p><h3>Bombers arrive</h3><p>Four US B-1 Lancer bombers land at Fairford after Keir Starmer, then prime minister, allows the US to use British bases for what the Ministry of Defence calls “specific defensive operations” against Iranian missile sites.<a class="cite" href="#s11">11</a></p><p><span class="pill official">On the record</span></p></div>
+      <div class="card reveal" style="transition-delay:.1s"><p class="fig">23 July</p><h3>Iran names the base</h3><p>Iran’s Revolutionary Guards say any base used to attack Iran is “a legitimate target”, and name Fairford’s role. It comes on the 13th straight day of US bombing.<a class="cite" href="#s1">1</a><a class="cite" href="#s18">18</a></p><p><span class="pill official">On the record</span></p></div>
+      <div class="card reveal" style="transition-delay:.2s"><p class="fig">Late Sept</p><h3>Highest alert</h3><p>The base had been at its highest threat level for several days before the arrests. British sources say this reflected a general worry about US bases, not a warning about this site.<a class="cite" href="#s18">18</a></p><p><span class="pill reported">Reported</span></p></div>
+    </div>
+    <div class="measure" style="margin-top:32px">
+      <h3>The pattern police are alert to</h3>
+      <p>Laurence Taylor, head of counter-terrorism policing, said on Monday that threats from foreign states often show up as “criminal activity, often at a small scale”, carried out by people whose main aim is “a quick financial gain” rather than terrorism.<a class="cite" href="#s3">3</a> He was describing the wider threat, not saying what these five men did. The Guardian notes that Iran is suspected of using such proxies in earlier cases in Britain.<a class="cite" href="#s3">3</a></p>
+      <p>The base has also drawn anti-war protests since the bombing began.<a class="cite" href="#s8">8</a> Police have not linked the arrests to any protest group.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THIS PAGE ================= -->
+<section class="block" aria-labelledby="rules-h">
+  <div class="wrap">
+    <div class="measure">
+      <p class="sec-num">6 · Our own rules</p>
+      <h2 id="rules-h">What we left out, and why</h2>
+      <p>This page follows the law it explains. We have not:</p>
+      <ul>
+        <li>named the men, or described how they looked. Police have not named them, and naming people before charge carries legal risk.<a class="cite" href="#l7">L7</a></li>
+        <li>used photos of the arrests. AI-sharpened versions of one blurred photo spread online over the weekend, and fact-checkers found them fake; they were used to make false claims about the men’s backgrounds.<a class="cite" href="#s16">16</a><a class="cite" href="#s17">17</a></li>
+        <li>repeated single-outlet reports about what was in the vans, or witness accounts of what the men did. That is evidence a jury may one day weigh.</li>
+      </ul>
+      <p>We have reported what politicians claimed, because it is news in its own right, but we have labelled it as claim and set it next to what police have said.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOURCES ================= -->
+<section class="block soft" aria-labelledby="src-h">
+  <div class="wrap">
+    <div class="measure">
+      <p class="sec-num">Sources</p>
+      <h2 id="src-h">Where every claim comes from</h2>
+      <p>Police statements start with P, news sources are numbered, and legal sources start with L. All were read on 29 September 2026. Quotes were checked against the text of the source.</p>
+      <h3 style="margin-top:24px">Police statements</h3>
+      <ol class="sources">
+        <li id="p1"><span class="sn">P1</span><span><a href="https://www.gloucestershire.police.uk/news/gloucestershire/2026/september/major-incident-declared-in-whelford/" rel="noopener">Major incident declared in Whelford</a><br><span class="meta">Gloucestershire Constabulary, 8.18am, 27 Sept 2026</span> <span class="meta">· Read via the Wayback Machine</span></span></li>
+        <li id="p2"><span class="sn">P2</span><span><a href="https://news.met.police.uk/news/counter-terrorism-policing-update-in-relation-to-incident-in-gloucestershire-513316" rel="noopener">Counter Terrorism Policing update in relation to incident in Gloucestershire</a><br><span class="meta">Metropolitan Police newsroom, for Counter Terrorism Policing, 2.02pm, 27 Sept 2026</span></span></li>
+        <li id="p3"><span class="sn">P3</span><span><a href="https://www.gloucestershire.police.uk/news/gloucestershire/2026/september/counter-terrorism-policing-leading-investigation-following-whelford-arrests/" rel="noopener">Counter Terrorism Policing leading investigation following Whelford arrests</a><br><span class="meta">Gloucestershire Constabulary, 2.15pm, 27 Sept 2026</span> <span class="meta">· Statement by ACC Richard Ocone</span></span></li>
+        <li id="p4"><span class="sn">P4</span><span><a href="https://www.counterterrorism.police.uk/news/update-on-raf-fairford-investigation/" rel="noopener">Update on RAF Fairford investigation – 12:30 28 September 2026</a><br><span class="meta">Counter Terrorism Policing, 28 Sept 2026</span> <span class="meta">· Nationality, ages, home areas; held under PACE</span></span></li>
+        <li id="p5"><span class="sn">P5</span><span><a href="https://www.counterterrorism.police.uk/news/update-on-raf-fairford-investigation-1600-28-september-2026/" rel="noopener">Update on RAF Fairford investigation – 16:00 28 September 2026</a><br><span class="meta">Counter Terrorism Policing, 28 Sept 2026</span> <span class="meta">· AC Laurence Taylor on bail</span></span></li>
+        <li id="p6"><span class="sn">P6</span><span><a href="https://www.gloucestershire.police.uk/news/gloucestershire/2026/september/thank-you-to-local-community-following-arrests-in-whelford/" rel="noopener">Thank you to local community following arrests in Whelford</a><br><span class="meta">Gloucestershire Constabulary, 6.40pm, 28 Sept 2026</span></span></li>
+      </ol>
+      <h3 style="margin-top:32px">News reports and statements</h3>
+      <ol class="sources">
+        <li id="s1"><span class="sn">1</span><span><a href="https://www.theguardian.com/uk-news/2026/sep/27/major-incident-declared-near-raf-fairford-as-men-arrested-on-suspicion-of-explosives-offences" rel="noopener">Five arrested for alleged terrorism offences after ‘major incident’ near RAF Fairford</a><br><span class="meta">The Guardian (Helena Horton, Vikram Dodd, Dan Sabbagh), 27 Sept 2026</span> <span class="meta">· Quotes Gloucestershire police statement (ACC Richard Ocone) in full</span></span></li>
+        <li id="s2"><span class="sn">2</span><span><a href="https://www.theguardian.com/uk-news/2026/sep/27/arrests-suspected-terrorism-charges-explosives-found-near-raf-base-us" rel="noopener">Counter-terror police investigate Iran link over suspected bomb plot at RAF base used by US</a><br><span class="meta">The Guardian, 27–28 Sept 2026</span> <span class="meta">· Quotes Counter Terrorism Policing statement on further arrest</span></span></li>
+        <li id="s3"><span class="sn">3</span><span><a href="https://www.theguardian.com/uk-news/2026/sep/28/men-arrested-raf-fairford-counter-terrorism-police" rel="noopener">Five UK nationals arrested near RAF Fairford released on bail</a><br><span class="meta">The Guardian (Vikram Dodd), 28 Sept 2026, 11pm BST</span> <span class="meta">· Quotes Asst Commissioner Laurence Taylor’s statement at length</span></span></li>
+        <li id="s4"><span class="sn">4</span><span><a href="https://www.theguardian.com/uk-news/live/2026/sep/28/raf-fairford-counter-terror-police-suspected-bomb-plot-iran-link-investigated-latest-news-updates" rel="noopener">Five men arrested near RAF Fairford to be released on bail, police say – as it happened</a><br><span class="meta">The Guardian live blog, 28 Sept 2026</span></span></li>
+        <li id="s5"><span class="sn">5</span><span><a href="https://www.theguardian.com/politics/2026/sep/28/nandy-labels-farage-master-of-conspiracy-theory-over-fairford-claims" rel="noopener">Nandy labels Farage ‘master of conspiracy theory’ over Fairford claims</a><br><span class="meta">The Guardian, 28 Sept 2026</span></span></li>
+        <li id="s6"><span class="sn">6</span><span><a href="https://www.theguardian.com/uk-news/2026/sep/29/raf-fairford-uk-bomb-plot-marco-rubio-claims-foreign-actor" rel="noopener">Rubio says foreign actor was ‘clearly’ behind suspected RAF Fairford plot</a><br><span class="meta">The Guardian, 29 Sept 2026</span></span></li>
+        <li id="s7"><span class="sn">7</span><span><a href="https://www.theguardian.com/uk-news/2026/sep/28/uk-security-forces-raf-fairford-suspected-bomb-plot-wes-streeting-defence-secretary" rel="noopener">UK security forces were aware of RAF Fairford suspected bomb plot, hints defence secretary</a><br><span class="meta">The Guardian, 28 Sept 2026</span></span></li>
+        <li id="s8"><span class="sn">8</span><span><a href="https://www.pbs.org/newshour/world/uk-police-say-5-men-arrested-near-a-u-s-run-air-base-will-be-released-on-bail" rel="noopener">UK police say 5 men arrested near a U.S.-run air base will be released on bail</a><br><span class="meta">Associated Press, via PBS NewsHour, 28 Sept 2026</span> <span class="meta">· Places Trump’s Sunday remarks in Chicago; reports PA’s unsourced line on explosives</span></span></li>
+        <li id="s9"><span class="sn">9</span><span><a href="https://www.cnn.com/2026/09/28/uk/raf-fairford-key-questions-terror-suspects-arrests-intl" rel="noopener">Rubio says ‘foreign actor’ involved in alleged terror plot targeting British base used by US</a><br><span class="meta">CNN, 28 Sept 2026</span></span></li>
+        <li id="s10"><span class="sn">10</span><span><a href="https://www.cbc.ca/news/world/uk-raf-fairford-incident-9.7360562" rel="noopener">British police release 5 London-based men after arrests near airbase used by U.S.</a><br><span class="meta">Reuters, via CBC News, 28–29 Sept 2026</span> <span class="meta">· Rubio quote from Fox News; US embassy alert</span></span></li>
+        <li id="s11"><span class="sn">11</span><span><a href="https://www.theguardian.com/world/2026/mar/07/us-bomber-lands-in-uk-after-warning-of-surge-in-strikes-on-iran" rel="noopener">Four US bombers land at RAF base in UK after warning of surge in strikes on Iran</a><br><span class="meta">The Guardian (Sammy Gecsoyler, Nadeem Badshah), 7 March 2026</span> <span class="meta">· B-1 Lancers arrive; Ministry of Defence on “defensive operations”</span></span></li>
+        <li id="s12"><span class="sn">12</span><span><a href="https://www.huffingtonpost.co.uk/entry/donald-trump-raf-fairford-terror-plot_uk_6abad400e4b075cb0a40a043" rel="noopener">Donald Trump Hits Out At Decision To Bail Five Men Over Suspected Terror Plot At RAF Base</a><br><span class="meta">HuffPost UK, 28 Sept 2026</span> <span class="meta">· Oval Office remarks, Monday</span></span></li>
+        <li id="s13"><span class="sn">13</span><span><a href="https://abcnews.com/International/tipster-raf-fairford-plot-partial-picture-british-minister/story?id=136815488" rel="noopener">UK air base latest: Suspects arrested on terror charges released on bail, police say</a><br><span class="meta">ABC News, 28 Sept 2026</span> <span class="meta">· Iranian embassy statement; Streeting on BBC</span></span></li>
+        <li id="s14"><span class="sn">14</span><span><a href="https://www.theguardian.com/politics/live/2026/sep/27/uk-politics-live-labour-party-conference-andy-burnham-angela-rayner-latest-news-updates" rel="noopener">UK politics live: Pat McFadden tells Labour activists they should not defend benefits system ‘status quo’</a><br><span class="meta">The Guardian live blog, 27 Sept 2026</span> <span class="meta">· Prime minister’s statement</span></span></li>
+        <li id="s15"><span class="sn">15</span><span><a href="https://www.theguardian.com/uk-news/live/2026/sep/29/raf-fairford-counter-terror-suspected-plot-iran-donald-trump-marco-rubio-latest-news-updates" rel="noopener">RAF Fairford: Rubio says ‘foreign actor’ behind suspected plot as some evacuated residents begin to return home – as it happened</a><br><span class="meta">The Guardian live blog, 29 Sept 2026</span> <span class="meta">· Lucy Powell on Sky News</span></span></li>
+        <li id="s16"><span class="sn">16</span><span><a href="https://leadstories.com/hoax-alert/2026/09/fact-check-ai-enhanced-picture-of-fairford-suspects-not-original-photograph.html" rel="noopener">Fact Check: AI-Enhanced Picture Of RAF Fairford Suspects Is NOT An Original Photograph</a><br><span class="meta">Lead Stories, 27 Sept 2026</span> <span class="meta">· Fact-check</span></span></li>
+        <li id="s17"><span class="sn">17</span><span><a href="https://www.france24.com/en/raf-fairford-ai-enhanced-photos-of-suspects-fuel-false-claims-about-their-religion-1" rel="noopener">RAF Fairford: AI-enhanced photos of suspects fuel false claims about their religion</a><br><span class="meta">France 24, Truth or Fake, 28 Sept 2026</span> <span class="meta">· Fact-check. Headline taken from the web address; the site blocked our reader</span></span></li>
+        <li id="s18"><span class="sn">18</span><span><a href="https://www.theguardian.com/world/2026/sep/28/questions-remain-over-irans-link-to-alleged-raf-fairford-bomb-plot" rel="noopener">Questions remain over Iran’s link to alleged RAF Fairford bomb plot</a><br><span class="meta">The Guardian (Dan Sabbagh), 28 Sept 2026</span></span></li>
+        <li id="s19"><span class="sn">19</span><span><a href="https://www.huffingtonpost.co.uk/entry/bbc-security-expert-donald-trump-raf-fairford_uk_6ab9fe64e4b0d1543f54c698" rel="noopener">BBC Security Expert Denies Trump RAF Fairford Terror Plot Claims</a><br><span class="meta">HuffPost UK, 28 Sept 2026</span> <span class="meta">· Trump’s “under view” quote; Frank Gardner citing Whitehall</span></span></li>
+        <li id="s20"><span class="sn">20</span><span><a href="https://www.aol.com/articles/bomb-squad-sent-village-near-074217000.html" rel="noopener">Counter-terror police investigate Iran link to suspected RAF base bomb plot</a><br><span class="meta">The Telegraph, via AOL, 27 Sept 2026</span> <span class="meta">· Quotes temporary chief constable Maggie Blyth</span></span></li>
+        <li id="s21"><span class="sn">21</span><span><a href="https://www.thenationalnews.com/news/uk/2026/09/28/farmer-who-raised-alarm-at-fairford-airbase-says-civilian-staff-had-been-withdrawn/" rel="noopener">Five arrests at airbase used by US military raises questions over UK security</a><br><span class="meta">The National, 28 Sept 2026</span> <span class="meta">· Quotes DAC Vicki Evans</span></span></li>
+      </ol>
+      <h3 style="margin-top:32px">Law and guidance</h3>
+      <ol class="sources">
+        <li id="l1"><span class="sn">L1</span><span><a href="https://www.legislation.gov.uk/ukpga/1981/49/contents" rel="noopener">Contempt of Court Act 1981, sections 1, 2, 4 and 14</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">Strict liability rule; “substantial risk” test; court reports; penalties</span></span></li>
+        <li id="l2"><span class="sn">L2</span><span><a href="https://www.legislation.gov.uk/ukpga/1981/49/schedule/1" rel="noopener">Contempt of Court Act 1981, schedule 1, paragraphs 3–4</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">Criminal proceedings become active on “arrest without warrant”</span></span></li>
+        <li id="l3"><span class="sn">L3</span><span><a href="https://www.legislation.gov.uk/uksi/2018/226/regulation/4" rel="noopener">Contempt of Court Act 1981 (Amendment) Regulations, SI 2018/226, reg 4</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">From 14 March 2018, cases in England and Wales stay active until the suspect is told they will not be prosecuted (sch 1 para 7(ca))</span></span></li>
+        <li id="l4"><span class="sn">L4</span><span><a href="https://caselaw.nationalarchives.gov.uk/ewhc/admin/2011/2074" rel="noopener">Attorney General v MGN Ltd and News Group Newspapers [2011] EWHC 2074 (Admin)</a><br><span class="meta">National Archives, Find Case Law</span><br><span class="meta">The Christopher Jefferies case</span></span></li>
+        <li id="l5"><span class="sn">L5</span><span><a href="https://www.legislation.gov.uk/ukpga/1981/49/section/5" rel="noopener">Contempt of Court Act 1981, section 5</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">Discussion of public affairs</span></span></li>
+        <li id="l6"><span class="sn">L6</span><span><a href="https://www.college.police.uk/app/media-and-communications/arrests-charges-judicial-outcomes" rel="noopener">Authorised Professional Practice: arrests, charges and judicial outcomes</a><br><span class="meta">College of Policing</span><br><span class="meta">Names released before charge “only… in exceptional circumstances”</span></span></li>
+        <li id="l7"><span class="sn">L7</span><span><a href="https://caselaw.nationalarchives.gov.uk/uksc/2022/5" rel="noopener">Bloomberg LP v ZXC [2022] UKSC 5</a><br><span class="meta">National Archives, Find Case Law</span><br><span class="meta">Para 146: a reasonable expectation of privacy before charge, as a “legitimate starting point”</span></span></li>
+        <li id="l8"><span class="sn">L8</span><span><a href="https://www.gov.uk/guidance/the-law-officers-approach-to-contempt-of-court-referrals" rel="noopener">The Law Officers’ approach to contempt of court referrals</a><br><span class="meta">Attorney General’s Office, gov.uk</span><br><span class="meta">Plus the AGO contempt fact sheet</span></span></li>
+        <li id="l9"><span class="sn">L9</span><span><a href="https://www.cps.gov.uk/prosecution-guidance/contempt-court" rel="noopener">Contempt of court: legal guidance</a><br><span class="meta">Crown Prosecution Service</span></span></li>
+        <li id="l10"><span class="sn">L10</span><span><a href="https://www.legislation.gov.uk/ukpga/1984/60/section/41" rel="noopener">Police and Criminal Evidence Act 1984, sections 41–44</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">24, 36 and 96-hour limits</span></span></li>
+        <li id="l11"><span class="sn">L11</span><span><a href="https://www.legislation.gov.uk/ukpga/2000/11/schedule/8" rel="noopener">Terrorism Act 2000, section 41 and schedule 8</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">48 hours, extendable by a judge to 14 days</span></span></li>
+        <li id="l12"><span class="sn">L12</span><span><a href="https://www.legislation.gov.uk/ukpga/1984/60/section/51" rel="noopener">Police and Criminal Evidence Act 1984, section 51</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">PACE detention and bail rules do not apply to Terrorism Act section 41 detention</span></span></li>
+        <li id="l13"><span class="sn">L13</span><span><a href="https://www.legislation.gov.uk/ukpga/1984/60/section/47ZB" rel="noopener">Police and Criminal Evidence Act 1984, sections 47ZB, 47ZC and 50A</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">Pre-charge bail: conditions, three-month first period, extensions. End-of-December date is our own calculation</span></span></li>
+        <li id="l14"><span class="sn">L14</span><span><a href="https://www.legislation.gov.uk/ukpga/Vict/46-47/3/section/4" rel="noopener">Explosive Substances Act 1883, sections 4 and 7</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">Maximum life since 2015; Attorney General’s consent needed</span></span></li>
+        <li id="l15"><span class="sn">L15</span><span><a href="https://www.legislation.gov.uk/ukpga/2006/11/section/5" rel="noopener">Terrorism Act 2006, sections 5 and 19</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">Maximum life; DPP consent, with AG permission where a foreign country is involved</span></span></li>
+        <li id="l16"><span class="sn">L16</span><span><a href="https://www.legislation.gov.uk/ukpga/2000/11/section/1" rel="noopener">Terrorism Act 2000, section 1</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">Definition of terrorism; section 1(3) on firearms and explosives</span></span></li>
+        <li id="l17"><span class="sn">L17</span><span><a href="https://www.legislation.gov.uk/ukpga/1984/60/section/47" rel="noopener">Police and Criminal Evidence Act 1984, section 47(2)</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">Re-arrest on new evidence</span></span></li>
+        <li id="l18"><span class="sn">L18</span><span><a href="https://www.cps.gov.uk/special-crime-and-counter-terrorism-division-scctd" rel="noopener">Special Crime and Counter Terrorism Division</a><br><span class="meta">Crown Prosecution Service</span></span></li>
+        <li id="l19"><span class="sn">L19</span><span><a href="https://www.legislation.gov.uk/ukpga/2017/3/section/68" rel="noopener">Policing and Crime Act 2017, section 68</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">Breaking pre-charge bail travel conditions in terrorism cases</span></span></li>
+        <li id="l20"><span class="sn">L20</span><span><a href="https://cdn.websitebuilder.service.justice.gov.uk/uploads/sites/54/2025/11/Contempt-of-Court-P1-Summary-Nov-25.pdf" rel="noopener">Contempt of Court, Part 1: summary (Law Com No 423)</a><br><span class="meta">Law Commission</span><br><span class="meta">18 Nov 2025. A recommendation, not law</span></span></li>
+        <li id="l21"><span class="sn">L21</span><span><a href="https://www.legislation.gov.uk/ukpga/2023/32/section/31" rel="noopener">National Security Act 2023, section 31</a><br><span class="meta">legislation.gov.uk</span><br><span class="meta">The “foreign power condition”</span></span></li>
+        <li id="l22"><span class="sn">L22</span><span><a href="https://www.gov.uk/government/news/media-advisory-notice-trial-of-axel-rudakubana" rel="noopener">Media advisory notice: trial of Axel Rudakubana</a><br><span class="meta">Attorney General’s Office, gov.uk</span><br><span class="meta">16 Jan 2025</span></span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="block" aria-labelledby="about-h" id="about">
+  <div class="wrap">
+    <div class="measure">
+      <p class="sec-num">About this page</p>
+      <h2 id="about-h">How it was made</h2>
+      <p>I asked Claude Code for this page at about 4pm on Tuesday 29 September 2026, as a worked example for the AI working group. The test: can an AI agent, in about an hour, turn a fast, messy, legally sensitive story into something clear, sourced and safe to read?</p>
+      <p>Claude sent three research agents out at once. One built the timeline from police statements and news reports. One gathered what politicians and others had claimed, and what fact-checkers had found. One read the law itself: the Contempt of Court Act, the Police and Criminal Evidence Act, the Terrorism Acts and the key court judgments. They drew on the Guardian’s own reporting through its Content API, on wires and broadcasters, and on legislation.gov.uk. Claude then checked the main facts against the two central Guardian reports by hand, and built the page.</p>
+      <p>The maps use Natural Earth coastlines and OpenStreetMap data. The page is plain HTML, CSS and JavaScript. It works without JavaScript, by keyboard and with a screen reader, and it stills its motion for people who ask their device to reduce it.</p>
+      <h3 style="margin-top:24px">What to be wary of</h3>
+      <p>No lawyer has read this, and no editor has signed it off. The legal section rests on the text of the law, but applying it to a live case is a lawyer’s job. It is a snapshot, not a live page, and the story will move. If you spot an error, tell me.</p>
+      <h3 style="margin-top:24px">Diary</h3>
+      <ol class="diary">
+        <li><time datetime="2026-09-29">Tuesday 29 September 2026</time><strong>First version</strong><span class="milestone">Milestone</span><br>Built in about an hour from one prompt. The hardest calls were about what to leave out: we kept to what police and ministers said on the record, labelled every claim, and left out names, photos and talk of evidence, since the case is already live in law.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">An example made for the ELG AI working group. Not published journalism. Correct at 4pm BST, Tuesday 29 September 2026.</div>
+</footer>
+
+<script>
+window.FAIRFORD_MAP_VIEWS = {"uk": {"k": 1, "tx": 0, "ty": 0}, "south": {"k": 4.2, "tx": -912.0, "ty": -1689.8}, "base": {"k": 7, "tx": -1471.6, "ty": -3003}};
+window.FAIRFORD_LOCAL = [
+  { lat: 51.6851, lon: -1.7865, label: 'RAF Fairford', colour: '#052962', dir: 'top' },
+  { lat: 51.7108, lon: -1.7820, label: 'Fairford', colour: '#545454', r: 5, dir: 'right' },
+  { lat: 51.6886, lon: -1.7549, label: 'Whelford', colour: '#c70000', dir: 'right' }
+];
+window.FAIRFORD_TESTER = [{"text": "All five men are British nationals from London.", "answer": "official", "why": "Counter Terrorism Policing said so at 12.30pm on Monday: three from Westminster, one from Camden, one from Willesden."}, {"text": "Police were first alerted by a phone call.", "answer": "official", "why": "Police say they got a call at about 12.45am on Sunday about three suspicious vehicles heading towards the base. British officials say the arrests were not led by intelligence."}, {"text": "A foreign state was behind it.", "answer": "claim", "why": "Marco Rubio said so on Fox News, without evidence. British police say they are keeping an open mind and have named no state. Iran’s embassy has denied any link."}, {"text": "The men had been watched by intelligence agencies for a long time.", "answer": "claim", "why": "Donald Trump said “we had them under view for a long time”. Briefings to the Guardian, Telegraph and BBC say the operation was not led by intelligence. Police have not commented."}, {"text": "Viable explosives were found in the vans.", "answer": "unknown", "why": "Police have not said either way on the record. Early reports said the material looked like bombs; later reports, citing unnamed sources, said no explosives were found."}, {"text": "The men have been released on bail with conditions.", "answer": "official", "why": "Assistant Commissioner Laurence Taylor said so on Monday, calling the conditions “stringent”. He has not said what they are."}, {"text": "The men came to Britain on small boats.", "answer": "claim", "why": "Nigel Farage linked the arrests to small boats. Police say all five are British nationals from London."}, {"text": "Online photos show the suspects’ faces.", "answer": "claim", "why": "Fact-checkers at Lead Stories and France 24 found the sharp images were made with AI from one dark, blurred photo. Two versions even showed different faces."}, {"text": "The men will be charged.", "answer": "unknown", "why": "No one knows. They remain under investigation; prosecutors, not police, will decide on charges."}];
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="app.js?v=1790696526"></script>
+</body>
+</html>
