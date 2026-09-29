@@ -28,6 +28,11 @@ python3 -m http.server 8811
 
 ## Changelog
 
+### 29 September 2026, evening: no agenda slide
+
+The agenda slide felt unnecessary. The cover now names the two parts in a
+line each, and the deck is thirteen slides.
+
 ### 29 September 2026, evening: finer points
 
 Layer 1 is now called the LLM, which fits its circle and says what it is.
