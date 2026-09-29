@@ -3230,3 +3230,11 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .slide--risks .risks-lead { margin-bottom: 26px; }
 .slide--jagged .dials li { padding: 12px 0 12px 40px; }
 .slide--jagged .jag-close { margin-top: 18px; }
+.guess-line { margin-bottom: 40px; }
+.odds-bar .seg .bar { height: 54px; }
+.slide--layer[data-layer="1"] .slide-body { padding: 20px 0 30px; }
+.slide--layer[data-layer="1"] .guess-note p { font-size: 28px; margin-bottom: 16px; }
+/* The earlier squeeze was chasing a false reading; restore the air */
+.guess-line { margin-bottom: 52px; }
+.odds-bar .seg .bar { height: 64px; }
+.slide--layer[data-layer="1"] .slide-body { padding: 40px 0 28px; }
