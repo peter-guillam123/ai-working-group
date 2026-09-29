@@ -28,6 +28,15 @@ python3 -m http.server 8811
 
 ## Changelog
 
+### 29 September 2026, late: read it like an editor
+
+The checklist slide was too thin and too much like a marking scheme. It
+is now three groups of questions to hold while working: can we trust it,
+how does it compare with us, where is it useful. Under them, six prompts
+to copy that show what bending to one reader can do: explain it simply,
+"I live near Fairford", the case that it's overblown, who wants what,
+the next question, three sentences for a family WhatsApp.
+
 ### 29 September 2026, late: how good are AI Overviews?
 
 The room thinks AI Overviews are terrible and typical of AI. A new slide

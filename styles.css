@@ -3467,3 +3467,21 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .ev-figs li { padding: 16px 0; }
 .ev-n { font-size: 84px; }
 .ev-fails .ev-note { margin: 14px 0 0; padding-top: 16px; border-top: 2px solid var(--ink); font-size: 24px; line-height: 1.3; }
+
+/* Read it like an editor: three groups of questions, then prompts */
+.slide--reflect .slide-title { margin-bottom: 36px; }
+.reflect { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 60px; }
+.reflect-col { border-top: 4px solid var(--ink); padding-top: 18px; }
+.reflect-col:nth-child(2) { border-top-color: var(--news-red); }
+.reflect-col:nth-child(3) { border-top-color: var(--guardian-blue); }
+.reflect-col h3 { font-family: var(--display); font-weight: 500; font-size: 42px; line-height: 1.05; margin: 0 0 14px; }
+.reflect-col:nth-child(2) h3 { color: var(--news-red); }
+.reflect-col:nth-child(3) h3 { color: var(--guardian-blue); }
+.reflect-col ul { list-style: none; margin: 0; padding: 0; }
+.reflect-col li { font-family: var(--body); font-size: 25px; line-height: 1.38; color: var(--ink-soft); padding: 7px 0 7px 22px; position: relative; }
+.reflect-col li::before { content: ''; position: absolute; left: 0; top: 0.72em; width: 8px; height: 8px; background: currentColor; opacity: 0.5; }
+.reflect-asks { margin-top: 44px; }
+.asks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px var(--grid-gutter); }
+.slide--reflect .tweak { padding: 14px 22px 16px; gap: 5px; border-top-width: 4px; }
+.slide--reflect .tweak-say { font-size: 22px; line-height: 1.36; }
+.reflect-col h3 { font-size: 38px; white-space: nowrap; }
