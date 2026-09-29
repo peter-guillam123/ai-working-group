@@ -33,7 +33,7 @@ Company user numbers are self-reported, unaudited, and each company counts diffe
 
 | Claim | Source | Label |
 |---|---|---|
-| Three stages of training; "grown, not built"; next-word odds are illustrative | AI risk field guide, part one | field guide |
+| Three stages of training; "grown, not built"; the next-word toy and its odds (illustrative, labelled on the slide) | AI risk field guide, part one and plate 1 | field guide |
 | o1, 12 Sep 2024 | OpenAI, "Learning to reason with LLMs" | field guide / background |
 | DeepSeek R1, 20 Jan 2025, open and cheap | DeepSeek-AI, arXiv 2501.12948 | field guide / background |
 | Gemini Deep Think, IMO gold standard, July 2025 (35/42) | Google DeepMind, 21 Jul 2025. https://deepmind.google/discover/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/ | read |

@@ -28,6 +28,16 @@ python3 -m http.server 8811
 
 ## Changelog
 
+### 29 September 2026, evening: the word toy comes over
+
+The layer 1 slide now carries the next-word toy from plate 1 of the AI
+risk field guide, restyled for the deck: pick a word or let the model
+roll the dice, and turn the risk up to wild to see the same start end
+differently. Space and Enter on its buttons press the button rather than
+turning the slide, and it resets each time the slide comes round. The
+risks lead went back to paper colours; ink with yellow on a paper slide
+was two styles crossing.
+
 ### 29 September 2026, evening: no agenda slide
 
 The agenda slide felt unnecessary. The cover now names the two parts in a

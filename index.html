@@ -212,26 +212,32 @@
     <h2 class="slide-title" data-split>It guesses the next <em>word</em>.</h2>
 
     <div class="slide-body">
-      <div class="l1-top">
-        <div class="guess2">
-          <p class="guess-line" data-fx="rise" style="--d:260ms">The cat sat on the <span class="pick">mat</span></p>
-          <p class="wg-label" data-fx="rise" style="--d:420ms">Its odds for the next word · made up, to show the idea</p>
-          <div class="odds-bar" role="img" aria-label="Odds for the next word: mat 52%, sofa 21%, windowsill 13%, keyboard 9%, other words 5%">
-            <div class="seg s1" style="--w:52%" data-fx="fade" style="--d:500ms"><span class="bar" data-fx="bar" style="--d:500ms"></span><span class="lab"><span class="sw">mat</span><span class="sp">52%</span></span></div>
-            <div class="seg s2" style="--w:21%" data-fx="fade" style="--d:620ms"><span class="bar" data-fx="bar" style="--d:620ms"></span><span class="lab"><span class="sw">sofa</span><span class="sp">21%</span></span></div>
-            <div class="seg s3" style="--w:13%" data-fx="fade" style="--d:740ms"><span class="bar" data-fx="bar" style="--d:740ms"></span><span class="lab"><span class="sw">windowsill</span><span class="sp">13%</span></span></div>
-            <div class="seg s4" style="--w:9%" data-fx="fade" style="--d:860ms"><span class="bar" data-fx="bar" style="--d:860ms"></span><span class="lab"><span class="sw">keyboard</span><span class="sp">9%</span></span></div>
-            <div class="seg s5" style="--w:5%" data-fx="fade" style="--d:980ms"><span class="bar" data-fx="bar" style="--d:980ms"></span><span class="lab"><span class="sp">other</span></span></div>
+      <div class="pred" id="pred" data-fx="rise" style="--d:300ms">
+        <div class="pred-left">
+          <p class="pred-sentence">The cat sat on the <span class="pred-caret" aria-hidden="true"></span></p>
+          <div class="pred-controls">
+            <button class="pred-pick" type="button">Let the model choose</button>
+            <button class="pred-reset" type="button">Start again</button>
           </div>
+          <div class="pred-temp" role="group" aria-label="How much risk it takes">
+            <span class="pred-temp-label">How much risk it takes</span>
+            <button type="button" data-t="cautious" aria-pressed="false">Cautious</button>
+            <button type="button" data-t="normal" aria-pressed="true">Normal</button>
+            <button type="button" data-t="wild" aria-pressed="false">Wild</button>
+          </div>
+          <p class="pred-live vh" aria-live="polite"></p>
         </div>
-        <div class="guess-note" data-fx="rise" style="--d:1000ms">
-          <p>It picks one, adds it, and does it all again: a word at a time, weighing <strong>everything written so far</strong>.</p>
-          <p>Nobody wrote its rules. It learned them, and even its makers can't fully read how.</p>
+        <div class="pred-right">
+          <p class="pred-q">What comes next? Its odds:</p>
+          <div class="pred-bars">
+            <p class="pred-static">mat 52% · sofa 21% · windowsill 13% · keyboard 9% · everything else 5%</p>
+          </div>
+          <p class="wg-source pred-note">The odds are made up, to show the idea. A real model picks from tens of thousands of word-pieces, every time.</p>
         </div>
       </div>
 
       <div class="grown">
-        <p class="wg-label" data-fx="rise" style="--d:1100ms">Grown, not built: three stages of training</p>
+        <p class="wg-label" data-fx="rise" style="--d:1100ms">Grown, not built: nobody wrote its rules. Three stages of training</p>
         <ol class="grown-steps">
           <li data-fx="rise" style="--d:1200ms"><h4>Read everything</h4><p>Predicting the next word across much of the internet. Knowledge, but no manners.</p></li>
           <li data-fx="rise" style="--d:1320ms"><h4>Learn what people like</h4><p>People rate its answers, and it is nudged towards the ones they prefer.</p></li>
@@ -585,6 +591,7 @@
 
 <script src="deck-stage.js"></script>
 <script src="prompt-copy.js"></script>
+<script src="predictor.js"></script>
 <script src="motion.js"></script>
 <script src="grid-overlay.js"></script>
 
