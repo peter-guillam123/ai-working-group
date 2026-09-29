@@ -103,3 +103,10 @@ nothing hides, `prefers-reduced-motion` gets a static deck.
 - The deck deploys to GitHub Pages on push to `main`.
 - Keep a reverse-chronological changelog in `README.md`, written in the
   deck owner's voice — what was built and why, updated with the work.
+
+## This deck: publishing
+
+- GitHub Pages lets browsers cache files for ten minutes, so a new page can
+  arrive with an old stylesheet. Before each push that changes `styles.css`
+  or a script, bump the `?v=` stamp on every asset link in `index.html`
+  (use the current date and time, `YYYYMMDDHHMM`).
