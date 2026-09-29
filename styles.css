@@ -3158,3 +3158,72 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 /* Reasoning slide: the one-line explanation under the two answers */
 .l2-how { margin: 22px 0 6px; font-family: var(--body); font-size: 25px; line-height: 1.4; color: var(--ink-soft); padding-left: 18px; border-left: 4px solid var(--l2); }
 .l2-how strong { color: var(--ink); }
+
+/* ---------- second polish pass ---------- */
+/* Timeline key: hollow rings for the layers, a filled dot for risk,
+   matching the dots on the line */
+.tl-key i { width: 20px; height: 20px; border-radius: 50%; background: var(--paper) !important; border: 5px solid var(--c); box-sizing: border-box; }
+.tl-key i.fill { background: var(--c) !important; }
+
+/* Layer 1: likely words and their odds in two aligned columns */
+.guess { column-gap: 30px; }
+.guess-words { display: grid; grid-template-columns: auto auto; column-gap: 20px; row-gap: 2px; align-items: baseline; }
+.guess-words li { display: contents; }
+.guess-words .gw { font-family: var(--display); font-weight: 500; line-height: 1.02; letter-spacing: -0.015em; }
+.guess-words .pc { font-family: var(--mono); font-size: 24px; color: var(--ink-mute); }
+.guess-words li:nth-child(1) .gw { font-size: 88px; color: var(--l1); }
+.guess-words li:nth-child(1) .pc { color: var(--l1); font-weight: 700; }
+.guess-words li:nth-child(2) .gw { font-size: 66px; color: rgba(18,18,18,0.58); }
+.guess-words li:nth-child(3) .gw { font-size: 52px; color: rgba(18,18,18,0.42); }
+.guess-words li:nth-child(4) .gw { font-size: 42px; color: rgba(18,18,18,0.3); }
+.guess-words li:nth-child(n+2) .pc { color: rgba(18,18,18,0.45); }
+
+/* Risks: the lead becomes an ink panel, so the space in it reads as
+   deliberate and the two voices get real contrast */
+.slide--risks .risks-lead {
+  width: 640px; padding: 52px 56px 56px; margin-bottom: 6px;
+  background: radial-gradient(120% 95% at 28% 18%, #1c1c1a 0%, var(--ink) 55%, #0b0b0a 100%);
+  color: var(--paper); box-shadow: var(--shadow-frame);
+}
+.slide--risks .risks-lead .kicker { color: var(--guardian-yellow); }
+.slide--risks .risks-lead .slide-title { color: var(--paper); }
+.slide--risks .risks-lead .slide-title em { color: var(--guardian-yellow); }
+.slide--risks .contrast { margin-bottom: 0; }
+.slide--risks .contrast .a { color: rgba(244,239,230,0.6); }
+.slide--risks .contrast .b { color: var(--paper); }
+.slide--risks .contrast .b em { color: var(--guardian-yellow); }
+.slide--risks { gap: 90px; }
+
+/* Final slide: what changes from tool to tool, one row per layer */
+.slide--jagged .jag { grid-template-columns: 1fr 680px; gap: 80px; }
+.dials { list-style: none; margin: 0; padding: 0; }
+.dials li { position: relative; padding: 14px 0 14px 40px; border-top: 1px solid var(--paper-rule); }
+.dials li:first-child { border-top: 3px solid var(--ink); }
+.dials li::before {
+  content: ''; position: absolute; left: 0; top: 22px;
+  width: 22px; height: 22px; border-radius: 50%; border: 5px solid var(--c); box-sizing: border-box; background: var(--paper);
+}
+.dials h4 { font-family: var(--display); font-weight: 500; font-size: 32px; line-height: 1.08; margin: 0 0 4px; }
+.dials p { margin: 0; font-family: var(--body); font-size: 21px; line-height: 1.38; color: var(--ink-soft); }
+
+/* Layer 1: the chosen word, then one bar split by the odds */
+.guess-line { font-family: var(--display); font-weight: 500; font-size: 92px; line-height: 1; letter-spacing: -0.02em; margin: 0 0 56px; color: var(--ink); white-space: nowrap; }
+.guess-line .pick { color: var(--l1); background: linear-gradient(transparent 88%, rgba(5,41,98,0.25) 88%); padding: 0 4px; }
+.odds-bar { display: flex; width: 100%; gap: 4px; }
+.odds-bar .seg { width: var(--w); flex: none; }
+.odds-bar .seg .bar { display: block; height: 64px; transform-origin: left center; }
+.odds-bar .s1 .bar { background: var(--l1); }
+.odds-bar .s2 .bar { background: var(--guardian-blue-soft); }
+.odds-bar .s3 .bar { background: rgba(74,111,165,0.62); }
+.odds-bar .s4 .bar { background: rgba(74,111,165,0.4); }
+.odds-bar .s5 .bar { background: var(--paper-rule); }
+.odds-bar .lab { display: block; padding-top: 12px; white-space: nowrap; }
+.odds-bar .sw { display: block; font-family: var(--display); font-weight: 500; font-size: 32px; line-height: 1.1; color: var(--ink); }
+.odds-bar .s1 .sw { color: var(--l1); font-size: 40px; }
+.odds-bar .sp { display: block; font-family: var(--mono); font-size: 20px; color: var(--ink-mute); margin-top: 2px; }
+.odds-bar .s1 .sp { color: var(--l1); font-weight: 700; }
+.slide--layer[data-layer="1"] .l1-top { align-items: start; grid-template-columns: 1fr 460px; gap: 90px; }
+.odds-bar .s5 .lab { display: none; }
+.odds-bar .s3 .sw, .odds-bar .s4 .sw { font-size: 24px; }
+.odds-bar .s4 .lab { padding-left: 6px; }
+.guess-line .pick { background: none; border-bottom: 6px solid var(--l1); padding: 0 2px; }

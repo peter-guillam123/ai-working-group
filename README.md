@@ -28,6 +28,15 @@ python3 -m http.server 8811
 
 ## Changelog
 
+### 29 September 2026, evening: finer points
+
+Layer 1 is now called the LLM, which fits its circle and says what it is.
+The reasoning slide says plainly that it's the same LLM writing out a
+plan and its working first. The next-word odds became one bar split by
+probability. The risks lead became an ink panel. The timeline key matches
+the dots. The final slide's right side now shows how tools differ on each
+of the four layers, including that more thinking isn't always better.
+
 ### 29 September 2026, later: one idea, polished
 
 Narrowed part one to a single job: showing that AI is no longer just a

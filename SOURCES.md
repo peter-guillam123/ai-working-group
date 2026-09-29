@@ -83,6 +83,9 @@ ChatGPT (Nov 2022), MCP (Nov 2024), Claude Code (Feb 2025): background. Claude O
 |---|---|---|
 | The jagged line and its task labels | Illustrative, labelled as such on the slide | ours |
 | Consultants using AI were 19 percentage points less likely to get a correct answer on a task outside the AI's ability; over 40% higher quality on tasks inside it; 758 BCG consultants | Dell'Acqua et al, "Navigating the Jagged Technological Frontier", Harvard Business School working paper 24-013, September 2023 | outlet (HBS page blocked; abstract confirmed via several sources) |
-| The four kinds of tool and how long each takes | General description, not a measurement | ours |
+| Newest, largest models usually better and often barely slower; a tool answering billions of searches must be quick and cheap | General description, not a measurement | ours |
+| Anthropic warns its top thinking setting can overthink; its newest Opus (5.5) defaults to medium effort | Anthropic, Effort docs: max effort "can lead to overthinking" on some tasks (written for Opus 4.7); Opus 5.5 defaults to medium. https://platform.claude.com/docs/en/build-with-claude/effort | read |
+| Overthinking in reasoning models generally | Chen et al, "Do NOT Think That Much for 2+3=?", arXiv 2412.21187, December 2024 | read (abstract) |
+| "GPT-6 Astra thinking for minutes" | GPT-6 Astra, OpenAI, 3 Sep 2026 (see research notes) | read (system card) |
 
 Full research notes, with more than made the slides, are in `../research/`, outside the repo.
