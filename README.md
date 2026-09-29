@@ -5,6 +5,11 @@ future of our journalism, 30 September 2026. Part one is a twenty-minute
 overview of where AI is now. Part two, still to build, puts the leading
 models to work on the same news story.
 
+Live at [peter-guillam123.github.io/ai-working-group](https://peter-guillam123.github.io/ai-working-group/),
+behind the same light password gate as the board and vibe coding decks.
+Either of their passwords opens it. The gate is a deterrent, not
+security: the slide text still reaches the browser.
+
 Built from the Guardian deck template, second edition, by way of the vibe
 coding workshop deck. The house rules live in `CLAUDE.md`. Every figure has
 a source in `SOURCES.md`.
