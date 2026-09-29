@@ -1,0 +1,246 @@
+<!DOCTYPE html><html lang="en-GB"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About · AI working group, session 1</title>
+<meta name="description" content="What the AI working group deck is, how it was made, and a diary of what changed and why.">
+<link rel="preconnect" href="https://assets.guim.co.uk" crossorigin>
+<style>
+  /* The deck's stylesheet is built around a fixed 1920×1080 stage, so
+     this page carries its own layout. The fonts, the palette and the
+     editorial register are deliberately the same. */
+
+  @font-face {
+    font-family: 'GH Guardian Headline';
+    src: url('https://assets.guim.co.uk/static/frontend/fonts/guardian-headline/noalts-not-hinted/GHGuardianHeadline-Medium.woff2') format('woff2');
+    font-weight: 500; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'GH Guardian Headline';
+    src: url('https://assets.guim.co.uk/static/frontend/fonts/guardian-headline/noalts-not-hinted/GHGuardianHeadline-Bold.woff2') format('woff2');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'GuardianTextEgyptian';
+    src: url('https://assets.guim.co.uk/static/frontend/fonts/guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Regular.woff2') format('woff2');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'GuardianTextEgyptian';
+    src: url('https://assets.guim.co.uk/static/frontend/fonts/guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Bold.woff2') format('woff2');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'GuardianTextSans';
+    src: url('https://assets.guim.co.uk/static/frontend/fonts/guardian-textsans/noalts-not-hinted/GuardianTextSans-Bold.woff2') format('woff2');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+
+  :root {
+    --paper: #F4EFE6;
+    --paper-deep: #E8DFD0;
+    --paper-rule: #D0C4AE;
+    --ink: #121212;
+    --ink-soft: #3d3a35;
+    --ink-mute: #6f6b63;
+    --guardian-blue: #052962;
+    --guardian-yellow: #FFE500;
+    --news-red: #C70000;
+    --eco-green: #22874d;
+    --display: 'GH Guardian Headline', Georgia, 'Times New Roman', serif;
+    --body: 'GuardianTextEgyptian', Georgia, 'Times New Roman', serif;
+    --ui: 'GuardianTextSans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --mono: 'Menlo', 'SF Mono', 'Courier New', monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 19px;
+    line-height: 1.62;
+  }
+
+  .band { height: 8px; display: flex; }
+  .band i { flex: 1; }
+  .band i:first-child { background: var(--guardian-blue); flex: 3; }
+  .band i:last-child { background: var(--guardian-yellow); }
+
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 24px 96px; }
+
+  header.masthead { padding: 56px 0 34px; border-bottom: 2px solid var(--ink); margin-bottom: 40px; }
+  .eyebrow {
+    font-family: var(--ui);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--news-red);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(38px, 7vw, 60px);
+    line-height: 1.04;
+    letter-spacing: -0.015em;
+    margin: 0 0 18px;
+  }
+  h1 em { color: var(--news-red); font-style: italic; }
+  .standfirst {
+    font-size: clamp(19px, 2.4vw, 22px);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 34rem;
+  }
+
+  h2 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(26px, 4vw, 33px);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin: 48px 0 14px;
+  }
+  h3 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(21px, 3vw, 25px);
+    line-height: 1.15;
+    margin: 32px 0 10px;
+  }
+  p { margin: 0 0 18px; }
+  a { color: var(--guardian-blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--news-red); }
+  a:focus-visible { outline: 3px solid var(--news-red); outline-offset: 3px; }
+  strong { font-weight: 700; }
+  code {
+    font-family: var(--mono);
+    font-size: 0.88em;
+    background: var(--paper-deep);
+    padding: 2px 6px;
+    border-radius: 3px;
+    word-break: break-word;
+  }
+
+  .lede-panel {
+    background: var(--paper-deep);
+    border-left: 5px solid var(--guardian-blue);
+    padding: 22px 26px 6px;
+    margin: 0 0 20px;
+  }
+
+  ul.plain { list-style: none; margin: 0 0 20px; padding: 0; }
+  ul.plain li {
+    padding: 11px 0 11px 26px;
+    border-top: 1px solid var(--paper-rule);
+    position: relative;
+  }
+  ul.plain li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 21px;
+    width: 9px; height: 9px;
+    background: var(--news-red);
+  }
+
+  /* The diary */
+  .entry { padding-top: 34px; margin-top: 34px; border-top: 1px solid var(--paper-rule); }
+  .entry:first-of-type { border-top: 2px solid var(--ink); }
+  .entry-meta {
+    font-family: var(--ui);
+    font-weight: 700;
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin: 0 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .tag {
+    color: var(--paper);
+    background: var(--eco-green);
+    padding: 3px 9px;
+    letter-spacing: 0.1em;
+  }
+  .tag.milestone { background: var(--news-red); }
+  .entry h3 { margin-top: 0; }
+
+  footer.foot {
+    margin-top: 64px;
+    padding-top: 22px;
+    border-top: 2px solid var(--ink);
+    font-family: var(--ui);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    color: var(--ink-mute);
+  }
+
+  @media (max-width: 480px) {
+    body { font-size: 17px; }
+    .wrap { padding-bottom: 64px; }
+    header.masthead { padding-top: 36px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="band" aria-hidden="true"><i></i><i></i></div>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">About this deck</p>
+    <h1>AI working group, <em>session one.</em></h1>
+    <p class="standfirst">The opening session for ten senior editors: where AI has got to, how it got there, and what that means for the news. This page says what the deck is, how it was made, and what changed and why.</p>
+  </header>
+
+  <h2>What this is</h2>
+
+  <div class="lede-panel">
+    <p>Slides for the first of four one-hour sessions of the ELG working group on AI, agents and the future of our journalism. Part one is a twenty-minute overview of where the technology stands. Part two puts the leading models to work on the same news story.</p>
+  </div>
+
+  <p>The heart of part one is a single idea, built up one layer at a time: a language model that guesses the next word; reasoning, which lets it work a problem through first; the loop, which lets it keep going until a job is done; and the harness, the tools and access built around it. Put together, that is an agent. Each layer keeps one colour throughout, so the diagram on the map slide can be read again on every slide that follows.</p>
+
+  <ul class="plain">
+    <li><strong>Every figure has a source.</strong> They are listed in <code>SOURCES.md</code> alongside the deck, each labelled by how it was checked.</li>
+    <li><strong>Arrow keys or space</strong> to move, R to reset, G to show the grid, Cmd-P to save a PDF.</li>
+  </ul>
+
+  <h2>How it's made</h2>
+
+  <p>Plain HTML and CSS, no build step. It is built from the Guardian deck template, second edition, by way of the vibe coding workshop deck, which carries the board training components too. The fonts load from Guardian servers, so it wants a network connection to look right.</p>
+
+  <p>I built it by describing it to Claude Code and letting it do the typing. The research behind the figures was done the same way, from primary sources where they exist, and anything that could not be checked has been left out.</p>
+
+  <h2>Diary</h2>
+
+  <article class="entry">
+    <p class="entry-meta"><span class="tag milestone">Milestone</span><span>29 September 2026</span></p>
+    <h3>Part one: four layers, and a lot of checking</h3>
+
+    <p>The brief to myself was to take the "current landscape" section of the board training deck, make it clearer and make it land harder. The board version had the right idea in three cards: a reasoning brain, a harness, an agentic loop. What it didn't have was an order. So this version builds the thing up one layer at a time, starting with the model itself, and gives each layer a colour it keeps for the rest of the deck. The ring diagram on the map slide shows them nested, which is the point: each one was built around the one before.</p>
+
+    <p>A lot of the explanation comes from the AI risk field guide I finished last week, which already had the plainest account of training I've managed: grown, not built, in three stages. It also had the Hugging Face story, which now closes the risks section.</p>
+
+    <p>The usage figures got the hardest look, and it was humbling. The board deck compared generative AI at work with the internet and smartphones at the same point after launch. The internet figure turned out to measure all use, not use at work, and I could find no source at all for the smartphone one. The chart is gone. The one comparison I can stand behind is narrower: at work in the US, AI reached the level of use the PC did in a third of the time.</p>
+
+    <p>The UK news figures tell a more interesting story than I expected. Only 4% of UK adults use a chatbot for news each week, the lowest of 48 countries, and 6% trust the answers. But 21% came across news through AI in the past month. They aren't choosing it; it's reaching them through search.</p>
+
+    <p>Then the news overtook the draft. Meta launched Muse on 8 September, ChatGPT Voice started using people's apps on 23 September, and on 25 September OpenAI paused tool use on its most capable models after an agent got out of a test again. All three are in.</p>
+  </article>
+
+  <footer class="foot">
+    <p>Chris Moran · Guardian · <a href="./">Open the deck</a></p>
+  </footer>
+
+</div>
+
+</body></html>
