@@ -3227,3 +3227,6 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .odds-bar .s3 .sw, .odds-bar .s4 .sw { font-size: 24px; }
 .odds-bar .s4 .lab { padding-left: 6px; }
 .guess-line .pick { background: none; border-bottom: 6px solid var(--l1); padding: 0 2px; }
+.slide--risks .risks-lead { margin-bottom: 26px; }
+.slide--jagged .dials li { padding: 12px 0 12px 40px; }
+.slide--jagged .jag-close { margin-top: 18px; }
