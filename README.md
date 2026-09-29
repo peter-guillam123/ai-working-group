@@ -28,6 +28,15 @@ python3 -m http.server 8811
 
 ## Changelog
 
+### 29 September 2026, evening: the reasoning race
+
+The two answers on the reasoning slide now stream out the way a model
+writes. The quick one is done and wrong in about a second. The other
+shows "Thinking" with a live count while its working appears, then
+"Thought for N seconds" and its answer. The 12% against 74% chart waits
+until both have finished. `stream.js` does it; with reduced motion, no
+JavaScript or when printing, every word is simply there.
+
 ### 29 September 2026, evening: the word toy comes over
 
 The layer 1 slide now carries the next-word toy from plate 1 of the AI

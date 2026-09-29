@@ -264,30 +264,30 @@
         <div>
           <p class="same-q" data-fx="rise" style="--d:260ms"><b>The same question, two ways</b>A council says its budget went up 4%, but spending per resident fell. Can both be true?</p>
           <div class="ways">
-            <div class="way fast" data-fx="rise" style="--d:500ms">
+            <div class="way fast" data-fx="rise" style="--d:500ms" data-stream-seq data-start="900">
               <p class="way-head">Answers straight away</p>
-              <p class="way-a">No. If the budget went up, the money spent on each resident went up too.</p>
-              <p class="verdict">Wrong</p>
+              <p class="way-a" data-stream data-rate="55">No. If the budget went up, the money spent on each resident went up too.</p>
+              <p class="verdict" data-stream="show" data-pause="350">Wrong</p>
             </div>
-            <div class="way slow" data-fx="rise" style="--d:700ms">
-              <p class="way-head">Thinks first · 9 seconds</p>
+            <div class="way slow" data-fx="rise" style="--d:700ms" data-stream-seq data-start="1000">
+              <p class="way-head"><span data-think-timer>Thinks first</span></p>
               <ol class="way-steps">
-                <li data-fx="fade" style="--d:1000ms">Per resident means dividing by the population.</li>
-                <li data-fx="fade" style="--d:1250ms">What if the population grew faster than 4%?</li>
-                <li data-fx="fade" style="--d:1500ms">4% more money, 6% more people: 1.04 ÷ 1.06 = 0.98.</li>
+                <li data-stream data-rate="130" data-pause="300">Per resident means dividing by the population.</li>
+                <li data-stream data-rate="130" data-pause="450">What if the population grew faster than 4%?</li>
+                <li data-stream data-rate="130" data-pause="450">4% more money, 6% more people: 1.04 ÷ 1.06 = 0.98.</li>
               </ol>
-              <p class="way-a" data-fx="rise" style="--d:1800ms">Yes, if the population grew faster. With 6% more residents, each gets about 2% less.</p>
-              <p class="verdict" data-fx="rise" style="--d:1900ms">Right</p>
+              <p class="way-a" data-stream data-rate="60" data-pause="400" data-stop-timer>Yes, if the population grew faster. With 6% more residents, each gets about 2% less.</p>
+              <p class="verdict" data-stream="show" data-pause="350">Right</p>
             </div>
           </div>
-          <p class="l2-how" data-fx="rise" style="--d:2000ms">It is <strong>the same LLM</strong>, still guessing the next word. It has just been trained to write out a plan and its working first, check itself, and only then answer.</p>
-          <p class="wg-source" data-fx="rise" style="--d:2100ms">The two answers are an illustration.</p>
+          <p class="l2-how" data-fx="rise" style="--d:2000ms" data-after-stream>It is <strong>the same LLM</strong>, still guessing the next word. It has just been trained to write out a plan and its working first, check itself, and only then answer.</p>
+          <p class="wg-source" data-fx="rise" style="--d:2100ms" data-after-stream>The two answers are an illustration.</p>
         </div>
-        <div class="duel" data-fx="rise" style="--d:400ms">
+        <div class="duel" data-fx="rise" style="--d:400ms" data-after-stream>
           <p class="wg-label">Maths competition problems solved</p>
           <div class="duel-bars">
-            <div class="col"><span class="v">12%</span><span class="bar" data-fx="bar-v" style="--h:16%;--d:700ms"></span></div>
-            <div class="col hi"><span class="v">74%</span><span class="bar" data-fx="bar-v" style="--h:100%;--d:900ms"></span></div>
+            <div class="col"><span class="v">12%</span><span class="bar" style="--h:16%;--d2:300ms"></span></div>
+            <div class="col hi"><span class="v">74%</span><span class="bar" style="--h:100%;--d2:500ms"></span></div>
           </div>
           <div class="duel-names"><span><b>GPT-4o</b>answers at once</span><span><b>o1</b>thinks first</span></div>
           <p class="wg-source">Same company, same month, same test: the 2024 American Invitational Mathematics Examination. OpenAI, September 2024.</p>
@@ -589,6 +589,7 @@
 <script src="deck-stage.js"></script>
 <script src="prompt-copy.js"></script>
 <script src="predictor.js"></script>
+<script src="stream.js"></script>
 <script src="motion.js"></script>
 <script src="grid-overlay.js"></script>
 
