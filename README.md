@@ -28,6 +28,17 @@ python3 -m http.server 8811
 
 ## Changelog
 
+### 29 September 2026, late: how good are AI Overviews?
+
+The room thinks AI Overviews are terrible and typical of AI. A new slide
+after the tool gives the fairest picture I could find: 91% right on a
+hard factual test and improving, but more than half of those right
+answers backed by links that don't support them; 89% of claims matching
+their sources in a big spring study. Then where it fails, with the
+Guardian's health investigation first. And the 76% everyone quotes was
+the Gemini app, not AI Overviews. The tool slides also lost their deks,
+which only repeated the title, and gained Open links and typed prompts.
+
 ### 29 September 2026, late: reach, not read
 
 The map said the Google tools "read" most. They can reach most, which

@@ -3442,3 +3442,28 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .slide--tool .tweak { padding: 12px 20px 14px; gap: 4px; }
 .slide--tool .tweak-say { font-size: 21px; line-height: 1.34; }
 .slide--tool .tool-rows li { padding: 13px 0 14px; }
+/* Tool slides without the one-line dek */
+.slide--tool .slide-title { margin-bottom: 34px; }
+.slide--tool .open-tool { margin-bottom: 18px; padding: 12px 24px; }
+
+/* AI Overviews: the evidence */
+.slide--aio-ev .slide-title { margin-bottom: 12px; }
+.slide--aio-ev .slide-subtitle { font-size: 30px; margin-bottom: 30px; }
+.ev-grid { display: grid; grid-template-columns: 1fr 700px; gap: 90px; align-items: start; }
+.ev-figs { list-style: none; margin: 0; padding: 0; border-top: 3px solid var(--ink); }
+.ev-figs li { display: grid; grid-template-columns: 200px 1fr; gap: 26px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--paper-rule); }
+.ev-n { font-family: var(--display); font-weight: 700; font-size: 92px; line-height: 0.9; letter-spacing: -0.03em; color: var(--guardian-blue); }
+.ev-figs li:nth-child(2) .ev-n { color: var(--news-red); }
+.ev-figs p { margin: 0; font-family: var(--body); font-size: 26px; line-height: 1.38; color: var(--ink); }
+.ev-figs .ev-src { margin-top: 6px; font-family: var(--ui); font-size: 17px; line-height: 1.4; color: var(--ink-mute); }
+.ev-fails { background: var(--paper-deep); border-top: 6px solid var(--news-red); padding: 26px 32px 28px; }
+.ev-fails ul { list-style: none; margin: 0; padding: 0; }
+.ev-fails li { padding: 12px 0; border-top: 1px solid var(--paper-rule); font-family: var(--body); font-size: 23px; line-height: 1.4; color: var(--ink-soft); }
+.ev-fails li:first-child { border-top: 0; padding-top: 4px; }
+.ev-fails b { color: var(--ink); }
+.ev-fails li span { display: block; font-family: var(--ui); font-size: 16px; color: var(--ink-mute); margin-top: 3px; }
+.ev-note { margin: 24px 0 0; font-family: var(--display); font-weight: 500; font-size: 28px; line-height: 1.25; color: var(--ink); max-width: 70ch; }
+.slide--aio-ev .slide-subtitle { margin-bottom: 26px; }
+.ev-figs li { padding: 16px 0; }
+.ev-n { font-size: 84px; }
+.ev-fails .ev-note { margin: 14px 0 0; padding-top: 16px; border-top: 2px solid var(--ink); font-size: 24px; line-height: 1.3; }

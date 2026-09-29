@@ -100,6 +100,15 @@ ChatGPT (Nov 2022), MCP (Nov 2024), Claude Code (Feb 2025): background. Claude O
 | AI Mode runs many searches behind the scenes | Google's description of AI Mode ("query fan-out"), Google I/O 2025 | background |
 | "Our test run took seven" minutes | Chris's ChatGPT screenshot: "Worked for 6m 56s", GPT-5.6 Sol, Extra High | Chris's run |
 | The reach map | A rough qualitative placing, labelled on the slide | ours |
+| AI Overviews 91% correct on SimpleQA (4,326 questions), up from 85% (Oct 2025 to Feb 2026, across the Gemini 3 switch); ungrounded share of correct answers 37% to 56% | Oumi for the New York Times: Oumi blog, 14 Apr 2026, https://oumi.ai/blog/oumis-study-finds-50-of-ai-overviews ; NYT 7 Apr 2026 (paywalled). Google: "serious holes", SimpleQA "full of errors"; DeepMind's SimpleQA Verified paper (arXiv 2509.07968) says the original has noisy and incorrect labels | read (Oumi, arXiv); outlet (NYT, Google quotes) |
+| 89% of 98,020 claims from 55,393 trending US searches supported by cited pages; 2.66% contradicted; "better than critics suggest, worse than Google claims" | Xu, Iqbal and Montgomery, Washington University in St Louis, arXiv 2605.14021, 13 May 2026 (preprint). https://arxiv.org/html/2605.14021v1 | read |
+| Pancreatic cancer advice the opposite of expert advice | The Guardian, 2 Jan 2026. https://www.theguardian.com/technology/2026/jan/02/google-ai-overviews-risk-harm-misleading-health-information | read |
+| Air India crash plane named as an Airbus; it was a Boeing (June 2025) | Cybernews; AI Incident Database 1097 | outlet |
+| Canadian musician falsely called a sex offender, suing | The Guardian, 5 May 2026 | read |
+| Munich court: AI Overviews are Google's own statements (June 2026) | Techdirt, Search Engine Land (ruling not read) | outlet |
+| Glue on pizza (May 2024); made-up sayings (April 2025) | Google's own blog, 30 May 2024; Engadget | read; outlet |
+| BBC/EBU 76% figure was the Gemini app, not AI Overviews | EBU/BBC News Integrity in AI Assistants report, 21 Oct 2025 | read |
+| Google has never published an error rate | No figure in Google's statements from May 2024 to January 2026 (research notes) | read (absence) |
 | Prompts for Gemini and ChatGPT | Chris's own, verbatim from his screenshots | Chris |
 
 Full research notes, with more than made the slides, are in `../research/`, outside the repo.
