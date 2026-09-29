@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI working group - Session 1</title>
 <link rel="preconnect" href="https://assets.guim.co.uk" crossorigin>
-<link rel="stylesheet" href="styles.css?v=202609291701">
+<link rel="stylesheet" href="styles.css?v=202609291818">
 <style id="deck-gate-style">
   #deck-gate {
     position: fixed; inset: 0; z-index: 2147483647;
@@ -61,7 +61,7 @@
     <p class="dg-error" id="deck-gate-error" hidden>That's not it. Try again.</p>
   </form>
 </div>
-<script src="gate.js?v=202609291701"></script>
+<script src="gate.js?v=202609291818"></script>
 
 <!-- ================================================================
      AI WORKING GROUP — Session 1, 30 September 2026.
@@ -671,61 +671,52 @@
     <h2 class="slide-title" data-split>Each one is built for a <em>job</em>.</h2>
 
     <div class="slide-body top">
-      <div class="cmp" style="--rows:12">
+      <div class="cmp cmp2" style="--rows:8">
         <div class="cmp-card" style="grid-column:2;--d:200ms" data-fx="fade"></div>
         <div class="cmp-card" style="grid-column:3;--d:200ms" data-fx="fade"></div>
         <div class="cmp-card" style="grid-column:4;--d:200ms" data-fx="fade"></div>
         <div class="cmp-card" style="grid-column:5;--d:200ms" data-fx="fade"></div>
-        <div class="cmp-corner"></div>
-        <div class="cmp-h" style="grid-column:2;--d:300ms" data-fx="rise"><span class="cn">1</span>Google AI Overviews</div>
-        <div class="cmp-h" style="grid-column:3;--d:380ms" data-fx="rise"><span class="cn">2</span>Google AI Mode</div>
-        <div class="cmp-h" style="grid-column:4;--d:460ms" data-fx="rise"><span class="cn">3</span>Gemini with Canvas</div>
-        <div class="cmp-h" style="grid-column:5;--d:540ms" data-fx="rise"><span class="cn">4</span>ChatGPT, thinking hard</div>
-        <div class="cmp-g" data-fx="fade" style="grid-row:2;--d:620ms">Why it exists</div>
-        <div class="cmp-k" data-fx="fade" style="grid-row:3;--d:620ms">For you</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:3;grid-column:2;--d:660ms">A quick answer</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:3;grid-column:3;--d:660ms">Research by conversation</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:3;grid-column:4;--d:660ms">Getting things made</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:3;grid-column:5;--d:660ms">Deep, careful work</div>
-        <div class="cmp-k" data-fx="fade" style="grid-row:4;--d:690ms">For its maker</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:4;grid-column:2;--d:730ms">Keeping search on Google</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:4;grid-column:3;--d:730ms">Keeping search on Google</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:4;grid-column:4;--d:730ms">A paid assistant, tied to Workspace</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:4;grid-column:5;--d:730ms">Subscriptions, and ads on the free tier</div>
-        <div class="cmp-g" data-fx="fade" style="grid-row:5;--d:760ms">What it works with</div>
-        <div class="cmp-k" data-fx="fade" style="grid-row:6;--d:760ms">Sources</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:6;grid-column:2;--d:800ms">Google's whole search index</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:6;grid-column:3;--d:800ms">Google's whole search index</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:6;grid-column:4;--d:800ms">Google Search, minus publishers who opt out</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:6;grid-column:5;--d:800ms">OpenAI's own search, minus publishers who block it</div>
-        <div class="cmp-k" data-fx="fade" style="grid-row:7;--d:830ms">Model</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:7;grid-column:2;--d:870ms">Gemini 3</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:7;grid-column:3;--d:870ms">A fast Gemini model</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:7;grid-column:4;--d:870ms">Your choice: fast or Thinking</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:7;grid-column:5;--d:870ms">Your choice, up to OpenAI's best</div>
-        <div class="cmp-g" data-fx="fade" style="grid-row:8;--d:900ms">How it works</div>
-        <div class="cmp-k" data-fx="fade" style="grid-row:9;--d:900ms">Time it takes</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:9;grid-column:2;--d:940ms"><span class="pips" aria-hidden="true"><i class=on></i><i></i><i></i><i></i></span>A second or two</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:9;grid-column:3;--d:940ms"><span class="pips" aria-hidden="true"><i class=on></i><i></i><i></i><i></i></span>Seconds</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:9;grid-column:4;--d:940ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i></i><i></i></span>A minute or two</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:9;grid-column:5;--d:940ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i class=on></i><i class=on></i></span>Minutes</div>
-        <div class="cmp-k" data-fx="fade" style="grid-row:10;--d:970ms">Thinking</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:10;grid-column:2;--d:1010ms"><span class="pips" aria-hidden="true"><i class=on></i><i></i><i></i><i></i></span>Little: it has to be quick</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:10;grid-column:3;--d:1010ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i></i><i></i></span>Some, on harder questions</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:10;grid-column:4;--d:1010ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i class=on></i><i></i></span>When you choose Thinking</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:10;grid-column:5;--d:1010ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i class=on></i><i class=on></i></span>As much as you allow</div>
-        <div class="cmp-k" data-fx="fade" style="grid-row:11;--d:1040ms">Built around it</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:11;grid-column:2;--d:1080ms">The results page</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:11;grid-column:3;--d:1080ms">Follow-ups, charts and maps</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:11;grid-column:4;--d:1080ms">Canvas, which builds working apps</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:11;grid-column:5;--d:1080ms">Search, code, files and apps</div>
-        <div class="cmp-k" data-fx="fade" style="grid-row:12;--d:1110ms">Many steps on its own</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:12;grid-column:2;--d:1150ms"><span class="pips" aria-hidden="true"><i></i><i></i><i></i><i></i></span>No</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:12;grid-column:3;--d:1150ms"><span class="pips" aria-hidden="true"><i class=on></i><i></i><i></i><i></i></span>Partly: many searches at once</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:12;grid-column:4;--d:1150ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i></i><i></i></span>Partly: plans and builds</div>
-        <div class="cmp-c" data-fx="fade" style="grid-row:12;grid-column:5;--d:1150ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i class=on></i><i class=on></i></span>Yes, in its agent mode</div>
+        <div class="cmp-h" style="grid-row:1;grid-column:2;--d:300ms" data-fx="rise"><span class="cn">1</span>Google AI Overviews</div>
+        <div class="cmp-h" style="grid-row:1;grid-column:3;--d:380ms" data-fx="rise"><span class="cn">2</span>Google AI Mode</div>
+        <div class="cmp-h" style="grid-row:1;grid-column:4;--d:460ms" data-fx="rise"><span class="cn">3</span>Gemini with Canvas</div>
+        <div class="cmp-h" style="grid-row:1;grid-column:5;--d:540ms" data-fx="rise"><span class="cn">4</span>ChatGPT, thinking hard</div>
+        <div class="cmp-k" data-fx="fade" style="grid-row:2;--d:620ms">For you</div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:2;grid-column:2;--d:660ms"><span>A quick answer</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:2;grid-column:3;--d:660ms"><span>Research by chat</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:2;grid-column:4;--d:660ms"><span>Getting things made</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:2;grid-column:5;--d:660ms"><span>Deep, careful work</span></div>
+        <div class="cmp-k" data-fx="fade" style="grid-row:3;--d:700ms">For its maker</div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:3;grid-column:2;--d:740ms"><span>Keeping you on Google</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:3;grid-column:3;--d:740ms"><span>Keeping you on Google</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:3;grid-column:4;--d:740ms"><span>A paid assistant</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:3;grid-column:5;--d:740ms"><span>Subscriptions and ads</span></div>
+        <div class="cmp-k" data-fx="fade" style="grid-row:4;--d:780ms">Sources</div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:4;grid-column:2;--d:820ms"><span>Whole search index</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:4;grid-column:3;--d:820ms"><span>Whole search index</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:4;grid-column:4;--d:820ms"><span>Search, minus opt-outs</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:4;grid-column:5;--d:820ms"><span>Its own search, minus blocks</span></div>
+        <div class="cmp-k has-pips" data-fx="fade" style="grid-row:5;--d:860ms">Time it takes</div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:5;grid-column:2;--d:900ms"><span class="pips" aria-hidden="true"><i class=on></i><i></i><i></i><i></i></span><span>A second or two</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:5;grid-column:3;--d:900ms"><span class="pips" aria-hidden="true"><i class=on></i><i></i><i></i><i></i></span><span>Seconds</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:5;grid-column:4;--d:900ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i></i><i></i></span><span>A minute or two</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:5;grid-column:5;--d:900ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i class=on></i><i class=on></i></span><span>Minutes</span></div>
+        <div class="cmp-k has-pips" data-fx="fade" style="grid-row:6;--d:940ms">Thinking</div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:6;grid-column:2;--d:980ms"><span class="pips" aria-hidden="true"><i class=on></i><i></i><i></i><i></i></span><span>Little</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:6;grid-column:3;--d:980ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i></i><i></i></span><span>Some</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:6;grid-column:4;--d:980ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i class=on></i><i></i></span><span>When you ask</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:6;grid-column:5;--d:980ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i class=on></i><i class=on></i></span><span>As much as you allow</span></div>
+        <div class="cmp-k has-pips" data-fx="fade" style="grid-row:7;--d:1020ms">Built around it</div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:7;grid-column:2;--d:1060ms"><span class="pips" aria-hidden="true"><i class=on></i><i></i><i></i><i></i></span><span>The results page</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:7;grid-column:3;--d:1060ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i></i><i></i></span><span>Charts and maps</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:7;grid-column:4;--d:1060ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i class=on></i><i></i></span><span>Canvas apps</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:7;grid-column:5;--d:1060ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i class=on></i><i class=on></i></span><span>Code, files, apps</span></div>
+        <div class="cmp-k has-pips" data-fx="fade" style="grid-row:8;--d:1100ms">Works on its own</div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:8;grid-column:2;--d:1140ms"><span class="pips" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>No</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:8;grid-column:3;--d:1140ms"><span class="pips" aria-hidden="true"><i class=on></i><i></i><i></i><i></i></span><span>Partly</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:8;grid-column:4;--d:1140ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i></i><i></i></span><span>Partly</span></div>
+        <div class="cmp-c" data-fx="fade" style="grid-row:8;grid-column:5;--d:1140ms"><span class="pips" aria-hidden="true"><i class=on></i><i class=on></i><i class=on></i><i class=on></i></span><span>Yes, in agent mode</span></div>
         </div>
-      <p class="wg-source consider-note" data-fx="rise" style="--d:1100ms">A rough guide, as of late September 2026. "For its maker" is our reading, not the companies' words.</p>
+      <p class="wg-source consider-note" data-fx="rise" style="--d:1100ms">A rough guide, as of late September 2026. "For its maker" is our reading. More on each tool as we go.</p>
     </div>
 
     <div class="slide-foot">
@@ -1039,11 +1030,11 @@
 
 </deck-stage>
 
-<script src="deck-stage.js?v=202609291701"></script>
-<script src="prompt-copy.js?v=202609291701"></script>
-<script src="predictor.js?v=202609291701"></script>
-<script src="stream.js?v=202609291701"></script>
-<script src="motion.js?v=202609291701"></script>
-<script src="grid-overlay.js?v=202609291701"></script>
+<script src="deck-stage.js?v=202609291818"></script>
+<script src="prompt-copy.js?v=202609291818"></script>
+<script src="predictor.js?v=202609291818"></script>
+<script src="stream.js?v=202609291818"></script>
+<script src="motion.js?v=202609291818"></script>
+<script src="grid-overlay.js?v=202609291818"></script>
 
 </body></html>
