@@ -28,6 +28,17 @@ python3 -m http.server 8811
 
 ## Changelog
 
+### 29 September 2026, evening: part two
+
+Ten slides for the hands-on half: one story, four tools, quickest first.
+Each tool gets a slide with a prompt you can copy and follow-ups on the
+left, and the same five rows on the right: what it's for, what it can
+read, where it's strong, what to watch, how long. A map sets out the
+trade-off: Google's AI Overviews and AI Mode can read almost everything,
+because publishers can't keep out of them without leaving Search, but
+think least; Gemini and ChatGPT can be blocked, and think more. Fairford
+is the fallback story; the morning's news may give a better one.
+
 ### 29 September 2026, evening: the reasoning race
 
 The two answers on the reasoning slide now stream out the way a model

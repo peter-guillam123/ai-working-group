@@ -3342,3 +3342,74 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
   .stream-armed [data-stream].is-waiting { visibility: visible; }
   .is-streaming::after { display: none; }
 }
+
+/* ================================================================
+   PART 2 — one story, four tools
+   ================================================================ */
+
+/* "You are here" on each tool slide: a thumbnail of the reach map */
+.map-badge { position: absolute; top: 80px; right: var(--grid-margin); display: flex; align-items: center; gap: 22px; z-index: 4; }
+.map-badge svg { width: 104px; height: 104px; overflow: visible; }
+.map-badge .mb-ax { stroke: var(--ink-mute); stroke-width: 2; opacity: 0.5; }
+.map-badge .mb-dot { fill: rgba(18,18,18,0.18); }
+.map-badge .mb-dot.on { fill: var(--news-red); }
+.map-badge .badge-text { font-family: var(--ui); font-weight: 700; font-size: 19px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); text-align: right; line-height: 1.35; }
+.map-badge .badge-text b { display: block; font-size: 26px; letter-spacing: 0.04em; color: var(--news-red); }
+
+/* Tool slides: prompt and follow-ups left, the ledger right */
+.slide--tool .slide-title { max-width: 18ch; margin-bottom: 34px; }
+.tool-grid { display: grid; grid-template-columns: 1fr 660px; gap: 90px; align-items: start; }
+.tool-setup { margin: 0 0 14px; font-family: var(--ui); font-weight: 700; font-size: 19px; letter-spacing: 0.04em; color: var(--ink-soft); }
+.slide--tool .prompt-text { font-size: 28px; line-height: 1.42; }
+.slide--tool[data-tool="aio"] .prompt-text { font-family: var(--ui); font-size: 40px; }
+.tries-label { margin: 30px 0 12px; }
+.tries { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.slide--tool .tweak { padding: 16px 22px 18px; gap: 6px; border-top-width: 4px; }
+.slide--tool .tweak-say { font-size: 22px; line-height: 1.38; }
+.slide--tool[data-tool="aio"] .tweak-say { font-family: var(--ui); }
+.tool-rows { list-style: none; margin: 0; padding: 0; border-top: 3px solid var(--ink); }
+.tool-rows li { padding: 16px 0 17px; border-bottom: 1px solid var(--paper-rule); }
+.tool-rows .tr-k { display: block; font-family: var(--ui); font-weight: 700; font-size: 17px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--news-red); margin-bottom: 5px; }
+.tool-rows p { margin: 0; font-family: var(--body); font-size: 24px; line-height: 1.4; color: var(--ink); }
+.tool-rows li:last-child p { font-family: var(--display); font-weight: 500; font-size: 30px; }
+
+/* The story */
+.story-title { font-size: 150px; line-height: 0.95; max-width: 14ch; margin-bottom: 40px; }
+.story-cols { display: grid; grid-template-columns: 1fr 760px; gap: 100px; align-items: start; }
+.story-dek { margin: 0; font-family: var(--display); font-weight: 500; font-size: 44px; line-height: 1.2; color: var(--ink-soft); }
+.story-why { list-style: none; margin: 0; padding: 0; border-top: 3px solid var(--ink); }
+.story-why li { padding: 16px 0; border-bottom: 1px solid var(--paper-rule); font-family: var(--body); font-size: 27px; line-height: 1.4; color: var(--ink-soft); }
+.story-why b { color: var(--ink); font-weight: 700; }
+
+/* What to look for: six checks, 3 x 2 */
+.checks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px var(--grid-gutter); column-gap: 60px; }
+.check { border-top: 4px solid var(--ink); padding-top: 20px; }
+.check:nth-child(4) { border-top-color: var(--news-red); }
+.check-n { font-family: var(--mono); font-size: 22px; color: var(--ink-mute); }
+.check:nth-child(4) .check-n { color: var(--news-red); }
+.check h3 { font-family: var(--display); font-weight: 500; font-size: 44px; line-height: 1.05; margin: 8px 0 10px; }
+.check p { margin: 0; font-family: var(--body); font-size: 26px; line-height: 1.42; color: var(--ink-soft); }
+
+/* The reach map */
+.reach-grid { display: grid; grid-template-columns: 900px 1fr; gap: 80px; align-items: center; }
+.reach-map { width: 900px; height: auto; overflow: visible; }
+.reach-map .ax { stroke: var(--ink); stroke-width: 3; }
+.reach-map .ax-t { font-family: var(--ui); font-weight: 700; font-size: 19px; letter-spacing: 0.1em; text-transform: uppercase; fill: var(--ink-mute); }
+.reach-map .mp circle { fill: var(--news-red); transform-box: fill-box; transform-origin: center; }
+.reach-map .mp-label { font-family: var(--display); font-weight: 500; font-size: 34px; fill: var(--ink); }
+.reach-text > div + div { margin-top: 30px; }
+.reach-text .wg-body { font-size: 27px; }
+.reach-text .wg-source { margin-top: 30px; }
+
+/* Claude */
+.claude-grid { display: grid; grid-template-columns: 1fr 660px; gap: 90px; align-items: start; }
+.slide--claude .prompt-text { font-size: 30px; line-height: 1.42; }
+
+/* Close */
+.asks { list-style: none; margin: 0; padding: 0; }
+.asks li { display: grid; grid-template-columns: 90px 1fr; gap: 24px; padding: 26px 0; border-top: 1px solid var(--paper-rule); }
+.asks li:first-child { border-top: 3px solid var(--ink); }
+.ask-n { font-family: var(--display); font-weight: 700; font-size: 72px; line-height: 0.9; color: var(--news-red); }
+.asks h3 { font-family: var(--display); font-weight: 500; font-size: 50px; line-height: 1.05; margin: 0 0 8px; }
+.asks p { margin: 0; font-family: var(--body); font-size: 28px; line-height: 1.42; color: var(--ink-soft); max-width: 60ch; }
+.asks-foot { margin: 34px 0 0; font-family: var(--display); font-weight: 500; font-size: 36px; color: var(--ink); }

@@ -88,4 +88,18 @@ ChatGPT (Nov 2022), MCP (Nov 2024), Claude Code (Feb 2025): background. Claude O
 | Overthinking in reasoning models generally | Chen et al, "Do NOT Think That Much for 2+3=?", arXiv 2412.21187, December 2024 | read (abstract) |
 | "GPT-6 Astra thinking for minutes" | GPT-6 Astra, OpenAI, 3 Sep 2026 (see research notes) | read (system card) |
 
+## Part 2
+
+| Claim | Source | Label |
+|---|---|---|
+| The story: five men arrested near RAF Fairford on Sunday 27 Sep, released on bail | Chris's screenshots of AI Overviews (citing BBC, Reuters) and ChatGPT (citing Counter Terrorism Policing statements), 29 Sep. To confirm against CTP on the morning, or swap the story | to check |
+| Once people are arrested, the law limits what can be reported | Contempt of Court Act 1981, Schedule 1: proceedings are active from arrest | background |
+| AI Overviews and AI Mode: publishers can limit them only with nosnippet, data-nosnippet, max-snippet or noindex, the same controls as ordinary Search | Google Search Central, "AI features and your website". https://developers.google.com/search/docs/appearance/ai-features | read |
+| Gemini app: publishers can block training and grounding with Google-Extended, which does not affect Search | Google Search Central, Google's common crawlers. https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers | read |
+| ChatGPT search: publishers can block OpenAI's crawlers without affecting Google | OpenAI's crawler documentation (OAI-SearchBot) | background |
+| AI Mode runs many searches behind the scenes | Google's description of AI Mode ("query fan-out"), Google I/O 2025 | background |
+| "Our test run took seven" minutes | Chris's ChatGPT screenshot: "Worked for 6m 56s", GPT-5.6 Sol, Extra High | Chris's run |
+| The reach map | A rough qualitative placing, labelled on the slide | ours |
+| Prompts for Gemini and ChatGPT | Chris's own, verbatim from his screenshots | Chris |
+
 Full research notes, with more than made the slides, are in `../research/`, outside the repo.
