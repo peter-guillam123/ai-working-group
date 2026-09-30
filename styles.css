@@ -3756,3 +3756,4 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .proxy-card .what { font-size: 28px; color: var(--ink); }
 .slide--timeline .tl-ev .t { font-size: 30px; }
 .slide--timeline .tl-ev .s { font-size: 20px; }
+.slide--tool .tries + .tool-docs { margin: 16px 0 0; }
