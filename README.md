@@ -38,6 +38,16 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 30 September 2026: the hard tests are falling
+
+The strawberry and six-finger examples made the case feel flimsy, so the
+slide now leads with a chart of three tests built to be hard: PhD-level
+science (39% to over 90%, past the experts' 65%), real software bugs (4%
+to over 90%, with a caveat about leakage) and Humanity's Last Exam (under
+10% to 61% in 20 months). Epoch's index puts the pace at twice what it
+was before reasoning models. The discoveries stay; strawberry survives as
+a one-line aside.
+
 ### 30 September 2026: from party trick to discovery
 
 The deck went from "it thinks" to "it keeps going" without saying that

@@ -3716,3 +3716,36 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .tn-note { font-size: 21px; }
 .then-now { gap: 40px; }
 .tn-q { font-size: 33px; white-space: nowrap; }
+
+/* The hard tests are falling: dumbbell chart */
+.slide--better .slide-title { margin-bottom: 26px; }
+.db { position: relative; }
+.db-row { display: grid; grid-template-columns: 430px 1fr; gap: 50px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--paper-rule); }
+.db-row:first-child { border-top: 3px solid var(--ink); }
+.db-name h3 { margin: 0 0 4px; font-family: var(--display); font-weight: 500; font-size: 36px; line-height: 1.05; }
+.db-name p { margin: 0; font-family: var(--ui); font-size: 17px; line-height: 1.35; color: var(--ink-mute); }
+.db-track { position: relative; height: 84px; margin: 0 60px 0 20px; }
+.db-grid { position: absolute; top: 14px; bottom: 14px; width: 1px; background: var(--paper-rule); }
+.db-span { position: absolute; top: 38px; height: 8px; border-radius: 4px; background: linear-gradient(90deg, rgba(18,18,18,0.18), var(--news-red)); transform-origin: left center; }
+.db-dot { position: absolute; top: 42px; width: 22px; height: 22px; margin: -11px 0 0 -11px; border-radius: 50%; }
+.db-dot.then { background: var(--paper); border: 4px solid var(--ink-mute); }
+.db-dot.now { background: var(--news-red); box-shadow: 0 0 0 7px rgba(199,0,0,0.14); transform-box: fill-box; }
+.fx-play .db-dot.now[data-fx="pop"] { animation-name: fxPop; }
+.db-lab { position: absolute; transform: translateX(-50%); white-space: nowrap; text-align: center; font-family: var(--mono); font-size: 19px; color: var(--ink-mute); }
+.db-lab.then { top: 58px; }
+.db-lab.then small { margin-left: 8px; font-family: var(--ui); font-size: 15px; }
+.db-lab.now { top: 0; font-family: var(--display); font-weight: 700; font-size: 26px; color: var(--news-red); }
+.db-exp { position: absolute; top: 12px; bottom: 12px; }
+.db-exp i { position: absolute; top: 0; bottom: 0; left: 0; border-left: 2px dashed var(--ink); opacity: 0.45; }
+.db-exp b { position: absolute; bottom: -8px; left: 8px; white-space: nowrap; font-family: var(--ui); font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mute); }
+.db-axis { position: relative; height: 22px; margin: 6px 60px 0 500px; }
+.db-axis span { position: absolute; transform: translateX(-50%); font-family: var(--mono); font-size: 15px; color: var(--ink-mute); }
+.better-foot { display: grid; grid-template-columns: 560px 1fr; gap: 60px; margin-top: 24px; align-items: start; }
+.pace { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; padding: 18px 24px; background: var(--paper-deep); border-left: 6px solid var(--l2); }
+.pace-n { font-family: var(--display); font-weight: 700; font-size: 78px; line-height: 0.9; color: var(--l2); }
+.pace p { margin: 0; font-family: var(--body); font-size: 21px; line-height: 1.38; color: var(--ink); }
+.slide--better .finds { margin-top: 0; padding-top: 0; border-top: 0; }
+.slide--better .finds ul { grid-template-columns: 1fr 1fr; gap: 36px; }
+.slide--better .finds li { font-size: 21px; }
+.better-note { margin-top: 16px; }
+@media (prefers-reduced-motion: reduce) { .db-span { transform: none !important; } }

@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI working group - Session 1</title>
 <link rel="preconnect" href="https://assets.guim.co.uk" crossorigin>
-<link rel="stylesheet" href="styles.css?v=202609300904">
+<link rel="stylesheet" href="styles.css?v=202609300918">
 <style id="deck-gate-style">
   #deck-gate {
     position: fixed; inset: 0; z-index: 2147483647;
@@ -61,7 +61,7 @@
     <p class="dg-error" id="deck-gate-error" hidden>That's not it. Try again.</p>
   </form>
 </div>
-<script src="gate.js?v=202609300904"></script>
+<script src="gate.js?v=202609300918"></script>
 
 <!-- ================================================================
      AI WORKING GROUP — Session 1, 30 September 2026.
@@ -328,49 +328,70 @@
     </div>
   </section>
 
-  <!-- 07b — The model itself got better. GPQA: Rein et al 2023 (GPT-4
-       ~39%, experts 65%); top models over 90% in 2026 (Epoch and other
-       leaderboards). Strawberry: widely reported 2024. AlphaEvolve:
-       DeepMind blog, 14 May 2025. Erdős: Quanta, reported. -->
+  <!-- 07b — The hard tests are falling. GPQA: Rein et al 2023 (GPT-4
+       ~39%, experts 65%), top models over 90% (developer-reported, which
+       Epoch finds accurate). SWE-bench: Stanford AI Index 2025 (4.4% in
+       2023, 71.7% a year later); over 90% on SWE-bench Verified in 2026,
+       with contamination concerns. HLE: under 10% at launch (Jan 2025),
+       61.4% top score 22 Sep 2026 (Artificial Analysis). Epoch ECI: 14
+       points a year since reasoning models v 6 before (1 Sep 2026). -->
   <section class="slide slide--spread slide--better" data-label="Better models">
     <div class="rule-band"></div>
 
     <p class="kicker" data-fx="rise" style="--d:60ms">Meanwhile, the models themselves</p>
-    <h2 class="slide-title" data-split>From party trick to <em>discovery</em>.</h2>
+    <h2 class="slide-title" data-split>The hard tests are <em>falling</em>.</h2>
 
     <div class="slide-body">
-      <div class="then-now">
-        <div class="tn" data-fx="rise" style="--d:320ms">
-          <p class="tn-q">How many r's in strawberry?</p>
-          <p class="tokens" aria-label="The model sees three word-pieces: st, raw, berry"><span>st</span><span>raw</span><span>berry</span></p>
-          <div class="tn-row"><span class="tn-when">2024</span><span class="tn-then">Two.</span></div>
-          <div class="tn-row"><span class="tn-when">Now</span><span class="tn-now">Three.</span></div>
-          <p class="tn-note">It sees word-pieces, not letters. Now it works round that.</p>
-        </div>
-        <div class="tn" data-fx="rise" style="--d:440ms">
-          <p class="tn-q">Draw me a hand.</p>
-          <p class="tn-big" aria-hidden="true">6 → 5</p>
-          <div class="tn-row"><span class="tn-when">2022</span><span class="tn-then">Six fingers, sometimes more.</span></div>
-          <div class="tn-row"><span class="tn-when">Now</span><span class="tn-now">Five, as a rule.</span></div>
-          <p class="tn-note">Image models, same story: the tell-tale flaw became a memory.</p>
-        </div>
-        <div class="tn" data-fx="rise" style="--d:560ms">
-          <p class="tn-q">PhD-level science questions</p>
-          <div class="gpqa" role="img" aria-label="GPT-4 in 2023 about 39%; PhD experts 65%; top models in 2026 over 90%">
-            <div class="gq"><span class="gq-bar" style="--w:31%"></span><span class="gq-l">GPT-4, 2023</span><span class="gq-v">39%</span></div>
-            <div class="gq ex"><span class="gq-bar" style="--w:52%"></span><span class="gq-l">PhD experts</span><span class="gq-v">65%</span></div>
-            <div class="gq now"><span class="gq-bar" style="--w:74%"></span><span class="gq-l">Top models, 2026</span><span class="gq-v">90%+</span></div>
+      <div class="db">
+          <div class="db-row" data-fx="rise" style="--d:400ms">
+            <div class="db-name"><h3>PhD-level science</h3><p>GPQA · 2023 · questions written to defeat a Google search</p></div>
+            <div class="db-track">
+              <span class="db-grid" style="left:0%"></span><span class="db-grid" style="left:50%"></span><span class="db-grid" style="left:100%"></span>
+              <span class="db-exp" style="left:65%"><i></i><b>PhD experts 65%</b></span>
+              <span class="db-span" style="left:39%;width:53%;--d:650ms" data-fx="bar"></span>
+              <span class="db-dot then" style="left:39%"></span>
+              <span class="db-lab then" style="left:39%">39%<small>GPT-4, 2023</small></span>
+              <span class="db-dot now" style="left:92%;--d:1300ms" data-fx="pop"></span>
+              <span class="db-lab now" style="left:92%">90%+ now</span>
+            </div>
           </div>
-          <p class="tn-note">The GPQA test: questions written to defeat a Google search.</p>
+          <div class="db-row" data-fx="rise" style="--d:620ms">
+            <div class="db-name"><h3>Real software bugs</h3><p>SWE-bench · 2023 · fix genuine faults in real code</p></div>
+            <div class="db-track">
+              <span class="db-grid" style="left:0%"></span><span class="db-grid" style="left:50%"></span><span class="db-grid" style="left:100%"></span>
+              
+              <span class="db-span" style="left:4.4%;width:87.6%;--d:870ms" data-fx="bar"></span>
+              <span class="db-dot then" style="left:4.4%"></span>
+              <span class="db-lab then" style="left:4.4%">4.4%<small>2023</small></span>
+              <span class="db-dot now" style="left:92%;--d:1520ms" data-fx="pop"></span>
+              <span class="db-lab now" style="left:92%">90%+ now</span>
+            </div>
+          </div>
+          <div class="db-row" data-fx="rise" style="--d:840ms">
+            <div class="db-name"><h3>Humanity's Last Exam</h3><p>2025 · the hardest questions experts could write</p></div>
+            <div class="db-track">
+              <span class="db-grid" style="left:0%"></span><span class="db-grid" style="left:50%"></span><span class="db-grid" style="left:100%"></span>
+              
+              <span class="db-span" style="left:8%;width:53%;--d:1090ms" data-fx="bar"></span>
+              <span class="db-dot then" style="left:8%"></span>
+              <span class="db-lab then" style="left:8%">Under 10%<small>at launch, January 2025</small></span>
+              <span class="db-dot now" style="left:61%;--d:1740ms" data-fx="pop"></span>
+              <span class="db-lab now" style="left:61%">61% now</span>
+            </div>
+          </div>
+        <div class="db-axis"><span style="left:0%">0%</span><span style="left:50%">50%</span><span style="left:100%">100%</span></div>
+      </div>
+      <div class="better-foot">
+        <div class="pace" data-fx="rise" style="--d:1400ms"><span class="pace-n">2×</span><p>The pace since reasoning models arrived. Epoch's index of overall capability has climbed 14 points a year since late 2024, against 6 before.</p></div>
+        <div class="finds" data-fx="rise" style="--d:1550ms">
+          <p class="wg-label">And now, real discoveries</p>
+          <ul>
+            <li><span class="f-when">May 2025</span>Google DeepMind's AlphaEvolve, built on Gemini, found a faster way to multiply 4×4 matrices, the first improvement on a method from 1969.</li>
+            <li><span class="f-when">May 2026</span>An OpenAI model disproved a 1946 conjecture by the mathematician Paul Erdős, Quanta reported.</li>
+          </ul>
         </div>
       </div>
-      <div class="finds" data-fx="rise" style="--d:760ms">
-        <p class="wg-label">And now, real discoveries</p>
-        <ul>
-          <li><span class="f-when">May 2025</span>Google DeepMind's AlphaEvolve, built on Gemini, found a faster way to multiply 4×4 matrices: the first improvement on a method from 1969.</li>
-          <li><span class="f-when">May 2026</span>An OpenAI model disproved a 1946 conjecture by the mathematician Paul Erdős, Quanta reported.</li>
-        </ul>
-      </div>
+      <p class="wg-source better-note" data-fx="rise" style="--d:1700ms">Stanford AI Index 2025; Epoch AI; Artificial Analysis. Top software scores may be flattered: the test is so widely used its answers may have leaked into training. And yes, it can count the r's in strawberry now.</p>
     </div>
 
     <div class="slide-foot">
@@ -1178,11 +1199,11 @@
 
 </deck-stage>
 
-<script src="deck-stage.js?v=202609300904"></script>
-<script src="prompt-copy.js?v=202609300904"></script>
-<script src="predictor.js?v=202609300904"></script>
-<script src="stream.js?v=202609300904"></script>
-<script src="motion.js?v=202609300904"></script>
-<script src="grid-overlay.js?v=202609300904"></script>
+<script src="deck-stage.js?v=202609300918"></script>
+<script src="prompt-copy.js?v=202609300918"></script>
+<script src="predictor.js?v=202609300918"></script>
+<script src="stream.js?v=202609300918"></script>
+<script src="motion.js?v=202609300918"></script>
+<script src="grid-overlay.js?v=202609300918"></script>
 
 </body></html>

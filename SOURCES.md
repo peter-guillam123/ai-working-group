@@ -46,16 +46,19 @@ Company user numbers are self-reported, unaudited, and each company counts diffe
 | MCP, the shared connector standard, now run by the Linux Foundation's Agentic AI Foundation | https://aaif.io/projects/model-context-protocol | outlet |
 | Harness names (Claude Code, Cowork, Claude in Chrome, Codex, ChatGPT Work, Gemini Spark, Comet) | Research notes, 29 Sep 2026 | read / outlet |
 
-## From party trick to discovery (after the reasoning slide)
+## The hard tests are falling (after the reasoning slide)
 
 | Claim | Source | Label |
 |---|---|---|
-| "How many r's in strawberry?" answered "two" by ChatGPT, 2024; models see word-pieces (st-raw-berry) | Widely reported, e.g. Inc., August 2024; OpenAI developer forum | outlet |
-| Early image generators drew six or more fingers (2022); hands now routinely right | Widely reported | background |
-| GPQA: GPT-4 about 39% (2023); PhD experts 65% | Rein et al, "GPQA: A Graduate-Level Google-Proof Q&A Benchmark", arXiv 2311.12022 | read (via search of the paper) |
-| Top models over 90% on GPQA Diamond in 2026 | Epoch AI benchmark hub and several leaderboards (e.g. Gemini 3.1 Pro 94.3%) | outlet |
-| AlphaEvolve found a way to multiply 4×4 complex matrices with 48 multiplications, first improvement on Strassen's 1969 method in this setting | Google DeepMind blog, 14 May 2025. https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/ | outlet (search of the blog) |
+| GPQA: GPT-4 about 39% (2023); PhD experts 65% | Rein et al, arXiv 2311.12022 | read (via search of the paper) |
+| GPQA: top models over 90% in 2026 | Developer-reported scores (e.g. Gemini 3.1 Pro 94.3%); Epoch finds developers report GPQA accurately. Epoch's own run page showed an older top of 87% | outlet |
+| SWE-bench: 4.4% in 2023, 71.7% a year later | Stanford HAI, AI Index 2025 | read |
+| SWE-bench Verified: over 90% in 2026; contamination concerns; OpenAI stopped reporting it | Leaderboards (BenchLM, llm-stats), via search | outlet |
+| Humanity's Last Exam: under 10% at launch (Jan 2025); 61.4% top score (Claude Opus 5.5), 22 Sep 2026 | Launch: HLE paper, arXiv 2501.14249 ("low accuracy"), launch scores widely reported; latest: Artificial Analysis via Wikipedia | read / outlet |
+| Epoch Capabilities Index frontier: 14 points a year since reasoning models, 6 before | Epoch AI data insight, 1 Sep 2026. https://epoch.ai/data-insights/eci-frontier-trend | read |
+| AlphaEvolve 4×4 matrices, 48 multiplications, first improvement on Strassen 1969 in this setting | Google DeepMind blog, 14 May 2025 | outlet (search of the blog) |
 | An OpenAI model disproved Erdős's 1946 unit distance conjecture, May 2026 | Quanta Magazine, 3 Aug 2026 | outlet |
+| Strawberry r's | Widely reported, 2024 | outlet |
 
 ## 10 Now it acts on your behalf
 
