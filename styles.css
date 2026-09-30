@@ -3598,3 +3598,18 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .cmp2 .cmp-c { padding: 16px 24px 17px; font-size: 26px; }
 .cmp2 .cmp-h { padding: 22px 24px 18px; }
 .cmp2 .cmp-c { font-size: 25px; } .cmp2 .cmp-c span { white-space: nowrap; }
+
+/* Choose a topic */
+.topic-cols { display: grid; grid-template-columns: 1fr 720px; gap: 100px; align-items: start; }
+.topics { list-style: none; margin: 0; padding: 0; counter-reset: tp; }
+.topics li { counter-increment: tp; position: relative; padding: 20px 0 20px 76px; border-top: 1px solid var(--paper-rule); }
+.topics li:first-child { border-top: 3px solid var(--ink); }
+.topics li::before { content: counter(tp); position: absolute; left: 0; top: 18px; font-family: var(--display); font-weight: 700; font-size: 56px; line-height: 1; color: var(--news-red); }
+.topics h3 { font-family: var(--display); font-weight: 500; font-size: 48px; line-height: 1.05; margin: 0 0 8px; }
+.topics p { margin: 0; font-family: var(--body); font-size: 25px; line-height: 1.4; color: var(--ink-soft); }
+.topic-side { background: var(--paper-deep); border-top: 6px solid var(--news-red); padding: 28px 36px 32px; }
+.topic-tests { list-style: none; margin: 0; padding: 0; }
+.topic-tests li { padding: 12px 0; border-bottom: 1px solid var(--paper-rule); font-family: var(--body); font-size: 25px; line-height: 1.4; color: var(--ink-soft); }
+.topic-tests b { color: var(--ink); }
+.topic-best { margin: 20px 0 0; font-family: var(--display); font-weight: 500; font-size: 32px; line-height: 1.2; color: var(--ink); }
+.topic-best b { font-weight: 500; color: var(--news-red); }

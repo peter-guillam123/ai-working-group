@@ -38,6 +38,14 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 30 September 2026: choose a topic
+
+Fairford is a few days old now, so the story slide became "Choose a
+topic": three examples (Fairford, the Manchester City tribunal, Andy
+Burnham's first speech), what makes a good one, and the real ask: pick
+something from your own patch, so you can tell within a minute whether
+the answer is any good.
+
 ### 29 September 2026, late: built for a job
 
 The reach-against-thinking map was a false flag: the tools differ in

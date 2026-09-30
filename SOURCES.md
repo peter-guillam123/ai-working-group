@@ -92,7 +92,7 @@ ChatGPT (Nov 2022), MCP (Nov 2024), Claude Code (Feb 2025): background. Claude O
 
 | Claim | Source | Label |
 |---|---|---|
-| The story: five men arrested near RAF Fairford on Sunday 27 Sep, released on bail | Chris's screenshots of AI Overviews (citing BBC, Reuters) and ChatGPT (citing Counter Terrorism Policing statements), 29 Sep. To confirm against CTP on the morning, or swap the story | to check |
+| Topic examples (Fairford, the Manchester City tribunal, Andy Burnham's first speech) | Chris's choices. The notes on why each works are general characterisations, with no factual claims | ours |
 | Once people are arrested, the law limits what can be reported | Contempt of Court Act 1981, Schedule 1: proceedings are active from arrest | background |
 | AI Overviews and AI Mode: publishers can limit them only with nosnippet, data-nosnippet, max-snippet or noindex, the same controls as ordinary Search | Google Search Central, "AI features and your website". https://developers.google.com/search/docs/appearance/ai-features | read |
 | Gemini app: publishers can block training and grounding with Google-Extended, which does not affect Search | Google Search Central, Google's common crawlers. https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers | read |
