@@ -38,6 +38,16 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 30 September 2026: a fifth tool
+
+Gemini Notebook, which most of the room will know as NotebookLM (Google
+renamed it in July), goes in as tool 4, before ChatGPT. It's the opposite
+of the others: it works only from the documents you give it, cites every
+answer to the passage, and turns them into something else, such as a
+video overview. A video takes a while, so people can start one and move
+on to ChatGPT. The "built for a job" chart gained a fifth column, and
+every badge is now a five-column table.
+
 ### 30 September 2026: true enough?
 
 The accuracy slide wasn't only about AI Overviews, so it now comes before

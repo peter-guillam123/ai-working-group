@@ -3643,3 +3643,17 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .slide--truth .ev-figs p { font-size: 22px; }
 .slide--truth .ev-grid { grid-template-columns: 1fr 700px; gap: 70px; } .slide--truth .ev-figs { column-gap: 50px; }
 .slide--reflect .slide-title { max-width: none; }
+
+/* Five tools: tighter columns on the "built for a job" chart */
+.cmp5 { grid-template-columns: 190px repeat(5, 1fr); column-gap: 18px; }
+.cmp5 .cmp-h { padding: 18px 18px 14px; font-size: 25px; white-space: normal; }
+.cmp5 .cmp-h .cn { font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; }
+.cmp5 .cmp-c { padding: 14px 18px 15px; font-size: 21px; }
+.cmp5 .cmp-k { font-size: 15px; }
+.cmp5 .pips i { width: 24px; }
+.map-badge svg { width: 101px; }
+.tool-docs { margin: 0 0 14px; font-family: var(--body); font-style: italic; font-size: 21px; color: var(--ink-soft); }
+.cmp5 .cmp-card:nth-of-type(4) { border-top-color: var(--ink); }
+.cmp5 .cmp-card:nth-of-type(5) { border-top-color: var(--news-red); }
+.slide--tool .tool-docs { margin: 0 0 14px; }
+.ev-side { padding: 20px 30px 18px; } .ev-why li { padding: 8px 0; } .ev-slips li { padding: 5px 0; }

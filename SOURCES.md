@@ -114,6 +114,9 @@ ChatGPT (Nov 2022), MCP (Nov 2024), Claude Code (Feb 2025): background. Claude O
 | 45% of news answers from free ChatGPT, Copilot, Gemini and Perplexity had a significant issue; Gemini 76%, Copilot 37%, ChatGPT 36%, Perplexity 30%; mostly sourcing | EBU/BBC News Integrity in AI Assistants report, 21 Oct 2025, 22 public service media, responses May–June 2025 | read |
 | Why they go wrong (making it up, answering too fast, wrong source, missing source) | General account, drawing on part 1 and the studies above | ours |
 | Google has never published an error rate | No figure in Google's statements from May 2024 to January 2026 (research notes) | read (absence) |
+| NotebookLM renamed Gemini Notebook, 16 July 2026; address now notebook.google.com; used by 30m+ people | Google blog, "NotebookLM is now Gemini Notebook". https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/ ; redirect checked with curl | outlet (search summary of the Google post); redirect checked |
+| Gemini Notebook runs on Gemini 3.5 (June 2026) | 9to5Google, 8 June 2026 | outlet |
+| Answers grounded in your sources, with inline citations; can find more sources if asked; Studio makes audio and video overviews, slide decks, mind maps, reports, quizzes | Google support and blog; TechCrunch 8 June 2026 on building sources from chat | outlet |
 | Prompts for Gemini and ChatGPT | Chris's own, verbatim from his screenshots | Chris |
 
 Full research notes, with more than made the slides, are in `../research/`, outside the repo.
