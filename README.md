@@ -38,6 +38,13 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 30 September 2026: final running order
+
+"True enough?" now closes part one. Part two opens as "Putting tools to
+the test", then "What we will evaluate" (the chart of five tools) sets out
+the task before "Choose a topic", which gained a line: one subject, to
+explore with each tool in turn.
+
 ### 30 September 2026: take them to work
 
 The last slide stopped being three questions for next week and became

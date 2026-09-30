@@ -3774,3 +3774,4 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .ways-l { font-family: var(--ui); font-weight: 700; font-size: 17px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-right: 8px; }
 .way-chip { font-family: var(--ui); font-weight: 700; font-size: 20px; padding: 9px 18px; border: 1.5px solid var(--ink); border-radius: 999px; color: var(--ink); background: var(--paper-bright); }
 .slide--ask .asks-foot { margin: 30px 0 0; font-family: var(--display); font-weight: 500; font-size: 34px; color: var(--ink); }
+.slide--topic .slide-title { margin-bottom: 12px; } .topic-dek { margin-bottom: 30px; }
