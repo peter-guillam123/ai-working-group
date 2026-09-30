@@ -69,7 +69,10 @@ Company user numbers are self-reported, unaudited, and each company counts diffe
 | No. 1 on the US App Store from 18 Sep | TechCrunch, 25 Sep 2026. https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/ | outlet |
 | ChatGPT Voice uses connected apps (Gmail, calendar, Slack), works in ChatGPT Work, worldwide, free users included in Chat; spoken approval not accepted, tap on screen | Android Headlines, Mixed, Notebookcheck, quoting OpenAI's help centre, 23 Sep 2026. https://mixed-news.com/en/chatgpt-voice-plugins-web-ios-android-on-screen-approval/ | outlet. OpenAI's own pages blocked our fetches |
 
-## 11 Timeline
+## Timeline
+
+Claude Mythos: announced 7 April 2026 as too risky for open release, given to vetted partners under Project Glasswing (Fortune, 7 Apr 2026; Wikipedia). US response: Treasury Secretary and Fed chair warned bank chiefs (Bloomberg, 9–10 Apr); on 12 June the Commerce Department ordered that no foreign national could use Mythos 5 or Fable 5, Anthropic suspended access for everyone, and the order was lifted 30 June (Anthropic statement, https://www.anthropic.com/news/fable-mythos-access ; Fortune 13 Jun; CNBC 26 Jun; CSIS). Label: outlet, with Anthropic's statement as primary.
+
 
 ChatGPT (Nov 2022), MCP (Nov 2024), Claude Code (Feb 2025): background. Claude Opus 4.5 and METR's five hours: METR, read. Hugging Face: field guide. Other dates as above.
 

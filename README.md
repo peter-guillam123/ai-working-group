@@ -38,6 +38,14 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 30 September 2026: ten moments
+
+The timeline gained Claude Mythos (April 2026), held back as too risky to
+release, and the US government's response: in June the Commerce
+Department barred any foreign national from using it, and Anthropic
+switched it off for everyone until the order was lifted. Slide 11 is now
+"Towards personal AI agents", with quieter bullets.
+
 ### 30 September 2026: the hard tests are falling
 
 The strawberry and six-finger examples made the case feel flimsy, so the
