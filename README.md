@@ -38,6 +38,14 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 30 September 2026: take them to work
+
+The last slide stopped being three questions for next week and became
+the real ask: over the next few weeks, use the tools in different ways
+on the hard things on your desk, and keep asking where they're strong and
+where they break, what happens when anyone can make their own
+journalism, and how we use them well and safely. It all feeds the brief.
+
 ### 30 September 2026: ten moments
 
 The timeline gained Claude Mythos (April 2026), held back as too risky to
