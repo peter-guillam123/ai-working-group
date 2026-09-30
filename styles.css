@@ -3750,3 +3750,7 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .better-note { margin-top: 16px; }
 @media (prefers-reduced-motion: reduce) { .db-span { transform: none !important; } }
 .db-lab.then.edge { transform: translateX(-14px); text-align: left; }
+/* Slide 11: quieter bullets, so the name and description lead */
+.proxy-card .does li { font-size: 21px; line-height: 1.36; color: var(--ink-soft); padding-left: 30px; }
+.proxy-card .does { gap: 8px; }
+.proxy-card .what { font-size: 28px; color: var(--ink); }
