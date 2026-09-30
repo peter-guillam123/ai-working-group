@@ -3749,3 +3749,4 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .slide--better .finds li { font-size: 21px; }
 .better-note { margin-top: 16px; }
 @media (prefers-reduced-motion: reduce) { .db-span { transform: none !important; } }
+.db-lab.then.edge { transform: translateX(-14px); text-align: left; }
