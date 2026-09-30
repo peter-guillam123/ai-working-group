@@ -38,6 +38,13 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 30 September 2026: the shape of the course
+
+Slide 2 is back, and better than the old agenda: the whole course on one
+line. Four sessions, each in the words of my email to the group, then
+weeks five and six, when everyone writes their brief. Today is marked in
+red; the brief sits in a yellow card at the end of the line.
+
 ### 30 September 2026: a fifth tool
 
 Gemini Notebook, which most of the room will know as NotebookLM (Google
