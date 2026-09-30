@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI working group - Session 1</title>
 <link rel="preconnect" href="https://assets.guim.co.uk" crossorigin>
-<link rel="stylesheet" href="styles.css?v=202609300847">
+<link rel="stylesheet" href="styles.css?v=202609300904">
 <style id="deck-gate-style">
   #deck-gate {
     position: fixed; inset: 0; z-index: 2147483647;
@@ -61,7 +61,7 @@
     <p class="dg-error" id="deck-gate-error" hidden>That's not it. Try again.</p>
   </form>
 </div>
-<script src="gate.js?v=202609300847"></script>
+<script src="gate.js?v=202609300904"></script>
 
 <!-- ================================================================
      AI WORKING GROUP — Session 1, 30 September 2026.
@@ -319,6 +319,57 @@
           <div class="duel-names"><span><b>GPT-4o</b>answers at once</span><span><b>o1</b>thinks first</span></div>
           <p class="wg-source">Same company, same month, same test: the 2024 American Invitational Mathematics Examination. OpenAI, September 2024.</p>
         </div>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">01 / NN</span>
+    </div>
+  </section>
+
+  <!-- 07b — The model itself got better. GPQA: Rein et al 2023 (GPT-4
+       ~39%, experts 65%); top models over 90% in 2026 (Epoch and other
+       leaderboards). Strawberry: widely reported 2024. AlphaEvolve:
+       DeepMind blog, 14 May 2025. Erdős: Quanta, reported. -->
+  <section class="slide slide--spread slide--better" data-label="Better models">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">Meanwhile, the models themselves</p>
+    <h2 class="slide-title" data-split>From party trick to <em>discovery</em>.</h2>
+
+    <div class="slide-body">
+      <div class="then-now">
+        <div class="tn" data-fx="rise" style="--d:320ms">
+          <p class="tn-q">How many r's in strawberry?</p>
+          <p class="tokens" aria-label="The model sees three word-pieces: st, raw, berry"><span>st</span><span>raw</span><span>berry</span></p>
+          <div class="tn-row"><span class="tn-when">2024</span><span class="tn-then">Two.</span></div>
+          <div class="tn-row"><span class="tn-when">Now</span><span class="tn-now">Three.</span></div>
+          <p class="tn-note">It sees word-pieces, not letters. Now it works round that.</p>
+        </div>
+        <div class="tn" data-fx="rise" style="--d:440ms">
+          <p class="tn-q">Draw me a hand.</p>
+          <p class="tn-big" aria-hidden="true">6 → 5</p>
+          <div class="tn-row"><span class="tn-when">2022</span><span class="tn-then">Six fingers, sometimes more.</span></div>
+          <div class="tn-row"><span class="tn-when">Now</span><span class="tn-now">Five, as a rule.</span></div>
+          <p class="tn-note">Image models, same story: the tell-tale flaw became a memory.</p>
+        </div>
+        <div class="tn" data-fx="rise" style="--d:560ms">
+          <p class="tn-q">PhD-level science questions</p>
+          <div class="gpqa" role="img" aria-label="GPT-4 in 2023 about 39%; PhD experts 65%; top models in 2026 over 90%">
+            <div class="gq"><span class="gq-bar" style="--w:31%"></span><span class="gq-l">GPT-4, 2023</span><span class="gq-v">39%</span></div>
+            <div class="gq ex"><span class="gq-bar" style="--w:52%"></span><span class="gq-l">PhD experts</span><span class="gq-v">65%</span></div>
+            <div class="gq now"><span class="gq-bar" style="--w:74%"></span><span class="gq-l">Top models, 2026</span><span class="gq-v">90%+</span></div>
+          </div>
+          <p class="tn-note">The GPQA test: questions written to defeat a Google search.</p>
+        </div>
+      </div>
+      <div class="finds" data-fx="rise" style="--d:760ms">
+        <p class="wg-label">And now, real discoveries</p>
+        <ul>
+          <li><span class="f-when">May 2025</span>Google DeepMind's AlphaEvolve, built on Gemini, found a faster way to multiply 4×4 matrices: the first improvement on a method from 1969.</li>
+          <li><span class="f-when">May 2026</span>An OpenAI model disproved a 1946 conjecture by the mathematician Paul Erdős, Quanta reported.</li>
+        </ul>
       </div>
     </div>
 
@@ -1127,11 +1178,11 @@
 
 </deck-stage>
 
-<script src="deck-stage.js?v=202609300847"></script>
-<script src="prompt-copy.js?v=202609300847"></script>
-<script src="predictor.js?v=202609300847"></script>
-<script src="stream.js?v=202609300847"></script>
-<script src="motion.js?v=202609300847"></script>
-<script src="grid-overlay.js?v=202609300847"></script>
+<script src="deck-stage.js?v=202609300904"></script>
+<script src="prompt-copy.js?v=202609300904"></script>
+<script src="predictor.js?v=202609300904"></script>
+<script src="stream.js?v=202609300904"></script>
+<script src="motion.js?v=202609300904"></script>
+<script src="grid-overlay.js?v=202609300904"></script>
 
 </body></html>

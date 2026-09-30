@@ -46,6 +46,17 @@ Company user numbers are self-reported, unaudited, and each company counts diffe
 | MCP, the shared connector standard, now run by the Linux Foundation's Agentic AI Foundation | https://aaif.io/projects/model-context-protocol | outlet |
 | Harness names (Claude Code, Cowork, Claude in Chrome, Codex, ChatGPT Work, Gemini Spark, Comet) | Research notes, 29 Sep 2026 | read / outlet |
 
+## From party trick to discovery (after the reasoning slide)
+
+| Claim | Source | Label |
+|---|---|---|
+| "How many r's in strawberry?" answered "two" by ChatGPT, 2024; models see word-pieces (st-raw-berry) | Widely reported, e.g. Inc., August 2024; OpenAI developer forum | outlet |
+| Early image generators drew six or more fingers (2022); hands now routinely right | Widely reported | background |
+| GPQA: GPT-4 about 39% (2023); PhD experts 65% | Rein et al, "GPQA: A Graduate-Level Google-Proof Q&A Benchmark", arXiv 2311.12022 | read (via search of the paper) |
+| Top models over 90% on GPQA Diamond in 2026 | Epoch AI benchmark hub and several leaderboards (e.g. Gemini 3.1 Pro 94.3%) | outlet |
+| AlphaEvolve found a way to multiply 4×4 complex matrices with 48 multiplications, first improvement on Strassen's 1969 method in this setting | Google DeepMind blog, 14 May 2025. https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/ | outlet (search of the blog) |
+| An OpenAI model disproved Erdős's 1946 unit distance conjecture, May 2026 | Quanta Magazine, 3 Aug 2026 | outlet |
+
 ## 10 Now it acts on your behalf
 
 | Claim | Source | Label |

@@ -38,6 +38,15 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 30 September 2026: from party trick to discovery
+
+The deck went from "it thinks" to "it keeps going" without saying that
+the model itself got far better. A new slide after reasoning does that:
+the strawberry question it used to fail, the six-fingered hands, GPT-4's
+39% on PhD-level science questions against over 90% now, and two real
+discoveries, a faster way to multiply matrices and a disproved Erdős
+conjecture.
+
 ### 30 September 2026: what each one is for
 
 The "for its maker" row confused more than it helped, so it's gone from
