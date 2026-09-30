@@ -111,7 +111,8 @@ ChatGPT (Nov 2022), MCP (Nov 2024), Claude Code (Feb 2025): background. Claude O
 | Canadian musician falsely called a sex offender, suing | The Guardian, 5 May 2026 | read |
 | Munich court: AI Overviews are Google's own statements (June 2026) | Techdirt, Search Engine Land (ruling not read) | outlet |
 | Glue on pizza (May 2024); made-up sayings (April 2025) | Google's own blog, 30 May 2024; Engadget | read; outlet |
-| BBC/EBU 76% figure was the Gemini app, not AI Overviews | EBU/BBC News Integrity in AI Assistants report, 21 Oct 2025 | read |
+| 45% of news answers from free ChatGPT, Copilot, Gemini and Perplexity had a significant issue; Gemini 76%, Copilot 37%, ChatGPT 36%, Perplexity 30%; mostly sourcing | EBU/BBC News Integrity in AI Assistants report, 21 Oct 2025, 22 public service media, responses May–June 2025 | read |
+| Why they go wrong (making it up, answering too fast, wrong source, missing source) | General account, drawing on part 1 and the studies above | ours |
 | Google has never published an error rate | No figure in Google's statements from May 2024 to January 2026 (research notes) | read (absence) |
 | Prompts for Gemini and ChatGPT | Chris's own, verbatim from his screenshots | Chris |
 

@@ -38,6 +38,15 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 30 September 2026: true enough?
+
+The accuracy slide wasn't only about AI Overviews, so it now comes before
+the tool pages as "True enough?", with every figure tagged by the tools
+it measured, and the EBU and BBC study's 45% across four assistants on
+the left with the rest. On the right, why they go wrong (making it up,
+answering too fast, the wrong source, a missing source), then a few famous
+slips, labelled as slips rather than as typical.
+
 ### 30 September 2026: choose a topic
 
 Fairford is a few days old now, so the story slide became "Choose a

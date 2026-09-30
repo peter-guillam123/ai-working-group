@@ -3613,3 +3613,32 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .topic-tests b { color: var(--ink); }
 .topic-best { margin: 20px 0 0; font-family: var(--display); font-weight: 500; font-size: 32px; line-height: 1.2; color: var(--ink); }
 .topic-best b { font-weight: 500; color: var(--news-red); }
+
+/* True enough? */
+.slide--truth .slide-title { margin-bottom: 30px; }
+.slide--truth .ev-grid { grid-template-columns: 1fr 760px; gap: 80px; }
+.slide--truth .ev-figs li { grid-template-columns: 170px 1fr; gap: 22px; padding: 13px 0; }
+.slide--truth .ev-n { font-size: 74px; }
+.slide--truth .ev-figs li:nth-child(4) .ev-n { color: var(--news-red); }
+.slide--truth .ev-figs li:nth-child(2) .ev-n { color: var(--guardian-blue); opacity: 0.7; }
+.ev-tool {
+  display: inline-block; margin-bottom: 6px; padding: 3px 10px;
+  font-family: var(--ui); font-weight: 700; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--paper-bright); background: var(--ink); border-radius: 3px;
+}
+.slide--truth .ev-figs p { font-size: 22px; line-height: 1.34; }
+.slide--truth .ev-figs .ev-src { font-size: 16px; margin-top: 4px; }
+.ev-side { background: var(--paper-deep); border-top: 6px solid var(--news-red); padding: 22px 32px 24px; }
+.ev-why, .ev-slips { list-style: none; margin: 0; padding: 0; }
+.ev-why li { padding: 9px 0; border-bottom: 1px solid var(--paper-rule); font-family: var(--body); font-size: 23px; line-height: 1.36; color: var(--ink-soft); }
+.ev-why b { color: var(--ink); }
+.ev-slips-label { margin-top: 20px; }
+.ev-slips li { padding: 7px 0; font-family: var(--body); font-style: italic; font-size: 20px; line-height: 1.34; color: var(--ink-soft); }
+.ev-slips li span { display: block; font-style: normal; font-family: var(--ui); font-size: 15px; color: var(--ink-mute); margin-top: 2px; }
+.slide--truth .ev-figs { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; border-top: 0; }
+.slide--truth .ev-figs li { display: block; padding: 18px 0 20px; border-top: 3px solid var(--ink); border-bottom: 0; }
+.slide--truth .ev-figs li:nth-child(n+3) { border-top-width: 1px; border-top-color: var(--paper-rule); margin-top: 8px; }
+.slide--truth .ev-n { display: block; font-size: 80px; margin-bottom: 8px; }
+.slide--truth .ev-tool { font-size: 14px; }
+.slide--truth .ev-figs p { font-size: 22px; }
+.slide--truth .ev-grid { grid-template-columns: 1fr 700px; gap: 70px; } .slide--truth .ev-figs { column-gap: 50px; }

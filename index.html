@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI working group - Session 1</title>
 <link rel="preconnect" href="https://assets.guim.co.uk" crossorigin>
-<link rel="stylesheet" href="styles.css?v=202609300819">
+<link rel="stylesheet" href="styles.css?v=202609300830">
 <style id="deck-gate-style">
   #deck-gate {
     position: fixed; inset: 0; z-index: 2147483647;
@@ -61,7 +61,7 @@
     <p class="dg-error" id="deck-gate-error" hidden>That's not it. Try again.</p>
   </form>
 </div>
-<script src="gate.js?v=202609300819"></script>
+<script src="gate.js?v=202609300830"></script>
 
 <!-- ================================================================
      AI WORKING GROUP — Session 1, 30 September 2026.
@@ -733,6 +733,48 @@
     </div>
   </section>
 
+  <!-- Part 2 · True enough? The evidence on accuracy, each figure tagged
+       with the tools it measured. NYT/Oumi (Oumi blog read), Washington
+       University preprint (read), EBU/BBC report (read), Guardian (read).
+       See SOURCES.md and research/research-aio-accuracy.md. -->
+  <section class="slide slide--spread slide--truth" data-label="True enough?">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">How accurate are they?</p>
+    <h2 class="slide-title" data-split>True <em>enough</em>?</h2>
+
+    <div class="slide-body top">
+      <div class="ev-grid">
+        <ol class="ev-figs">
+          <li data-fx="rise" style="--d:340ms"><span class="ev-n">91%</span><div><span class="ev-tool">AI Overviews</span><p>right on 4,326 hard factual questions, up from 85% before Google moved it to Gemini 3.</p><p class="ev-src">Oumi for the New York Times, October 2025 and February 2026. Google disputes the test set.</p></div></li>
+          <li data-fx="rise" style="--d:440ms"><span class="ev-n">56%</span><div><span class="ev-tool">AI Overviews</span><p>of those right answers linked to sources that didn't fully back them up.</p><p class="ev-src">Same study. Google has never published an error rate.</p></div></li>
+          <li data-fx="rise" style="--d:540ms"><span class="ev-n">89%</span><div><span class="ev-tool">AI Overviews</span><p>of 98,000 claims from trending US searches matched the pages cited. 2.7% were contradicted by them.</p><p class="ev-src">Washington University in St Louis, spring 2026, not yet peer reviewed.</p></div></li>
+          <li data-fx="rise" style="--d:640ms"><span class="ev-n">45%</span><div><span class="ev-tool">ChatGPT · Copilot · Gemini · Perplexity</span><p>of news answers had a significant problem, mostly sourcing. Gemini 76%, Copilot 37%, ChatGPT 36%, Perplexity 30%.</p><p class="ev-src">22 public broadcasters led by the EBU and BBC, free versions, May and June 2025.</p></div></li>
+        </ol>
+        <div class="ev-side" data-fx="rise" style="--d:760ms">
+          <p class="wg-label">Why they go wrong</p>
+          <ul class="ev-why">
+            <li><b>Making it up.</b> Pure invention: rarer now, and likeliest where little has been written.</li>
+            <li><b>Answering too fast.</b> No time to think, so no chance to check.</li>
+            <li><b>Trusting the wrong source.</b> Satire, a forum joke or one weak page, taken at face value.</li>
+            <li><b>Missing the right source.</b> Blocked, paywalled, or too new to reach.</li>
+          </ul>
+          <p class="wg-label ev-slips-label">Some famous slips</p>
+          <ul class="ev-slips">
+            <li>Told pancreatic cancer patients to avoid high-fat foods, the opposite of expert advice. <span>AI Overviews · Guardian investigation, January 2026</span></li>
+            <li>Said the Air India plane that crashed in June 2025 was an Airbus. It was a Boeing. <span>AI Overviews</span></li>
+            <li>Suggested glue to keep cheese on pizza, from an old forum joke. <span>AI Overviews · May 2024</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group · Part 2</span>
+      <span class="num">01 / NN</span>
+    </div>
+  </section>
+
   <!-- Part 2 · AI Overviews -->
   <section class="slide slide--tool" data-tool="aio" data-label="AI Overviews">
     <div class="rule-band"></div>
@@ -773,44 +815,6 @@
             <li data-fx="rise" style="--d:670ms"><span class="tr-k">Built around it</span><p>The results page. Nothing to steer, no follow-ups.</p></li>
             <li data-fx="rise" style="--d:760ms"><span class="tr-k">Watch for</span><p>Brief by design. It blends sources without weighing them, so rumour and fact can share a sentence.</p></li>
         </ul>
-      </div>
-    </div>
-
-    <div class="slide-foot">
-      <span class="wm">AI working group · Part 2</span>
-      <span class="num">01 / NN</span>
-    </div>
-  </section>
-
-  <!-- Part 2 · AI Overviews: the evidence. Figures from the NYT/Oumi
-       study (Oumi blog read), Washington University preprint (read), the
-       Guardian's health investigation (read), EBU/BBC report (read). See
-       SOURCES.md and research/research-aio-accuracy.md. -->
-  <section class="slide slide--spread slide--aio-ev" data-label="AI Overviews: the evidence">
-    <div class="rule-band"></div>
-    <div class="map-badge" data-fx="fade" style="--d:200ms"><span class="badge-text">Tool 1<b>of 4</b></span><svg viewBox="0 0 100 94" aria-hidden="true"><rect class="mt on" x="0" y="0" width="22" height="14"/><rect class="mt on" x="0" y="20" width="22" height="14"/><rect class="mt on" x="0" y="40" width="22" height="14"/><rect class="mt on" x="0" y="60" width="22" height="14"/><rect class="mt on" x="0" y="80" width="22" height="14"/><rect class="mt" x="26" y="0" width="22" height="14"/><rect class="mt" x="26" y="20" width="22" height="14"/><rect class="mt" x="26" y="40" width="22" height="14"/><rect class="mt" x="26" y="60" width="22" height="14"/><rect class="mt" x="26" y="80" width="22" height="14"/><rect class="mt" x="52" y="0" width="22" height="14"/><rect class="mt" x="52" y="20" width="22" height="14"/><rect class="mt" x="52" y="40" width="22" height="14"/><rect class="mt" x="52" y="60" width="22" height="14"/><rect class="mt" x="52" y="80" width="22" height="14"/><rect class="mt" x="78" y="0" width="22" height="14"/><rect class="mt" x="78" y="20" width="22" height="14"/><rect class="mt" x="78" y="40" width="22" height="14"/><rect class="mt" x="78" y="60" width="22" height="14"/><rect class="mt" x="78" y="80" width="22" height="14"/></svg></div>
-
-    <p class="kicker" data-fx="rise" style="--d:60ms">Tool 1 of 4 · How accurate is it?</p>
-    <h2 class="slide-title" data-split>Better than its <em>reputation</em>.</h2>
-    <p class="slide-subtitle" data-fx="rise" style="--d:220ms">And worse than Google claims.</p>
-
-    <div class="slide-body top">
-      <div class="ev-grid">
-        <ol class="ev-figs">
-          <li data-fx="rise" style="--d:400ms"><span class="ev-n">91%</span><div><p>right on 4,326 hard factual questions, up from 85% before Google moved it to Gemini 3.</p><p class="ev-src">Oumi for the New York Times, October 2025 and February 2026. Google says the test set is full of errors, and its own researchers agree it has some.</p></div></li>
-          <li data-fx="rise" style="--d:520ms"><span class="ev-n">56%</span><div><p>of those right answers linked to sources that didn't fully back them up, up from 37%.</p><p class="ev-src">Same study.</p></div></li>
-          <li data-fx="rise" style="--d:640ms"><span class="ev-n">89%</span><div><p>of 98,000 claims, from 55,000 trending US searches, matched the pages cited. 2.7% were flatly contradicted by them.</p><p class="ev-src">Washington University in St Louis, spring 2026, not yet peer reviewed; it tests fidelity to sources, not truth. Its authors: better than critics suggest, worse than Google claims.</p></div></li>
-        </ol>
-        <div class="ev-fails" data-fx="rise" style="--d:760ms">
-          <p class="wg-label">Where it goes wrong</p>
-          <ul>
-            <li><b>Health.</b> Told pancreatic cancer patients to avoid high-fat foods, the opposite of expert advice. <span>Guardian investigation, January 2026</span></li>
-            <li><b>Breaking news.</b> Said the Air India plane that crashed in June 2025 was an Airbus. It was a Boeing.</li>
-            <li><b>People.</b> Falsely called a Canadian musician a sex offender; he is suing. A Munich court has ruled that its words are Google's own.</li>
-            <li><b>Oddities.</b> Glue on pizza in 2024; confident meanings for made-up sayings in 2025.</li>
-          </ul>
-          <p class="ev-note">The widely quoted 76% of answers with significant problems, from the BBC and EBU, was about the Gemini app, not AI Overviews. Google has never published an error rate.</p>
-        </div>
       </div>
     </div>
 
@@ -1038,11 +1042,11 @@
 
 </deck-stage>
 
-<script src="deck-stage.js?v=202609300819"></script>
-<script src="prompt-copy.js?v=202609300819"></script>
-<script src="predictor.js?v=202609300819"></script>
-<script src="stream.js?v=202609300819"></script>
-<script src="motion.js?v=202609300819"></script>
-<script src="grid-overlay.js?v=202609300819"></script>
+<script src="deck-stage.js?v=202609300830"></script>
+<script src="prompt-copy.js?v=202609300830"></script>
+<script src="predictor.js?v=202609300830"></script>
+<script src="stream.js?v=202609300830"></script>
+<script src="motion.js?v=202609300830"></script>
+<script src="grid-overlay.js?v=202609300830"></script>
 
 </body></html>
