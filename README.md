@@ -38,6 +38,12 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 30 September 2026: what each one is for
+
+The "for its maker" row confused more than it helped, so it's gone from
+the chart and from the tool slides. In its place each tool slide opens
+with a plain line on what the tool is for.
+
 ### 30 September 2026: the shape of the course
 
 Slide 2 is back, and better than the old agenda: the whole course on one
