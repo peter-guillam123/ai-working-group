@@ -3642,3 +3642,4 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .slide--truth .ev-tool { font-size: 14px; }
 .slide--truth .ev-figs p { font-size: 22px; }
 .slide--truth .ev-grid { grid-template-columns: 1fr 700px; gap: 70px; } .slide--truth .ev-figs { column-gap: 50px; }
+.slide--reflect .slide-title { max-width: none; }
