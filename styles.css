@@ -3792,3 +3792,20 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .ex-tests { margin: auto 0 0; padding-top: 10px; border-top: 1px solid var(--paper-rule); font-family: var(--body); font-size: 18px; line-height: 1.38; color: var(--ink); }
 .ex-tests b { font-family: var(--ui); font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); margin-right: 4px; }
 .ex-lede { font-size: 28px; margin-bottom: 24px; } .ex-grid { gap: 20px; }
+
+/* Things to try: five columns, each idea tagged use or test */
+.slide--try .slide-title { margin-bottom: 12px; }
+.try-lede { margin: 0 0 30px; font-family: var(--display); font-weight: 500; font-size: 28px; line-height: 1.25; color: var(--ink-soft); max-width: 70ch; }
+.try-lede b { font-weight: 500; padding: 0 6px; border-radius: 3px; color: var(--paper-bright); }
+.try-lede b.u { background: var(--guardian-blue); }
+.try-lede b.t { background: var(--news-red); }
+.try-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; }
+.try-col { border-top: 4px solid var(--ink); padding-top: 14px; }
+.try-h { margin: 0 0 12px; font-family: var(--display); font-weight: 500; font-size: 27px; line-height: 1.1; color: var(--ink); white-space: nowrap; }
+.try-h .cn { display: block; font-family: var(--mono); font-size: 15px; color: var(--news-red); margin-bottom: 4px; }
+.try-col ul { list-style: none; margin: 0; padding: 0; }
+.try-col li { padding: 11px 0 12px; border-bottom: 1px solid var(--paper-rule); font-family: var(--body); font-size: 19px; line-height: 1.38; color: var(--ink); }
+.tt { display: inline-block; margin-right: 8px; padding: 1px 7px 2px; border-radius: 3px; font-family: var(--ui); font-weight: 700; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--paper-bright); vertical-align: 2px; }
+.tt-use { background: var(--guardian-blue); }
+.tt-test { background: var(--news-red); }
+.try-col li { font-size: 20px; padding: 12px 0 13px; }

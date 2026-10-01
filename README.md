@@ -38,6 +38,14 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 1 October 2026: things to try
+
+Between the ask and the examples, a slide of things to try in each tool,
+each tagged as a newsroom use or a test of accuracy and bias: research a
+background point, find what readers would find confusing, compare a
+speech with the coverage of it, ask the same question three ways. Public
+material only.
+
 ### 1 October 2026: what the tools can already do
 
 The session went well. A last slide links out to five examples: three
