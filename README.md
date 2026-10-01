@@ -38,6 +38,16 @@ line sourced. It lives at `/fairford/` behind the same gate. The source
 and build script sit outside this repo, in `Working group/fairford/`;
 `build.py` writes the gated copy here.
 
+### 1 October 2026: what the tools can already do
+
+The session went well. A last slide links out to five examples: three
+things I've built with Claude (the Steinem obituary, the data centre tour,
+the AI risk field guide) and two Gemini Canvas reports made in the
+session, on Andy Burnham's speech and Manchester City. Each has a rough
+version of the prompt and a line on what it was testing. The slide says
+plainly that these are demonstrations, not a plan to make journalism this
+way, though there is room to use the tools more within our principles.
+
 ### 30 September 2026: final running order
 
 "True enough?" now closes part one. Part two opens as "Putting tools to

@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI working group - Session 1</title>
 <link rel="preconnect" href="https://assets.guim.co.uk" crossorigin>
-<link rel="stylesheet" href="styles.css?v=202609301224">
+<link rel="stylesheet" href="styles.css?v=202610010954">
 <style id="deck-gate-style">
   #deck-gate {
     position: fixed; inset: 0; z-index: 2147483647;
@@ -61,7 +61,7 @@
     <p class="dg-error" id="deck-gate-error" hidden>That's not it. Try again.</p>
   </form>
 </div>
-<script src="gate.js?v=202609301224"></script>
+<script src="gate.js?v=202610010954"></script>
 
 <!-- ================================================================
      AI WORKING GROUP — Session 1, 30 September 2026.
@@ -1208,13 +1208,63 @@
     </div>
   </section>
 
+  <!-- Examples. Links out; the Claude prompts are approximations, the two
+       Gemini prompts are Chris's own from the session. -->
+  <section class="slide slide--spread slide--examples" data-label="Examples">
+    <div class="rule-band"></div>
+
+    <p class="kicker" data-fx="rise" style="--d:60ms">Examples</p>
+    <h2 class="slide-title" data-split>What the tools can already <em>do</em>.</h2>
+    <p class="ex-lede" data-fx="rise" style="--d:260ms">These show what today’s tools are capable of, not a plan to make journalism this way from end to end. But within our AI principles, there is plenty of room to use them more.</p>
+
+    <div class="slide-body top">
+      <div class="ex-grid">
+        <article class="ex-card ex-claude" data-fx="rise" style="--d:420ms">
+          <p class="ex-tool">Built with Claude</p>
+          <h3><a href="https://claude.ai/artifact/8PF5Nhrn2RewUtjb8bRCJn" target="_blank" rel="noopener">Gloria Steinem, 1934–2026 <span aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></h3>
+          <p class="ex-prompt">“Build a scrolling interactive obituary of Gloria Steinem, in her own words wherever a quotation can be verified, with numbered sources and a small interactive for each of her big ideas.”</p>
+          <p class="ex-tests"><b>Testing:</b> Research under deadline: every quote traced to a primary source, famous ones dropped if they couldn’t be. Built the day her death was announced.</p>
+        </article>
+        <article class="ex-card ex-claude" data-fx="rise" style="--d:520ms">
+          <p class="ex-tool">Built with Claude</p>
+          <h3><a href="https://peter-guillam123.github.io/how-a-data-centre-works/" target="_blank" rel="noopener">How a data centre works <span aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></h3>
+          <p class="ex-prompt">“Build a 3D model of a typical modern data centre from published standards, then a page that lets readers scroll through it, walk inside, and follow a request, the power and the heat.”</p>
+          <p class="ex-tests"><b>Testing:</b> Modelling 3D objects and space, then turning the model into something a reader can explore, with every figure footnoted.</p>
+        </article>
+        <article class="ex-card ex-claude" data-fx="rise" style="--d:620ms">
+          <p class="ex-tool">Built with Claude</p>
+          <h3><a href="https://peter-guillam123.github.io/ai-risk-field-guide/" target="_blank" rel="noopener">AI risk field guide <span aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></h3>
+          <p class="ex-prompt">“Write a plain-English guide to the row about AI and existential risk, for readers who know nothing about AI, with interactive plates and every claim sourced.”</p>
+          <p class="ex-tests"><b>Testing:</b> Deep research on a story still unfolding, primary sources first, and explaining hard ideas through things you can play with.</p>
+        </article>
+        <article class="ex-card ex-gemini" data-fx="rise" style="--d:720ms">
+          <p class="ex-tool">Gemini Canvas · made in the session</p>
+          <h3><a href="https://gemini.google.com/share/d/18XvJFEbFpLPmHkrTPRJyOOvEApr_ZL-3?usp=sharing" target="_blank" rel="noopener">Andy Burnham speech analysis <span aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></h3>
+          <p class="ex-prompt">“Can you create a really clear, deeply sourced interactive report on the speech that Andy Burnham gave at the Labour conference, highlighting the key points of his speech. If you can’t access the speech, please use reported coverage”</p>
+          <p class="ex-tests"><b>Testing:</b> Turning a fresh political speech into a sourced, interactive briefing, and what it does when it can’t reach the original.</p>
+        </article>
+        <article class="ex-card ex-gemini" data-fx="rise" style="--d:820ms">
+          <p class="ex-tool">Gemini Canvas · made in the session</p>
+          <h3><a href="https://gemini.google.com/share/d/1sY_5hyQ8ORfwymg3IrEaBkeSzt9J72lD?usp=sharing" target="_blank" rel="noopener">Manchester City Financial Verdict & Sanctions Dossier <span aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></h3>
+          <p class="ex-prompt">“Can you create a really clear, deeply sourced interactive report on the where we stand with Manchester City and cheating, including the recent FA report and wider responses from City and others”</p>
+          <p class="ex-tests"><b>Testing:</b> A long, contested, legally dense story: can it separate the verdict from the noise, and source both?</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="slide-foot">
+      <span class="wm">AI working group</span>
+      <span class="num">01 / NN</span>
+    </div>
+  </section>
+
 </deck-stage>
 
-<script src="deck-stage.js?v=202609301224"></script>
-<script src="prompt-copy.js?v=202609301224"></script>
-<script src="predictor.js?v=202609301224"></script>
-<script src="stream.js?v=202609301224"></script>
-<script src="motion.js?v=202609301224"></script>
-<script src="grid-overlay.js?v=202609301224"></script>
+<script src="deck-stage.js?v=202610010954"></script>
+<script src="prompt-copy.js?v=202610010954"></script>
+<script src="predictor.js?v=202610010954"></script>
+<script src="stream.js?v=202610010954"></script>
+<script src="motion.js?v=202610010954"></script>
+<script src="grid-overlay.js?v=202610010954"></script>
 
 </body></html>

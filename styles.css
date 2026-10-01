@@ -3775,3 +3775,20 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .way-chip { font-family: var(--ui); font-weight: 700; font-size: 20px; padding: 9px 18px; border: 1.5px solid var(--ink); border-radius: 999px; color: var(--ink); background: var(--paper-bright); }
 .slide--ask .asks-foot { margin: 30px 0 0; font-family: var(--display); font-weight: 500; font-size: 34px; color: var(--ink); }
 .slide--topic .slide-title { margin-bottom: 12px; } .topic-dek { margin-bottom: 30px; }
+
+/* Examples: three Claude builds over two Gemini Canvas outputs */
+.slide--examples .slide-title { margin-bottom: 14px; }
+.ex-lede { margin: 0 0 30px; font-family: var(--display); font-weight: 500; font-size: 30px; line-height: 1.24; color: var(--ink-soft); max-width: 62ch; }
+.ex-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 22px; }
+.ex-card { grid-column: span 2; background: var(--paper-bright); border: 1px solid var(--hairline); border-top: 6px solid var(--ink); box-shadow: var(--shadow-card); padding: 18px 24px 20px; display: flex; flex-direction: column; }
+.ex-card.ex-gemini { grid-column: span 3; border-top-color: var(--guardian-blue); }
+.ex-tool { margin: 0 0 6px; font-family: var(--ui); font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--news-red); }
+.ex-gemini .ex-tool { color: var(--guardian-blue); }
+.ex-card h3 { margin: 0 0 10px; font-family: var(--display); font-weight: 500; font-size: 30px; line-height: 1.08; }
+.ex-card h3 a { color: var(--ink); text-decoration: none; border-bottom: 2px solid rgba(199,0,0,0.35); }
+.ex-card h3 a:hover { color: var(--news-red); border-bottom-color: var(--news-red); }
+.ex-card h3 a:focus-visible { outline: 3px solid var(--news-red); outline-offset: 3px; }
+.ex-prompt { margin: 0 0 10px; font-family: var(--body); font-style: italic; font-size: 18px; line-height: 1.4; color: var(--ink-soft); }
+.ex-tests { margin: auto 0 0; padding-top: 10px; border-top: 1px solid var(--paper-rule); font-family: var(--body); font-size: 18px; line-height: 1.38; color: var(--ink); }
+.ex-tests b { font-family: var(--ui); font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); margin-right: 4px; }
+.ex-lede { font-size: 28px; margin-bottom: 24px; } .ex-grid { gap: 20px; }
