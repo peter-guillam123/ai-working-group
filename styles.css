@@ -3809,3 +3809,5 @@ a.chat-bubble:hover { background: var(--guardian-blue); color: var(--paper); }
 .tt-use { background: var(--guardian-blue); }
 .tt-test { background: var(--news-red); }
 .try-col li { font-size: 20px; padding: 12px 0 13px; }
+.ex-lede { max-width: none; }
+.ex-card { padding: 16px 22px 16px; } .ex-prompt { margin-bottom: 8px; } .ex-tests { padding-top: 8px; } .ex-lede { margin-bottom: 20px; }
